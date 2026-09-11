@@ -91,3 +91,4 @@ np.zeros(3, dtype=int) →  [0, 0, 0]       int
 | 3 | По умолчанию float; для целых — `dtype=int` |
 | 4 | `zeros_like(a)` — нули той же формы, что `a` |
 
+

@@ -94,3 +94,4 @@ rng.integers(0, 10, size=(5,))
 | 4 | Массив: `size=(строки, столбцы)` |
 | 5 | Современнее: `default_rng().integers(...)` |
 
+
