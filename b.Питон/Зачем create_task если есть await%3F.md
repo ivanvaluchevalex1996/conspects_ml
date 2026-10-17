@@ -1,7 +1,6 @@
 
  ![](uploads/b6a79d50-4ce2-4be2-bc27-b1454afd5244/9e1ea815-525c-4013-9f87-b46d3545ed9f/image.png "aspect=1")
 
-
 Вариант 1: Просто await (последовательное выполнение)
 
 ```javascript
@@ -39,7 +38,6 @@ B завершена
 ```
 
 **Итог:** Общее время = **6 секунд**. Мы ждали А, потом начали B.
-
 
 Вариант 2: create_task() + await (параллельное выполнение)
 
@@ -79,7 +77,7 @@ asyncio.run(main())
 ```
 
 **Итог:** Общее время = **3 секунды**. Обе задачи запустились параллельно!
-  
+ 
 
 ### Зачем нужен create_task()?
 
@@ -102,8 +100,6 @@ async def main():
     print(f"Результат: {result}")
 ```
 
-
-
  ![](uploads/b6a79d50-4ce2-4be2-bc27-b1454afd5244/1c1eff23-7811-4bce-9464-23547b6674c6/image.png "aspect=1")
 
 ```javascript
@@ -112,7 +108,6 @@ async def main():
     await asyncio.sleep(5)  # <-- ТУТ ВСЕ СТОП!
     print("Шаг 2")          # Это случится только через 5 секунд
 ```
-
 
  ![](uploads/b6a79d50-4ce2-4be2-bc27-b1454afd5244/91fbc9ba-2748-4d1c-9ca8-0fc4cac725b5/image.png "aspect=1")
 
@@ -124,9 +119,7 @@ async def main():
     await task      # Ждем, когда понадобится
 ```
 
-
  ![](uploads/b6a79d50-4ce2-4be2-bc27-b1454afd5244/148f2252-b35b-4cc0-9de8-1e40e63832f4/image.png "aspect=1")
-
 
 ```javascript
 import asyncio
@@ -137,20 +130,16 @@ async def long_running_task():
     print("Задача завершена")
     return "Результат"
 
-
 async def main():
     # asyncio.create_task(long_running_task()) создает задачу (объект Task)
     # background_task — это объект Task, а не строка
     # await background_task → ожидает завершения задачи и получает результат
-
 
     background_task = asyncio.create_task(long_running_task())
     await asyncio.sleep(1)
     print("Пока задача работала, я сделал что-то полезное")
     result = await background_task
     print(f"Результат: {result}")
-
-
 
 # если бы мы не испольщовали create_task, то 
 
@@ -172,5 +161,4 @@ async def main():
     
 asyncio.run(main())
 ```
-
 

@@ -1,5 +1,5 @@
 
-# **Asyncio.gather()**  
+# **Asyncio.gather()** 
 
  ![](uploads/b6a79d50-4ce2-4be2-bc27-b1454afd5244/4830e90f-11b2-422a-8d50-259b3fecb879/image.png "aspect=1")
 
@@ -19,7 +19,6 @@ async def main():
     print(result1, result2, result3)
 ```
 
-
 ```javascript
 async def main():
     # Все в одной строке!
@@ -32,7 +31,6 @@ async def main():
     # results = [результат1, результат2, результат3]
     print(results)
 ```
-
 
  ![](uploads/b6a79d50-4ce2-4be2-bc27-b1454afd5244/f1e4cea5-b3da-45c7-ab86-25a7bcd94348/image.png "aspect=1")
 
@@ -50,13 +48,12 @@ async def my_gather(*coroutines):
 
 ## **💡 Пример с gather и ошибками**
 
-  
+ 
 
 ### **Стандартное поведение (первая ошибка — все падает)**
 
 ```javascript
 import asyncio
-
 
 async def fail():
     raise ValueError("Ошибка!")
@@ -82,7 +79,6 @@ async def main():
 
 asyncio.run(main())
 ```
-
 
 ## return_exceptions=True — продолжаем выполнение
 
@@ -117,10 +113,9 @@ asyncio.run(main())
 # Успех: OK
 ```
 
-
  ![](uploads/b6a79d50-4ce2-4be2-bc27-b1454afd5244/136776b9-e617-4120-b2bf-897e69f83475/image.png "aspect=1")
 
-  
+ 
 
 ## **🎯 Итог одной фразой**
 
@@ -135,7 +130,7 @@ asyncio.run(main())
 
 # Asyncio.wait() 
 
-  
+ 
 
 **Когда использовать:**
 
@@ -185,15 +180,13 @@ async def main():
 asyncio.run(main())
 ```
 
-
  ![](uploads/b6a79d50-4ce2-4be2-bc27-b1454afd5244/5b0c55b8-fb6f-4e31-bf84-e8605ea0b7f9/image.png "aspect=1")
-
 
 # Сравнение подходов
 
  ![](uploads/b6a79d50-4ce2-4be2-bc27-b1454afd5244/838da4e5-29e9-4263-bfe1-4623c19ec73c/image.png "aspect=1")
 
-  
+ 
 
 ## **🎯 Когда что использовать (шпаргалка)**
 
@@ -224,4 +217,4 @@ wait
 - ✅ Хотите **постепенно** обрабатывать результаты
 - ✅ Нужен **гибкий контроль** над выполнением
 
-  
+ 
