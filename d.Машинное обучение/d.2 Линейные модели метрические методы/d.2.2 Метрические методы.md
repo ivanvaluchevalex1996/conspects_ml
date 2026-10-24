@@ -946,8 +946,7 @@ print("Лучший скейлер и параметры:", grid.best_params_)
 
 > Перенесено из введения (`d.1`). Кратко во введении — [`d.1.5`](../d.1%20Введение%20в%20мл/d.1.5%20KNN%20(кратко).md).
 
-
-[График слева, взят из конспекта РСА главных компонент](https://ivan-valuchev.yonote.ru/doc/7metod-glavnyh-komponent-pca-aotVS52Ro4) 
+[График слева, взят из конспекта РСА главных компонент](../d.3%20Classic%20ML/d.3.7%20%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%20%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%20%28PCA%29.md) 
 
  ![](../uploads/b6a79d50-4ce2-4be2-bc27-b1454afd5244/d714f6f2-df70-4eca-9304-af1f791ab7ad/image.png "aspect=1")
 

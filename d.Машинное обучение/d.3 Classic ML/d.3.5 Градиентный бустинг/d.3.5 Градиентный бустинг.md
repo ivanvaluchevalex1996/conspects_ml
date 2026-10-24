@@ -50,7 +50,7 @@
 
 ## 2. «Учим остатки» на пальцах (MSE)
 
-Пример уже был разобран в **5.2. [Как это работает — на примере](https://ivan-valuchev.yonote.ru/doc/4ansambli-v-mashinnom-obuchenii-uh5CXeopEU#h-chast-5-busting)**
+Пример уже был разобран в **5.2. [Как это работает — на примере](../d.3.4%20%D0%90%D0%BD%D1%81%D0%B0%D0%BC%D0%B1%D0%BB%D0%B8%20%D0%B2%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%BD%D0%BE%D0%BC%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B8.md#nav-34-5)**
 
 Регрессия, loss = MSE. Композиция из M базовых алгоритмов:
 

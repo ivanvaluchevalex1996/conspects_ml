@@ -73,9 +73,9 @@ $$
 
 Веса стали маленькими, стабильными и не улетают в космос при малейшем изменении данных.
 
-#### Решение 3. [Метод главных компонент (PCA)](https://ivan-valuchev.yonote.ru/doc/7metod-glavnyh-komponent-pca-aotVS52Ro4) 
+#### Решение 3. [Метод главных компонент (PCA)](../../d.3%20Classic%20ML/d.3.7%20%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%20%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%20%28PCA%29.md) 
 
-[Ссылка](https://ivan-valuchev.yonote.ru/doc/7metod-glavnyh-komponent-pca-aotVS52Ro4)
+[Ссылка](../../d.3%20Classic%20ML/d.3.7%20%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%20%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%20%28PCA%29.md)
 
 ---
 

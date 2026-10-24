@@ -16,8 +16,6 @@
 
 ---
 
-[Без названия](https://ivan-valuchev.yonote.ru/doc/untitled-MTbLTmAgH8)
-
 ### Что нужно усвоить (обязательно)
 
 1. **Как думает KNN** «Запомнил все примеры → для нового ищу похожих → голосую».
@@ -105,7 +103,6 @@
 ---
 
 ## 🔷 1. Полная цепочка KNN
-
 
 ```
 новая картинка (test)
@@ -321,7 +318,7 @@ F1        = 2 * precision * recall / (precision + recall)
 
 ## 🔷 5. Подбор k — кросс-валидация (гиперпараметр)
 
-[Подробный разбор](https://ivan-valuchev.yonote.ru/doc/primer-iz-domashki-po-knn-8VFIyckdlN)
+[Подробный разбор](../d.3%20Classic%20ML/d.3.2%20%D0%9A%D1%80%D0%BE%D1%81%D1%81-%D0%B2%D0%B0%D0%BB%D0%B8%D0%B4%D0%B0%D1%86%D0%B8%D1%8F/d.3.2%20%D0%9A%D1%80%D0%BE%D1%81%D1%81-%D0%B2%D0%B0%D0%BB%D0%B8%D0%B4%D0%B0%D1%86%D0%B8%D1%8F.md#primer-iz-domashki-knn)
 
 **k** — единственный гиперпараметр KNN. `fit` его **не подбирает** — только принимает `KNN(k=...)`.
 
