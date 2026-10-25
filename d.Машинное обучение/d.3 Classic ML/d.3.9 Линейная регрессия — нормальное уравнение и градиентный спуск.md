@@ -22,7 +22,7 @@
 
 Файл с решениями DeepML:
 
-[`../../учеба мл/python_base/14_deep_ml_machine_learning.py`](../../учеба%20мл/python_base/14_deep_ml_machine_learning.py)
+[`../../учеба мл/python_base/12_deep_ml_machine_learning.py`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/12_deep_ml_machine_learning.py)
 
 | Задача в этом конспекте | Функция в файле | Строки (ориентир) |
 |:---|:---|:---|
@@ -54,7 +54,7 @@
 | Нормальное уравнение | §4–§6 | [`d.2.1.12`](../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1.12%20%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0%20%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9%20%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B8%20%D1%81%20MSE%20%D1%81%20%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%BE%D0%BC.md) (w), [`d.2.1`](../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8.md) |
 | Что такое градиент / цепочка / α | — | [`d.4.1.1 Градиент и правило цепочки`](../d.0%20Градиент%20и%20правило%20цепочки.md) (база «с нуля») |
 | Градиент MSE / GD | §7–§9 | [`d.2.1.4`](../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1.4%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20MSE%20%D0%B8%20SGD%20%D0%B4%D0%BB%D1%8F%20%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9%20%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B8.md) (w, ℓ, 2/ℓ), `d2.1` (w, N, 2/N), [`d.2.1.8`](../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1.8%20%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%20%D1%81%20%D1%86%D0%B5%D0%BD%D0%BE%D0%B9%20%D1%81%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D0%B0%D0%BC%D0%B8.md) (суммы с y-ŷ) |
-| Код задач | §0, §6, §9 | [`14_deep_ml_machine_learning.py`](../../учеба%20мл/python_base/14_deep_ml_machine_learning.py) |
+| Код задач | §0, §6, §9 | [`12_deep_ml_machine_learning.py`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/12_deep_ml_machine_learning.py) |
 
 > **Правило:** увидел w или N в другом файле — подставь мысленно θ и m. Это не другая математика.
 
@@ -140,7 +140,7 @@ $$
 
 ## 4. Способ 1. Нормальное уравнение: веса за один шаг
 
-> **Код задачи:** [`14_deep_ml_machine_learning.py`](../../учеба%20мл/python_base/14_deep_ml_machine_learning.py) → функция `linear_regression_normal_equation` (строки ≈ 3–7).
+> **Код задачи:** [`12_deep_ml_machine_learning.py`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/12_deep_ml_machine_learning.py) → функция `linear_regression_normal_equation` (строки ≈ 3–7).
 
 В формуле ŷ = X · θ веса θ изначально неизвестны. Зато известны матрица признаков X и вектор реальных ответов y.
 
@@ -162,7 +162,7 @@ $$
 
 ## 5. Задача 1. Бумага vs код: нормальное уравнение
 
-> **Смотри в коде:** та же формула одной строкой — `theta = np.linalg.inv(X.T @ X) @ X.T @ y` в `linear_regression_normal_equation`. Данные примера совпадают с `X`, `y` внизу [`14_deep_ml_machine_learning.py`](../../учеба%20мл/python_base/14_deep_ml_machine_learning.py).
+> **Смотри в коде:** та же формула одной строкой — `theta = np.linalg.inv(X.T @ X) @ X.T @ y` в `linear_regression_normal_equation`. Данные примера совпадают с `X`, `y` внизу [`12_deep_ml_machine_learning.py`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/12_deep_ml_machine_learning.py).
 
 Одни и те же данные, что в §3:
 
@@ -258,7 +258,7 @@ theta = np.linalg.inv(X.T @ X) @ X.T @ y
 
 Рабочая копия живёт здесь:
 
-[`14_deep_ml_machine_learning.py` → `linear_regression_normal_equation`](../../учеба%20мл/python_base/14_deep_ml_machine_learning.py)
+[`12_deep_ml_machine_learning.py` → `linear_regression_normal_equation`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/12_deep_ml_machine_learning.py)
 
 Ниже — эталон под сдачу (с `round` и `.tolist()`, если платформа так просит):
 
@@ -278,7 +278,7 @@ def linear_regression_normal_equation(X: list[list[float]], y: list[float]) -> l
 
 ## 7. Способ 2. Градиентный спуск: веса по шагам
 
-> **Код задачи:** [`14_deep_ml_machine_learning.py`](../../учеба%20мл/python_base/14_deep_ml_machine_learning.py) → функция `linear_regression_gradient_descent` (строки ≈ 9–46). Параметры `alpha`, `iterations` и тестовые `X`, `y` — внизу того же файла (≈ 48–53).
+> **Код задачи:** [`12_deep_ml_machine_learning.py`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/12_deep_ml_machine_learning.py) → функция `linear_regression_gradient_descent` (строки ≈ 9–46). Параметры `alpha`, `iterations` и тестовые `X`, `y` — внизу того же файла (≈ 48–53).
 
 Нормальное уравнение даёт веса **сразу**. Градиентный спуск даёт те же веса **по шагам**: смотрим, куда ошибка растёт сильнее всего (градиент), и двигаем θ в обратную сторону.
 
@@ -355,7 +355,7 @@ $$
 
 ## 8. Задача 2. Бумага vs код: градиентный спуск
 
-> **Смотри в коде:** цикл внутри `linear_regression_gradient_descent` в [`14_deep_ml_machine_learning.py`](../../учеба%20мл/python_base/14_deep_ml_machine_learning.py). Числа ниже = блок внизу файла: `X = [[1,1],[1,2],[1,3]]`, `y = [3,5,7]`, `alpha = 0.1`, `iterations = 1`.
+> **Смотри в коде:** цикл внутри `linear_regression_gradient_descent` в [`12_deep_ml_machine_learning.py`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/12_deep_ml_machine_learning.py). Числа ниже = блок внизу файла: `X = [[1,1],[1,2],[1,3]]`, `y = [3,5,7]`, `alpha = 0.1`, `iterations = 1`.
 
 Те же данные. Старт: θ = [0, 0], α = 0.1, одна итерация, m = 3.
 
@@ -433,7 +433,7 @@ $$
 
 Рабочая копия живёт здесь:
 
-[`14_deep_ml_machine_learning.py` → `linear_regression_gradient_descent`](../../учеба%20мл/python_base/14_deep_ml_machine_learning.py)
+[`12_deep_ml_machine_learning.py` → `linear_regression_gradient_descent`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/12_deep_ml_machine_learning.py)
 
 Ниже — развёрнутый эталон (шаги названы явно; в файле можно писать короче одной строкой `grad = 1/m * (X.T @ (pred - y))`):
 
@@ -507,7 +507,7 @@ $$
 
 ### Код задач (смотреть в первую очередь)
 
-- [`../../учеба мл/python_base/14_deep_ml_machine_learning.py`](../../учеба%20мл/python_base/14_deep_ml_machine_learning.py)
+- [`../../учеба мл/python_base/12_deep_ml_machine_learning.py`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/12_deep_ml_machine_learning.py)
  - `linear_regression_normal_equation` ↔ §4–§6 этого конспекта
  - `linear_regression_gradient_descent` ↔ §7–§9 этого конспекта
 
@@ -525,7 +525,7 @@ $$
 - [`d.4.1.1 Градиент и правило цепочки`](../d.0%20Градиент%20и%20правило%20цепочки.md) — градиент и цепочка «с нуля» (не матрицы).
 - [`d.2.1.4`](../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1.4%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20MSE%20%D0%B8%20SGD%20%D0%B4%D0%BB%D1%8F%20%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9%20%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B8.md) — матричный GD/SGD и мини-пример с числами; здесь — связка с задачами DeepML.
 - [`d.2.1.8`](../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1.8%20%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%20%D1%81%20%D1%86%D0%B5%D0%BD%D0%BE%D0%B9%20%D1%81%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D0%B0%D0%BC%D0%B8.md) — та же сумма (y-ŷ)· x на бумаге (знак ошибки записан наоборот, смысл тот же).
-- [`d.2.1.14`](../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1.14%20%D0%A7%D1%82%D0%BE%20%D1%82%D0%B0%D0%BA%D0%BE%D0%B5%20W0%C2%A0%20(%D1%81%D0%B4%D0%B2%D0%B8%D0%B3%2Fbias)%3F%20%D0%9F%D0%BE%D1%87%D0%B5%D0%BC%D1%83%20%D0%BE%D0%BD%20%D0%BD%D1%83%D0%B6%D0%B5%D0%BD%3F%20%D0%A7%D1%82%D0%BE%20%D0%B1%D1%83%D0%B4%D0%B5%D1%82,%20%D0%B5%D1%81%D0%BB%D0%B8%20%D0%B5%D0%B3%D0%BE%20%D1%83%D0%B1%D1%80%D0%B0%D1%82%D1%8C%3F.md) — зачем свободный член.
+- [`d.2.1.14`](../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1.14%20%D0%A7%D1%82%D0%BE%20%D1%82%D0%B0%D0%BA%D0%BE%D0%B5%20W0%C2%A0%20%28%D1%81%D0%B4%D0%B2%D0%B8%D0%B3%252Fbias%29%253F%20%D0%9F%D0%BE%D1%87%D0%B5%D0%BC%D1%83%20%D0%BE%D0%BD%20%D0%BD%D1%83%D0%B6%D0%B5%D0%BD%253F%20%D0%A7%D1%82%D0%BE%20%D0%B1%D1%83%D0%B4%D0%B5%D1%82%2C%20%D0%B5%D1%81%D0%BB%D0%B8%20%D0%B5%D0%B3%D0%BE%20%D1%83%D0%B1%D1%80%D0%B0%D1%82%D1%8C%253F.md)%3F%20%D0%9F%D0%BE%D1%87%D0%B5%D0%BC%D1%83%20%D0%BE%D0%BD%20%D0%BD%D1%83%D0%B6%D0%B5%D0%BD%3F%20%D0%A7%D1%82%D0%BE%20%D0%B1%D1%83%D0%B4%D0%B5%D1%82,%20%D0%B5%D1%81%D0%BB%D0%B8%20%D0%B5%D0%B3%D0%BE%20%D1%83%D0%B1%D1%80%D0%B0%D1%82%D1%8C%3F.md) — зачем свободный член.
 - [`5.матрицы`](../../a.NumPy/5.%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86%D1%8B.md) — транспонирование и `@`.
 
 > **Одна фраза:** нормальное уравнение находит θ сразу через (Xᵀ X)⁻¹ Xᵀ y; градиентный спуск крутит те же θ по шагам 

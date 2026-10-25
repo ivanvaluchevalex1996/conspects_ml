@@ -183,7 +183,7 @@ X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.
 >
 > То же самое с гиперпараметрами — их **нельзя** подбирать на test.
 
-***[Пояснение 2.3](/doc/poyasnenie-23-Xh9qeVrGjV)***
+***[Пояснение 2.3](d.3.2.1%20%D0%9F%D0%BE%D1%8F%D1%81%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5.md)***
 
 ---
 
