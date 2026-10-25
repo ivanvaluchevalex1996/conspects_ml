@@ -15,7 +15,7 @@
 Мы выбираем линейную модель с двумя признаками и свободным членом:
 
 $$
-\hat{y} = w_1 \cdot x_1 + w_2 \cdot x_2 + w_0
+\Large \hat{y} = w_1 \cdot x_1 + w_2 \cdot x_2 + w_0
 $$
 
 Где:
@@ -49,7 +49,7 @@ $$
 Считаем MSE для начальных весов:
 
 $$
-MSE = \frac{1}{3} \left( (5 - 0)^2 + (6.5 - 0)^2 + (8 - 0)^2 \right) = \frac{25 + 42.25 + 64}{3} = \frac{131.25}{3} = 43.75
+\Large MSE = \frac{1}{3} \left( (5 - 0)^2 + (6.5 - 0)^2 + (8 - 0)^2 \right) = \frac{25 + 42.25 + 64}{3} = \frac{131.25}{3} = 43.75
 $$
 
 Ошибка огромная.
@@ -63,43 +63,43 @@ $$
 Для MSE с линейной моделью градиенты равны:
 
 $$
-\frac{\partial MSE}{\partial w_0} = -\frac{2}{N} \sum (y_i - \hat{y}_i)
+\Large \frac{\partial MSE}{\partial w_0} = -\frac{2}{N} \sum (y_i - \hat{y}_i)
 $$
 
 $$
-\frac{\partial MSE}{\partial w_1} = -\frac{2}{N} \sum (y_i - \hat{y}_i) \cdot x_{i1}
+\Large \frac{\partial MSE}{\partial w_1} = -\frac{2}{N} \sum (y_i - \hat{y}_i) \cdot x_{i1}
 $$
 
 $$
-\frac{\partial MSE}{\partial w_2} = -\frac{2}{N} \sum (y_i - \hat{y}_i) \cdot x_{i2}
+\Large \frac{\partial MSE}{\partial w_2} = -\frac{2}{N} \sum (y_i - \hat{y}_i) \cdot x_{i2}
 $$
 
 На первом шаге ŷ_i = 0, поэтому:
 
 $$
-\sum (y_i - 0) = 5 + 6.5 + 8 = 19.5
+\Large \sum (y_i - 0) = 5 + 6.5 + 8 = 19.5
 $$
 
 $$
-\sum (y_i - 0) \cdot x_{i1} = 5 \cdot 50 + 6.5 \cdot 70 + 8 \cdot 90 = 250 + 455 + 720 = 1425
+\Large \sum (y_i - 0) \cdot x_{i1} = 5 \cdot 50 + 6.5 \cdot 70 + 8 \cdot 90 = 250 + 455 + 720 = 1425
 $$
 
 $$
-\sum (y_i - 0) \cdot x_{i2} = 5 \cdot 2 + 6.5 \cdot 3 + 8 \cdot 4 = 10 + 19.5 + 32 = 61.5
+\Large \sum (y_i - 0) \cdot x_{i2} = 5 \cdot 2 + 6.5 \cdot 3 + 8 \cdot 4 = 10 + 19.5 + 32 = 61.5
 $$
 
 Подставляем в формулы (делим на N = 3, умножаем на -2):
 
 $$
-\frac{\partial MSE}{\partial w_0} = -\frac{2}{3} \cdot 19.5 = -13
+\Large \frac{\partial MSE}{\partial w_0} = -\frac{2}{3} \cdot 19.5 = -13
 $$
 
 $$
-\frac{\partial MSE}{\partial w_1} = -\frac{2}{3} \cdot 1425 = -950
+\Large \frac{\partial MSE}{\partial w_1} = -\frac{2}{3} \cdot 1425 = -950
 $$
 
 $$
-\frac{\partial MSE}{\partial w_2} = -\frac{2}{3} \cdot 61.5 = -41
+\Large \frac{\partial MSE}{\partial w_2} = -\frac{2}{3} \cdot 61.5 = -41
 $$
 
 ---
@@ -115,7 +115,7 @@ $$
 Теперь модель:
 
 $$
-\hat{y} = 0.00013 + 0.0095 \cdot x_1 + 0.00041 \cdot x_2
+\Large \hat{y} = 0.00013 + 0.0095 \cdot x_1 + 0.00041 \cdot x_2
 $$
 
 ---
@@ -127,29 +127,29 @@ $$
 - Кв.1: 
 
 $$
-\hat{y}_1 = 0.00013 + 0.0095 \cdot 50 + 0.00041 \cdot 2 = 0.00013 + 0.475 + 0.00082 = 0.47595
+\Large \hat{y}_1 = 0.00013 + 0.0095 \cdot 50 + 0.00041 \cdot 2 = 0.00013 + 0.475 + 0.00082 = 0.47595
 $$
 
 - Кв.2: 
 
 $$
-\hat{y}_2 = 0.00013 + 0.0095 \cdot 70 + 0.00041 \cdot 3 = 0.00013 + 0.665 + 0.00123 = 0.66636
+\Large \hat{y}_2 = 0.00013 + 0.0095 \cdot 70 + 0.00041 \cdot 3 = 0.00013 + 0.665 + 0.00123 = 0.66636
 $$
 
 - Кв.3: 
 
 $$
-\hat{y}_3 = 0.00013 + 0.0095 \cdot 90 + 0.00041 \cdot 4 = 0.00013 + 0.855 + 0.00164 = 0.85677
+\Large \hat{y}_3 = 0.00013 + 0.0095 \cdot 90 + 0.00041 \cdot 4 = 0.00013 + 0.855 + 0.00164 = 0.85677
 $$
 
 Считаем новую MSE:
 
 $$
-MSE = \frac{(5 - 0.47595)^2 + (6.5 - 0.66636)^2 + (8 - 0.85677)^2}{3}
+\Large MSE = \frac{(5 - 0.47595)^2 + (6.5 - 0.66636)^2 + (8 - 0.85677)^2}{3}
 $$
 
 $$
-MSE \approx \frac{20.47 + 34.03 + 51.03}{3} \approx 35.18
+\Large MSE \approx \frac{20.47 + 34.03 + 51.03}{3} \approx 35.18
 $$
 
 **Результат:** MSE уменьшилась с 43.75 до ≈ 35.18. Шаг был достаточно маленьким, чтобы ошибка действительно пошла вниз.
@@ -184,7 +184,7 @@ $$
 ## ✅ Шаг 7: Финальная модель
 
 $$
-\hat{y} = 1.25 + 0.075 \cdot x_1
+\Large \hat{y} = 1.25 + 0.075 \cdot x_1
 $$
 
 (признак «комнаты» оказался не нужен из-за мультиколлинеарности).

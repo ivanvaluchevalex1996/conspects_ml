@@ -9,6 +9,7 @@
 Фазы «обучения» почти нет: запоминаем Train (**lazy learning**). На предсказании считаем расстояния до объектов Train, берём $k$ ближайших, голосуем (классификация) или усредняем (регрессия).
 
 $$
+\Large
 d_i = \sqrt{\sum_{j=1}^{m}\bigl(x_{\mathrm{new},j}-X_{i,j}\bigr)^2}
 \qquad\to\qquad
 \hat y = \arg\max_c \sum_{i\in N_k}[Y_i=c]

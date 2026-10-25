@@ -67,7 +67,7 @@
 Уравнение предсказания для одного объекта (например, одной квартиры):
 
 $$
-y = w_0 \cdot 1 + w_1 \cdot x_1
+\Large y = w_0 \cdot 1 + w_1 \cdot x_1
 $$
 
 | Обозначение | Имя | Что это |
@@ -91,7 +91,7 @@ $$
 Общая матричная формула предсказаний:
 
 $$
-\hat{y} = X \cdot \theta
+\Large \hat{y} = X \cdot \theta
 $$
 
 где X — матрица всех признаков, а θ — вектор всех весов модели.
@@ -99,6 +99,7 @@ $$
 Если расписать её покоординатно для трёх объектов, получится система:
 
 $$
+\Large
 \begin{cases}
 \hat{y}_1 = \theta_0 \cdot 1 + \theta_1 \cdot 1 \\
 \hat{y}_2 = \theta_0 \cdot 1 + \theta_1 \cdot 2 \\
@@ -113,6 +114,7 @@ $$
 В задаче матрица X на входе выглядит так:
 
 $$
+\Large
 X = \begin{pmatrix}
 \mathbf{1} & 1 \\
 \mathbf{1} & 2 \\
@@ -125,13 +127,13 @@ $$
 В исходном уравнении свободный член w₀ стоит одиноко:
 
 $$
-y = w_0 + w_1 x
+\Large y = w_0 + w_1 x
 $$
 
 Чтобы компьютер считал всё одной матричной операцией, к каждому объекту дописывают искусственный «виртуальный признак», который всегда равен 1:
 
 $$
-y = w_0 \cdot \mathbf{1} + w_1 x
+\Large y = w_0 \cdot \mathbf{1} + w_1 x
 $$
 
 Тогда w₀ становится обычным весом при этом столбце, и формула ŷ = Xθ покрывает и наклон, и сдвиг.
@@ -147,13 +149,13 @@ $$
 Хотим, чтобы предсказания совпали с реальностью: ŷ ≈ y. Подставляем известный y на место предсказания и получаем матричное уравнение:
 
 $$
-y = X \cdot \theta
+\Large y = X \cdot \theta
 $$
 
 Через производную и поиск минимума ошибки это уравнение «выворачивают» и выражают неизвестную θ через известные X и y. Так получается **нормальное уравнение** (Normal Equation):
 
 $$
-\theta = (X^{T} X)^{-1} X^{T} y
+\Large \theta = (X^{T} X)^{-1} X^{T} y
 $$
 
 Это аналитическая формула: компьютер применяет её один раз и сразу получает веса θ, которые минимизируют ошибку.
@@ -167,6 +169,7 @@ $$
 Одни и те же данные, что в §3:
 
 $$
+\Large
 X = \begin{pmatrix} 1 & 1 \\ 1 & 2 \\ 1 & 3 \end{pmatrix},\quad
 y = \begin{pmatrix} 3 \\ 5 \\ 7 \end{pmatrix}
 $$
@@ -178,12 +181,13 @@ $$
 **1. Перевернуть X** — чтобы дальше умножать «строка на столбец»:
 
 $$
-X^{T} = \begin{pmatrix} 1 & 1 & 1 \\ 1 & 2 & 3 \end{pmatrix}
+\Large X^{T} = \begin{pmatrix} 1 & 1 & 1 \\ 1 & 2 & 3 \end{pmatrix}
 $$
 
 **2. Считать Xᵀ X** — квадрат 2 × 2:
 
 $$
+\Large
 X^{T} X = \begin{pmatrix} 1&1&1 \\ 1&2&3 \end{pmatrix}
 \begin{pmatrix} 1&1 \\ 1&2 \\ 1&3 \end{pmatrix}
 = \begin{pmatrix} 3 & 6 \\ 6 & 14 \end{pmatrix}
@@ -198,6 +202,7 @@ $$
 **3. Считать Xᵀ y:**
 
 $$
+\Large
 X^{T} y = \begin{pmatrix} 1&1&1 \\ 1&2&3 \end{pmatrix}
 \begin{pmatrix} 3 \\ 5 \\ 7 \end{pmatrix}
 = \begin{pmatrix} 1\cdot3+1\cdot5+1\cdot7 \\ 1\cdot3+2\cdot5+3\cdot7 \end{pmatrix}
@@ -207,18 +212,19 @@ $$
 **4. Обратная матрица** (Xᵀ X)⁻¹. Для матрицы 
 
 $$
-\begin{pmatrix}a&b\\c&d\end{pmatrix}
+\Large \begin{pmatrix}a&b\\c&d\end{pmatrix}
 $$
 
  формула:
 
 $$
-\frac{1}{ad-bc}\begin{pmatrix}d&-b\\-c&a\end{pmatrix}
+\Large \frac{1}{ad-bc}\begin{pmatrix}d&-b\\-c&a\end{pmatrix}
 $$
 
 Здесь ad-bc = 3·14 - 6·6 = 6, значит:
 
 $$
+\Large
 (X^{T} X)^{-1} = \frac{1}{6}\begin{pmatrix} 14 & -6 \\ -6 & 3 \end{pmatrix}
 = \begin{pmatrix} 7/3 & -1 \\ -1 & 1/2 \end{pmatrix}
 $$
@@ -226,6 +232,7 @@ $$
 **5. Финал** θ = (Xᵀ X)⁻¹ (Xᵀ y):
 
 $$
+\Large
 \theta = \begin{pmatrix} 7/3 & -1 \\ -1 & 1/2 \end{pmatrix}
 \begin{pmatrix} 15 \\ 34 \end{pmatrix}
 = \begin{pmatrix} (7/3)\cdot15 + (-1)\cdot34 \\ (-1)\cdot15 + (1/2)\cdot34 \end{pmatrix}
@@ -301,13 +308,13 @@ SGD в DL (батч, средний градиент по объектам) — 
 Модель та же:
 
 $$
-\hat{y} = X\theta
+\Large \hat{y} = X\theta
 $$
 
 Ошибка на всех объектах — средний квадрат промаха (MSE). Число объектов обозначим m (в других конспектах то же самое пишут как N или ℓ):
 
 $$
-L(\theta) = \frac{1}{m}\sum_{i=1}^{m}(\hat{y}_i - y_i)^2
+\Large L(\theta) = \frac{1}{m}\sum_{i=1}^{m}(\hat{y}_i - y_i)^2
 $$
 
 ### 7.3. Градиент по весам ∂ L / ∂ θ
@@ -317,13 +324,13 @@ $$
 В теории (конспект [`d.2.1.4`](../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1.4%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20MSE%20%D0%B8%20SGD%20%D0%B4%D0%BB%D1%8F%20%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9%20%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B8.md#%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82-mse--gd--sgd-%D0%B4%D0%BB%D1%8F-%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9-%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B8)) часто пишут с двойкой от производной квадрата:
 
 $$
-\frac{\partial L}{\partial \theta} = \frac{2}{m}\, X^{T}(\hat{y} - y) = \frac{2}{m}\, X^{T}(X\theta - y)
+\Large \frac{\partial L}{\partial \theta} = \frac{2}{m}\, X^{T}(\hat{y} - y) = \frac{2}{m}\, X^{T}(X\theta - y)
 $$
 
 В задаче DeepML loss берут без этой двойки, поэтому в коде множитель 1/m:
 
 $$
-\text{grad} = \frac{1}{m}\, X^{T}(\hat{y} - y)
+\Large \text{grad} = \frac{1}{m}\, X^{T}(\hat{y} - y)
 $$
 
 Смысл один: `Xᵀ(ŷ − y)` — «сырой» кусок, а `1/m` (или `2/m`) — усреднение по объектам.
@@ -341,7 +348,7 @@ $$
 ### 7.4. Формула обновления веса
 
 $$
-\theta := \theta - \alpha \cdot \text{grad}
+\Large \theta := \theta - \alpha \cdot \text{grad}
 $$
 
 | Параметр | Что делает |
@@ -364,6 +371,7 @@ $$
 **A. Предсказания** для каждой строки отдельно (без матриц):
 
 $$
+\Large
 \begin{align*}
 \hat{y}_1 &= 0\cdot1 + 0\cdot1 = 0 \\
 \hat{y}_2 &= 0\cdot1 + 0\cdot2 = 0 \\
@@ -374,13 +382,13 @@ $$
 **B. Ошибки** ŷ_i - y_i:
 
 $$
-0-3 = -3,\quad 0-5 = -5,\quad 0-7 = -7
+\Large 0-3 = -3,\quad 0-5 = -5,\quad 0-7 = -7
 $$
 
 **C. Сырой градиент** — сумма «столбец признака × ошибки» (тут **нет** слова «транспонирование», просто смотришь вниз по столбцу):
 
 $$
-\text{raw\_gradient}_j = \sum_{i=1}^{m} x_{i,j} \cdot \text{error}_i
+\Large \text{raw\_gradient}_j = \sum_{i=1}^{m} x_{i,j} \cdot \text{error}_i
 $$
 
 - для θ₀ (столбец 1,1,1): 1·(-3)+1·(-5)+1·(-7) = -15
@@ -389,12 +397,13 @@ $$
 **D. Усреднить** (DeepML, множитель 1/m):
 
 $$
-\text{grad} = \frac{1}{3}\begin{pmatrix}-15\\-34\end{pmatrix} = \begin{pmatrix}-5\\-11.\overline{3}\end{pmatrix}
+\Large \text{grad} = \frac{1}{3}\begin{pmatrix}-15\\-34\end{pmatrix} = \begin{pmatrix}-5\\-11.\overline{3}\end{pmatrix}
 $$
 
 **E. Обновить веса:**
 
 $$
+\Large
 \theta_{\text{new}} = \begin{pmatrix}0\\0\end{pmatrix} - 0.1\begin{pmatrix}-5\\-11.\overline{3}\end{pmatrix}
 = \begin{pmatrix}0.5\\1.1\overline{3}\end{pmatrix}
 $$
@@ -423,6 +432,7 @@ theta = theta - alpha * gradient         # шаг E
 **В чём разница бумаги и кода:** математика одна. На бумаге шаг C — «смотрю столбец и складываю». В коде столбец сначала кладут в строку (`X.T`), потому что `@` умеет только «строка × столбец». Поэтому на бумаге нет слова «транспонирование», а в коде оно есть.
 
 $$
+\Large
 X^{T} = \begin{pmatrix} 1 & 1 & 1 \\ 1 & 2 & 3 \end{pmatrix},\quad
 X^{T}\begin{pmatrix}-3\\-5\\-7\end{pmatrix} = \begin{pmatrix}-15\\-34\end{pmatrix}
 $$
@@ -495,7 +505,7 @@ def linear_regression_gradient_descent(
 - [ ] Почему на бумаге пишут сумму 
 
 $$
-\sum x\cdot\text{error}
+\Large \sum x\cdot\text{error}
 $$
 
 , а в коде — `X.T @ error`?
@@ -517,7 +527,7 @@ $$
 - [`d.2.1`](../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8.md#%D1%87%D1%82%D0%BE-%D0%B4%D0%B5%D0%BB%D0%B0%D0%BB-%D0%B2-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BA%D0%B5-httpsgithubcomivanvaluchevalex1996homeworklinearmodelsandknn) и [`d.2.1`](../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8.md#%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8) — общее место линейной модели; там же блок про GD с формулой 
 
 $$
-\nabla_w L = \frac{2}{N} X^{T}(Xw - y)
+\Large \nabla_w L = \frac{2}{N} X^{T}(Xw - y)
 $$
 
 .
@@ -531,7 +541,7 @@ $$
 > **Одна фраза:** нормальное уравнение находит θ сразу через (Xᵀ X)⁻¹ Xᵀ y; градиентный спуск крутит те же θ по шагам 
 
 $$
-\theta := \theta - \alpha\cdot\frac{1}{m}X^{T}(X\theta - y)
+\Large \theta := \theta - \alpha\cdot\frac{1}{m}X^{T}(X\theta - y)
 $$
 
  — столбец единиц прячет bias, а `X.T @ error` на бумаге — это обычная сумма «признак × ошибка».

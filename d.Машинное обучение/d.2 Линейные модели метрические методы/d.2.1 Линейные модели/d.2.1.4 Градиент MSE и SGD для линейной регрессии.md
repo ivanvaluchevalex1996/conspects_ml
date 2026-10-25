@@ -45,13 +45,13 @@
 Модель (после добавления фиктивного признака x = 1):
 
 $$
-\hat{y} = Xw
+\Large \hat{y} = Xw
 $$
 
 Ошибка (эмпирический риск / MSE):
 
 $$
-L(w) = \frac{1}{\ell}\,\|Xw - y\|^2_2 = \frac{1}{\ell}\sum_{i=1}^{\ell}\big(\hat{y}_i - y_i\big)^2
+\Large L(w) = \frac{1}{\ell}\,\|Xw - y\|^2_2 = \frac{1}{\ell}\sum_{i=1}^{\ell}\big(\hat{y}_i - y_i\big)^2
 $$
 
 где ℓ — число объектов (строк в X).
@@ -63,7 +63,7 @@ $$
 ### 4. Градиент MSE по весам (главная формула семинара)
 
 $$
-\frac{\partial L}{\partial w} = \frac{2}{\ell}\, X^T(\hat{y} - y) = \frac{2}{\ell}\, X^T(Xw - y)
+\Large \frac{\partial L}{\partial w} = \frac{2}{\ell}\, X^T(\hat{y} - y) = \frac{2}{\ell}\, X^T(Xw - y)
 $$
 
 #### Что это значит словами
@@ -94,7 +94,7 @@ $$
 Формула обновления:
 
 $$
-w := w - \alpha \frac{\partial L}{\partial w}
+\Large w := w - \alpha \frac{\partial L}{\partial w}
 $$
 
 | Параметр | Что делает | Если слишком большой / маленький |
@@ -111,6 +111,7 @@ $$
 Пусть два объекта уже с колонкой единиц:
 
 $$
+\Large
 X = \begin{bmatrix} 1 & 2 \ 1 & 4 \end{bmatrix},\quad
 y = \begin{bmatrix} 5 \ 9 \end{bmatrix},\quad
 w = \begin{bmatrix} 1 \ 1 \end{bmatrix}
@@ -119,13 +120,13 @@ $$
 **Шаг A. Предсказания**
 
 $$
-\hat{y} = Xw = \begin{bmatrix} 1\cdot1 + 2\cdot1 \ 1\cdot1 + 4\cdot1 \end{bmatrix} = \begin{bmatrix} 3 \ 5 \end{bmatrix}
+\Large \hat{y} = Xw = \begin{bmatrix} 1\cdot1 + 2\cdot1 \ 1\cdot1 + 4\cdot1 \end{bmatrix} = \begin{bmatrix} 3 \ 5 \end{bmatrix}
 $$
 
 **Шаг B. Ошибки**
 
 $$
-\hat{y} - y = \begin{bmatrix} 3-5 \ 5-9 \end{bmatrix} = \begin{bmatrix} -2 \ -4 \end{bmatrix}
+\Large \hat{y} - y = \begin{bmatrix} 3-5 \ 5-9 \end{bmatrix} = \begin{bmatrix} -2 \ -4 \end{bmatrix}
 $$
 
 Оба раза **недопредсказали**.
@@ -133,6 +134,7 @@ $$
 **Шаг C. Градиент**
 
 $$
+\Large
 \text{grad} = \frac{2}{2} X^T(\hat{y}-y) = X^T\begin{bmatrix}-2\-4\end{bmatrix}
 = \begin{bmatrix}1&1\2&4\end{bmatrix}\begin{bmatrix}-2\-4\end{bmatrix}
 = \begin{bmatrix}-6\-20\end{bmatrix}
@@ -141,6 +143,7 @@ $$
 **Шаг D. Обновление** при α = 0.01:
 
 $$
+\Large
 w_{\text{new}} = \begin{bmatrix}1\1\end{bmatrix} - 0.01\begin{bmatrix}-6\-20\end{bmatrix}
 = \begin{bmatrix}1.06\1.20\end{bmatrix}
 $$
@@ -156,7 +159,7 @@ $$
 **Идея SGD:** на шаге берём не всю выборку, а **батч** размера k (подмножество строк) и считаем градиент только по нему.
 
 $$
-\text{grad}_{\text{batch}} \approx \frac{2}{k}\, X_{\text{batch}}^T(\hat{y}_{\text{batch}} - y_{\text{batch}})
+\Large \text{grad}_{\text{batch}} \approx \frac{2}{k}\, X_{\text{batch}}^T(\hat{y}_{\text{batch}} - y_{\text{batch}})
 $$
 
 | Режим | Сколько объектов в градиенте | Как выглядит путь |
@@ -235,14 +238,14 @@ $$
 1. Обучаем линейную регрессию, минимизируя MSE: 
 
 $$
-L = \frac{1}{\ell}\|Xw - y\|^2
+\Large L = \frac{1}{\ell}\|Xw - y\|^2
 $$
 
 .
 2. Градиент:
 
 $$
-\frac{\partial L}{\partial w} = \frac{2}{\ell} X^T(\hat{y} - y)
+\Large \frac{\partial L}{\partial w} = \frac{2}{\ell} X^T(\hat{y} - y)
 $$
 
 3. Полный GD: w := w - α · grad по всей выборке.

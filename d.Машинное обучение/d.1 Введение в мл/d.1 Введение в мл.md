@@ -25,7 +25,7 @@
 ## Главная формула обучения
 
 $$
-\theta_{\text{best}} = \arg\min_{\theta} \frac{1}{n}\sum_{i=1}^{n} L\bigl(y_i,\ \hat y_\theta(x_i)\bigr)
+\Large \theta_{\text{best}} = \arg\min_{\theta} \frac{1}{n}\sum_{i=1}^{n} L\bigl(y_i,\ \hat y_\theta(x_i)\bigr)
 $$
 
 Средний штраф (эмпирический риск) → крутим параметры θ, пока он не станет минимальным.

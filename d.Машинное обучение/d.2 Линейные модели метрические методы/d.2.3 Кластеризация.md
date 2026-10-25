@@ -112,13 +112,13 @@
  - 
 
 $$
-\mu_1 = \frac{1+2}{2} = 1.5
+\Large \mu_1 = \frac{1+2}{2} = 1.5
 $$
 
  - 
 
 $$
-\mu_2 = \frac{8+9}{2} = 8.5
+\Large \mu_2 = \frac{8+9}{2} = 8.5
 $$
 
 - **Шаг 4 (повтор):** точки снова распределяются. Всё остаётся на месте → алгоритм сошёлся.
@@ -149,7 +149,7 @@ $$
 **Альтернатива: косинусная мера близости** (популярна в анализе текстов):
 
 $$
-\text{CosineSimilarity}(\mu_k, x_i) = \frac{\langle \mu_k, x_i \rangle}{\|\mu_k\|_2 \cdot \|x_i\|_2}
+\Large \text{CosineSimilarity}(\mu_k, x_i) = \frac{\langle \mu_k, x_i \rangle}{\|\mu_k\|_2 \cdot \|x_i\|_2}
 $$
 
 > **Важно:** это мера близости, а не расстояние — чем больше значение, тем ближе векторы.
@@ -186,7 +186,7 @@ K-means можно использовать как метод понижения
 Алгоритм минимизирует средний квадрат евклидова расстояния от объектов до центров их кластеров:
 
 $$
-\Phi_0 = \frac{1}{nK} \sum_{k=1}^K \sum_{i=1}^n (\mu_k - x_i)^2 I[a(x_i) = k]
+\Large \Phi_0 = \frac{1}{nK} \sum_{k=1}^K \sum_{i=1}^n (\mu_k - x_i)^2 I[a(x_i) = k]
 $$
 
 - **Шаг распределения:** фиксируем центры, минимизируем каждое слагаемое, выбирая ближайший кластер.
@@ -221,19 +221,19 @@ $$
 - **Среднее расстояние (average linkage):**
 
 $$
-d_{avg}(U, V) = \frac{1}{|U| \cdot |V|} \sum_{u \in U} \sum_{v \in V} \rho(u, v)
+\Large d_{avg}(U, V) = \frac{1}{|U| \cdot |V|} \sum_{u \in U} \sum_{v \in V} \rho(u, v)
 $$
 
 - **Минимальное расстояние (single linkage):**
 
 $$
-d_{min}(U, V) = \min_{(u,v) \in U \times V} \rho(u, v)
+\Large d_{min}(U, V) = \min_{(u,v) \in U \times V} \rho(u, v)
 $$
 
 - **Максимальное расстояние (complete linkage):**
 
 $$
-d_{max}(U, V) = \max_{(u,v) \in U \times V} \rho(u, v)
+\Large d_{max}(U, V) = \max_{(u,v) \in U \times V} \rho(u, v)
 $$
 
 **Пример:**
@@ -245,13 +245,13 @@ $$
 Расстояния между всеми парами: 10, 
 
 $$
-\sqrt{101} \approx 10.05
+\Large \sqrt{101} \approx 10.05
 $$
 
 , 
 
 $$
-\sqrt{101} \approx 10.05
+\Large \sqrt{101} \approx 10.05
 $$
 
 , 10.
@@ -260,13 +260,13 @@ $$
 - 
 
 $$
-d_{max} = \sqrt{101} \approx 10.05
+\Large d_{max} = \sqrt{101} \approx 10.05
 $$
 
 - 
 
 $$
-d_{avg} = \frac{10 + 10.05 + 10.05 + 10}{4} \approx 10.025
+\Large d_{avg} = \frac{10 + 10.05 + 10.05 + 10}{4} \approx 10.025
 $$
 
 ---
@@ -365,7 +365,7 @@ DBSCAN (Density-Based Spatial Clustering of Applications with Noise) разви�
 Сумма расстояний между точками из одного кластера, делённая на количество таких пар. Чем меньше, тем компактнее кластеры.
 
 $$
-F_0 = \frac{\sum_{i=1}^n \sum_{j=i}^n \rho(x_i, x_j) I[a(x_i) = a(x_j)]}{\sum_{i=1}^n \sum_{j=i}^n I[a(x_i) = a(x_j)]}
+\Large F_0 = \frac{\sum_{i=1}^n \sum_{j=i}^n \rho(x_i, x_j) I[a(x_i) = a(x_j)]}{\sum_{i=1}^n \sum_{j=i}^n I[a(x_i) = a(x_j)]}
 $$
 
 **Пример:**
@@ -373,7 +373,7 @@ $$
 Расстояния внутри: (1+2+1) + (1) = 5. Пар: 3+1=4.
 
 $$
-F_0 = \frac{5}{4} = 1.25
+\Large F_0 = \frac{5}{4} = 1.25
 $$
 
 .
@@ -385,7 +385,7 @@ $$
 Аналогично, но считается от центров кластеров (средних). Используется в K-means.
 
 $$
-\Phi_0 = \frac{1}{nK} \sum_{k=1}^K \sum_{i=1}^n \rho(\mu_k, x_i)^2 I[a(x_i) = k]
+\Large \Phi_0 = \frac{1}{nK} \sum_{k=1}^K \sum_{i=1}^n \rho(\mu_k, x_i)^2 I[a(x_i) = k]
 $$
 
 ---
@@ -395,7 +395,7 @@ $$
 Среднее расстояние между объектами из разных кластеров. Чем больше, тем лучше кластеры разделены.
 
 $$
-F_1 = \frac{\sum_{i=1}^n \sum_{j=i}^n \rho(x_i, x_j) I[a(x_i) \neq a(x_j)]}{\sum_{i=1}^n \sum_{j=i}^n I[a(x_i) \neq a(x_j)]}
+\Large F_1 = \frac{\sum_{i=1}^n \sum_{j=i}^n \rho(x_i, x_j) I[a(x_i) \neq a(x_j)]}{\sum_{i=1}^n \sum_{j=i}^n I[a(x_i) \neq a(x_j)]}
 $$
 
 ---
@@ -416,25 +416,25 @@ $$
 Энтропия истинных классов:
 
 $$
-H_{\text{class}} = -\sum_{c=1}^C \frac{m_c}{n} \log \frac{m_c}{n}
+\Large H_{\text{class}} = -\sum_{c=1}^C \frac{m_c}{n} \log \frac{m_c}{n}
 $$
 
 Энтропия кластеров:
 
 $$
-H_{\text{clust}} = -\sum_{k=1}^K \frac{n_k}{n} \log \frac{n_k}{n}
+\Large H_{\text{clust}} = -\sum_{k=1}^K \frac{n_k}{n} \log \frac{n_k}{n}
 $$
 
 Условная энтропия класса при условии кластера:
 
 $$
-H_{\text{class} \mid \text{clust}} = -\sum_{c=1}^C \sum_{k=1}^K \frac{n_{ck}}{n} \log \frac{n_{ck}}{n_k}
+\Large H_{\text{class} \mid \text{clust}} = -\sum_{c=1}^C \sum_{k=1}^K \frac{n_{ck}}{n} \log \frac{n_{ck}}{n_k}
 $$
 
 Условная энтропия кластера при условии класса:
 
 $$
-H_{\text{clust} \mid \text{class}} = -\sum_{c=1}^C \sum_{k=1}^K \frac{n_{ck}}{n} \log \frac{n_{ck}}{m_c}
+\Large H_{\text{clust} \mid \text{class}} = -\sum_{c=1}^C \sum_{k=1}^K \frac{n_{ck}}{n} \log \frac{n_{ck}}{m_c}
 $$
 
 ---
@@ -444,7 +444,7 @@ $$
 Показывает, насколько каждый кластер состоит из объектов одного истинного класса. От 0 до 1. 1 — идеал (каждый кластер содержит только один класс).
 
 $$
-\text{Homogeneity} = 1 - \frac{H_{\text{class} \mid \text{clust}}}{H_{\text{class}}}
+\Large \text{Homogeneity} = 1 - \frac{H_{\text{class} \mid \text{clust}}}{H_{\text{class}}}
 $$
 
 **Пример:**
@@ -453,7 +453,7 @@ $$
 Гомогенность 
 
 $$
-= 1 - \frac{0.373}{0.693} \approx 0.462
+\Large = 1 - \frac{0.373}{0.693} \approx 0.462
 $$
 
 .
@@ -465,7 +465,7 @@ $$
 Показывает, насколько все объекты одного истинного класса попали в один и тот же кластер. От 0 до 1. 1 — идеал (каждый класс целиком лежит в одном кластере).
 
 $$
-\text{Completeness} = 1 - \frac{H_{\text{clust} \mid \text{class}}}{H_{\text{clust}}}
+\Large \text{Completeness} = 1 - \frac{H_{\text{clust} \mid \text{class}}}{H_{\text{clust}}}
 $$
 
 **Пример (продолжая предыдущий):**
@@ -473,7 +473,7 @@ Hclust ≈ 0.636, Hclust class ≈ 0.317.
 Полнота 
 
 $$
-= 1 - \frac{0.317}{0.636} \approx 0.502
+\Large = 1 - \frac{0.317}{0.636} \approx 0.502
 $$
 
 .
@@ -487,19 +487,19 @@ $$
 Общая формула:
 
 $$
-V_\beta = \frac{(1+\beta) \cdot \text{Homogeneity} \cdot \text{Completeness}}{\beta \cdot \text{Homogeneity} + \text{Completeness}}
+\Large V_\beta = \frac{(1+\beta) \cdot \text{Homogeneity} \cdot \text{Completeness}}{\beta \cdot \text{Homogeneity} + \text{Completeness}}
 $$
 
 Чаще всего используют β = 1 (равный вес):
 
 $$
-V_1 = \frac{2 \cdot \text{Homogeneity} \cdot \text{Completeness}}{\text{Homogeneity} + \text{Completeness}}
+\Large V_1 = \frac{2 \cdot \text{Homogeneity} \cdot \text{Completeness}}{\text{Homogeneity} + \text{Completeness}}
 $$
 
 **Пример (продолжая):**
 
 $$
-V_1 = \frac{2 \cdot 0.462 \cdot 0.502}{0.462 + 0.502} = \frac{0.464}{0.964} \approx 0.481
+\Large V_1 = \frac{2 \cdot 0.462 \cdot 0.502}{0.462 + 0.502} = \frac{0.464}{0.964} \approx 0.481
 $$
 
 .
@@ -516,7 +516,7 @@ $$
 Формула коэффициента:
 
 $$
-S(x_i) = \frac{B(x_i) - A(x_i)}{\max(A(x_i), B(x_i))}
+\Large S(x_i) = \frac{B(x_i) - A(x_i)}{\max(A(x_i), B(x_i))}
 $$
 
 - S → +1: отличная кластеризация (свой кластер близко, соседний далеко).
@@ -532,15 +532,15 @@ $$
 Для точки x = 2 (из кластера 1):
 
 $$
-A(2) = \frac{|2-1| + |2-3|}{2} = \frac{1+1}{2} = 1.0
+\Large A(2) = \frac{|2-1| + |2-3|}{2} = \frac{1+1}{2} = 1.0
 $$
 
 $$
-B(2) = \frac{|2-10| + |2-11|}{2} = \frac{8+9}{2} = 8.5
+\Large B(2) = \frac{|2-10| + |2-11|}{2} = \frac{8+9}{2} = 8.5
 $$
 
 $$
-S(2) = \frac{8.5 - 1.0}{\max(8.5, 1.0)} = \frac{7.5}{8.5} \approx 0.882
+\Large S(2) = \frac{8.5 - 1.0}{\max(8.5, 1.0)} = \frac{7.5}{8.5} \approx 0.882
 $$
 
 (очень хороший силуэт).
@@ -563,6 +563,7 @@ $$
 ### 📦 Итоговое обобщение
 
 $$
+\Large
 \boxed{
 \begin{aligned}
 & \text{Кластеризация — обучение без учителя:} \
