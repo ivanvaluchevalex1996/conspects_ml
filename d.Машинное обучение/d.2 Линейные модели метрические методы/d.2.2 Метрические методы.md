@@ -775,7 +775,7 @@ X_val_s   = scaler.transform(X_val)       # только transform, без fit!
 
 $$
 x \;\longrightarrow\; F(x) \;\longrightarrow\; \begin{cases}
-F(x), & \text{uniform} \[4pt]
+F(x), & \text{uniform} \\[4pt]
 \Phi^{-1}\big(F(x)\big), & \text{normal}
 \end{cases}
 $$
