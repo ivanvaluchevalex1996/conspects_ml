@@ -1,5 +1,7 @@
 *(Разбор видео Карпати про micrograd: как backprop считает градиенты по графу вычислений и как из этого собирается и обучается простая нейросеть. Код с запуском по шагам — [`micrograd_walkthrough.ipynb`](micrograd_walkthrough.ipynb). Теория — [`d.0`](../../d.0%20Градиент%20и%20правило%20цепочки.md) и [`d.4.1`](../d.4.1%20Полносвязные%20нейронные%20сети.md).)*
 
+**Практика PyTorch (тот же смысл на тензорах):** шаг `backward` / Adam — [`pytorch/08`](../../../../учеба%20мл/pytorch/08/08_активации_потери_оптимизатор.ipynb) блок 5; карта курса — [`0_как_учить_pytorch.md`](../../../../учеба%20мл/pytorch/0_как_учить_pytorch.md).
+
 Видео: [The spelled-out intro to neural networks and backpropagation: building micrograd](https://www.youtube.com/watch?v=VMj-3S1tku0) · репо: [karpathy/micrograd](https://github.com/karpathy/micrograd)
 
 ---
