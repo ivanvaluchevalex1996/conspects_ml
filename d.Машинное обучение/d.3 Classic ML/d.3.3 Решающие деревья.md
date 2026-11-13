@@ -21,6 +21,8 @@
 
 ---
 
+> **Deep-ML [#64](https://www.deep-ml.com/problems/64)** — `gini_impurity` в [`12_deep_ml_machine_learning.py`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/12_deep_ml_machine_learning.py). См. также [`Deep-ML — задачи ↔ конспекты`](../Deep-ML%20%E2%80%94%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%20%E2%86%94%20%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B.md).
+
 ## 0. План параграфа
 
 Сегодня разберём:

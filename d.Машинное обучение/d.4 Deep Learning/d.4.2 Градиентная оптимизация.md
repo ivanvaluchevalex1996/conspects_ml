@@ -10,6 +10,8 @@ DeepML (θ, m) → [`d.3.9`](../d.3%20Classic%20ML/d.3.9%20%D0%9B%D0%B8%D0%BD%D0
 
 > Preview: важные формулы в `$$`, в тексте — обычные символы.
 
+**Deep-ML:** [#29](https://www.deep-ml.com/problems/29) `shuffle_data`, [#30](https://www.deep-ml.com/problems/30) `batch_iterator` — [`12_deep_ml_machine_learning.py`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/12_deep_ml_machine_learning.py). Указатель: [`Deep-ML — задачи ↔ конспекты`](../Deep-ML%20%E2%80%94%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%20%E2%86%94%20%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B.md).
+
 ---
 
 ## 0. О чём этот конспект и где что лежит

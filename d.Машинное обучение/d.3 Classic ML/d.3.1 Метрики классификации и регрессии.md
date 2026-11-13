@@ -19,6 +19,12 @@
 
 ---
 
+### Deep-ML: решено в коде
+
+В [`12_deep_ml_machine_learning.py`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/12_deep_ml_machine_learning.py): [#36](https://www.deep-ml.com/problems/36) `accuracy_score`, [#46](https://www.deep-ml.com/problems/46) `precision`, [#52](https://www.deep-ml.com/problems/52) `recall`, [#61](https://www.deep-ml.com/problems/61) `f_score`, [#69](https://www.deep-ml.com/problems/69) `r_squared`, [#71](https://www.deep-ml.com/problems/71) `rmse`. Указатель: [`Deep-ML — задачи ↔ конспекты`](../Deep-ML%20%E2%80%94%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%20%E2%86%94%20%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B.md).
+
+---
+
 ## 0. План параграфа
 
 Сегодня разберём:

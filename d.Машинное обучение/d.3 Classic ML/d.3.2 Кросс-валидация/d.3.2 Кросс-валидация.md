@@ -1,3 +1,5 @@
+> **Deep-ML [#29](https://www.deep-ml.com/problems/29)** — та же идея, что в §2.1: `shuffle_data` в [`12_deep_ml_machine_learning.py`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/12_deep_ml_machine_learning.py).
+
 *(По [статье Яндекс.Хендбука 3.2](https://education.yandex.ru/handbook/ml/article/kross-validaciya). Стиль: подробный, с аналогиями, пошаговыми примерами и интуитивным объяснением)*
 
 *(Напоминание: следующий параграф 3.3 — «Подбор гиперпараметров».)*

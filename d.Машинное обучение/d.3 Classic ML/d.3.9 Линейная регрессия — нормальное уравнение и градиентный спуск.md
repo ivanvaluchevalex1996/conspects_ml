@@ -24,11 +24,13 @@
 
 [`../../учеба мл/python_base/12_deep_ml_machine_learning.py`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/12_deep_ml_machine_learning.py)
 
-| Задача в этом конспекте | Функция в файле | Строки (ориентир) |
-|:---|:---|:---|
-| §4–§6 нормальное уравнение | `linear_regression_normal_equation` | ≈ 3–7 |
-| §7–§9 градиентный спуск | `linear_regression_gradient_descent` | ≈ 9–46 |
-| Те же числа, что в примерах §3, §5, §8 | блок `X, y, alpha, iterations` внизу файла | ≈ 48–53 |
+| Задача в этом конспекте | Deep-ML | Функция в файле | Строки (ориентир) |
+|:---|:---|:---|:---|
+| §4–§6 нормальное уравнение | [#14](https://www.deep-ml.com/problems/14) | `linear_regression_normal_equation` | ≈ 3–7 |
+| §7–§9 градиентный спуск | [#15](https://www.deep-ml.com/problems/15) | `linear_regression_gradient_descent` | ≈ 9–46 |
+| Те же числа, что в примерах §3, §5, §8 | — | блок `X, y, alpha, iterations` внизу файла | ≈ 48–53 |
+
+Полный указатель задач: [`Deep-ML — задачи ↔ конспекты`](../Deep-ML%20%E2%80%94%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%20%E2%86%94%20%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B.md).
 
 > Если номера строк чуть съехали после правок кода — ищи по **имени функции**.
 
