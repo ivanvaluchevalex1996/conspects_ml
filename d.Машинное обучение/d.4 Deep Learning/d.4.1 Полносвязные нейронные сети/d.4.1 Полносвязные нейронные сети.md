@@ -26,8 +26,8 @@ $$`. Инлайн-формулы в одну строку с текстом и �
 | Функции активации                         | §8–9 здесь                                              |
 | Краткий обзор CNN и RNN                   | §9.5 здесь                                              |
 | Полносвязная нейронная сеть               | весь этот файл                                          |
-| [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html) гл.33 | теория — этот `.md`; практика — [`handbook_gl33_практика.ipynb`](./practice/handbook_gl33/handbook_gl33_практика.ipynb) |
-| [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/activations.html) гл.34 | §8–9; [`handbook_gl34_activations.md`](./practice/handbook_gl34/README.md); §34.4–6 — [`handbook_gl34_activations_практика.ipynb`](./practice/handbook_gl34/handbook/handbook_gl34_практика.ipynb); Deep-ML — [`handbook_gl34_activations/`](./practice/handbook_gl34/deep_ml/README.md) |
+| [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html) гл.33 | теория — этот `.md`; практика — [`practice/handbook_gl33/`](./practice/handbook_gl33/README.md) |
+| [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/activations.html) гл.34 | теория §8–9; практика — [`practice/handbook_gl34/`](./practice/handbook_gl34/README.md) |
 | Градиентная оптимизация в DL              | `d.4.2` §1–2                                            |
 | Нормализация / регуляризация в DL         | `d.4.3` §1–2; пример шага → `d.4.3.1`                   |
 
@@ -66,7 +66,7 @@ $$`. Инлайн-формулы в одну строку с текстом и �
 12. Чеклист: что уже достаточно знать
 13. Шпаргалка
 
-> Практика handbook: **гл.33** — [`handbook_gl33_практика.ipynb`](./practice/handbook_gl33/handbook_gl33_практика.ipynb); **гл.34** — §34.4–6 [`handbook_gl34_activations_практика.ipynb`](./practice/handbook_gl34/handbook/handbook_gl34_практика.ipynb), домашка Deep-ML [`handbook_gl34_activations/`](./practice/handbook_gl34/deep_ml/README.md), указатель [`handbook_gl34_activations.md`](./practice/handbook_gl34/README.md).
+> Практика handbook: [`handbook_gl33/`](./practice/handbook_gl33/README.md) · [`handbook_gl34/`](./practice/handbook_gl34/README.md) (код только в подпапках, без дубля в этом `.md`).
 
 > Все числа игрушечные. Цель — чтобы формула «ожила», а не чтобы решать олимпиаду.
 
@@ -88,7 +88,7 @@ $$`. Инлайн-формулы в одну строку с текстом и �
 | --- | --- | --- |
 | Учусь с нуля, forward + слои | **только А** §5 → §6 → **§7.А** | Б, В, батч в конце §7.А |
 | Классификация, softmax | **Б** §7.Б + §9.3 | handbook |
-| Прохожу ML Handbook гл.33 | этот файл §0–§13; код — [`handbook_gl33_практика.ipynb`](./practice/handbook_gl33/handbook_gl33_практика.ipynb) | |
+| Прохожу ML Handbook гл.33 | теория §0–§13; код — [`handbook_gl33/`](./practice/handbook_gl33/README.md) | |
 | Прохожу ML Handbook гл.34 | §8–9; [`practice/`](./practice/README.md) (Deep-ML + §34.4–6) | |
 | Зачем нелинейность, XOR | §2 таблица + §8 | картинки handbook по желанию |
 
@@ -756,7 +756,7 @@ X = 3 × 2                 W = 2 × 4                 XW + b = 3 × 4
 
 ### 7.В. Forward 2→2→1 — указатель на handbook **§33.5**
 
-> Код §33.5 — в [`handbook_gl33_практика.ipynb`](./practice/handbook_gl33/handbook_gl33_практика.ipynb). Эталон — [handbook §33.5](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html#forward-%D0%BF%D1%80%D0%BE%D1%85%D0%BE%D0%B4-%D1%80%D1%83%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BF%D0%BE-%D1%88%D0%B0%D0%B3%D0%B0%D0%BC).
+> Код §33.5 — [`33_5_forward/`](./practice/handbook_gl33/33_5_forward/). Эталон на сайте — [handbook §33.5](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html#forward-%D0%BF%D1%80%D0%BE%D1%85%D0%BE%D0%B4-%D1%80%D1%83%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BF%D0%BE-%D1%88%D0%B0%D0%B3%D0%B0%D0%BC).
 
 **Зачем строка в конспекте:** после **§7.А** (свои числа, ReLU, квартира) — соседний пример handbook: сеть **2→2→1**, **sigmoid**, бинарный **выход-вероятность**.
 
@@ -807,38 +807,17 @@ ReLU между слоями это ломает: часть сигналов о
 
 Forward MLP — цепочка **матричных умножений** (слой = W x + b на батче; у нас — `XW+b`, см. §7.А батч). На больших размерах это делают на **GPU** (параллельно много «точек» matmul). База: [`a.NumPy/11`](../../a.NumPy/11.%D1%83%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%E2%80%94%20star%2C%20at%2C%20dot.md), §0.1 (возврат DL + GPU).
 
-#### PyTorch: тот же MLP, что в handbook (3→4→4→1)
+#### Handbook 3→4→4→1 (код — только в практике)
 
-```python
-import torch
-import torch.nn as nn
+Собрать `Sequential`, **41** параметр — тренажёр [`33_4_sequential/`](./practice/handbook_gl33/33_4_sequential/). `nn.Linear` / `Sequential` — [`pytorch/09`](../../../../учеба%20мл/pytorch/09/09_классы_нейросетей.ipynb), [`pytorch/10`](../../../../учеба%20мл/pytorch/10/10_создание_нейросетей.ipynb).
 
-net = nn.Sequential(
-    nn.Linear(3, 4), nn.ReLU(),
-    nn.Linear(4, 4), nn.ReLU(),
-    nn.Linear(4, 1), nn.Sigmoid(),
-)
-x = torch.tensor([[0.5, -1.2, 2.0]])
-print(net(x).item())
-print(sum(p.numel() for p in net.parameters()))  # 41
-```
-
-| Слой | веса | bias | всего |
-| --- | --- | --- | --- |
-| Linear(3, 4) | 12 | 4 | 16 |
-| Linear(4, 4) | 16 | 4 | 20 |
-| Linear(4, 1) | 4 | 1 | 5 |
-| **итого** | | | **41** |
-
-Подробнее про `Sequential` / `nn.Linear` — [`pytorch/09`](../../../../учеба%20мл/pytorch/09/09_классы_нейросетей.ipynb), [`pytorch/10`](../../../../учеба%20мл/pytorch/10/10_создание_нейросетей.ipynb). Документация: [torch.nn.Linear](https://pytorch.org/docs/stable/generated/torch.nn.Linear.html), [nn.Sequential](https://pytorch.org/docs/stable/generated/torch.nn.Sequential.html).
-
-Домашка handbook — в [`handbook_gl33_практика.ipynb`](./practice/handbook_gl33/handbook_gl33_практика.ipynb).
+Вся практика handbook гл.33: [`practice/handbook_gl33/`](./practice/handbook_gl33/README.md).
 
 ---
 
 ## 9. Какие активации бывают
 
-> Handbook **гл.34** (§34.4–6 на сайте): [`handbook_gl34_activations_практика.ipynb`](./practice/handbook_gl34/handbook/handbook_gl34_практика.ipynb). Домашка Deep-ML: [`handbook_gl34_activations/`](./practice/handbook_gl34/deep_ml/README.md) · [`handbook_gl34_activations.md`](./practice/handbook_gl34/README.md).
+> Практика гл.34 (handbook + Deep-ML): [`practice/handbook_gl34/`](./practice/handbook_gl34/README.md).
 
 **Подробно** — три частых (§9.1–9.3): ReLU, sigmoid, softmax (+ log-softmax для CE). **Остальные** — одна таблица в §9.4 (+ коротко Swish).
 
@@ -1416,8 +1395,8 @@ if best_val - val_loss > threshold:
 | Классика vs сеть (§3)       | классика = сразу ответ; сеть = конвейер признаков → ответ в конце                     |
 | Два примера                 | А квартира→цена (§7.А); Б цифры→класс (§7.Б + §9.3)                                   |
 | W¹ и W²                     | номер слоя, не «в квадрате»                                                           |
-| Практика handbook гл.33     | [`handbook_gl33_практика.ipynb`](./practice/handbook_gl33/handbook_gl33_практика.ipynb) |
-| Практика handbook гл.34     | §34 [`handbook_gl34_activations_практика.ipynb`](./practice/handbook_gl34/handbook/handbook_gl34_практика.ipynb); Deep-ML [`handbook_gl34_activations/`](./practice/handbook_gl34/deep_ml/README.md) |
+| Практика handbook гл.33     | [`practice/handbook_gl33/`](./practice/handbook_gl33/README.md) |
+| Практика handbook гл.34     | [`practice/handbook_gl34/`](./practice/handbook_gl34/README.md) |
 
 ---
 

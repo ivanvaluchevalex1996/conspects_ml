@@ -59,7 +59,7 @@
 
 ## Deep Learning (`13_…`)
 
-Практика **ML Handbook гл.34**: handbook §34.4–6 — [`handbook_gl34_activations_практика.ipynb`](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl34/handbook/handbook_gl34_практика.ipynb); Deep-ML по папкам — [`handbook_gl34_activations/`](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl34/deep_ml/README.md).
+Практика **ML Handbook гл.34**: [`practice/handbook_gl34/`](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl34/README.md) (`handbook/` + `deep_ml/`).
 
 | # | Задача | Функция | Конспект |
 |---|--------|---------|----------|
