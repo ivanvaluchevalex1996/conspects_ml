@@ -29,7 +29,8 @@ $$`. Инлайн-формулы в одну строку с текстом и �
 | [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html) гл.33 | теория — этот `.md`; практика — [`practice/handbook_gl33/`](./practice/handbook_gl33/README.md) |
 | [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/activations.html) гл.34 | теория §8–9; практика — [`practice/handbook_gl34/`](./practice/handbook_gl34/README.md) |
 | [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/backprop.html) гл.35 | теория §11; практика — [`practice/handbook_gl35/`](./practice/handbook_gl35/README.md) |
-| Градиентная оптимизация в DL              | `d.4.2` §1–2                                            |
+| [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-optimization.html) гл.36 | теория `d.4.2` §1–2; практика — [`d.4.2/…/handbook_gl36/`](../d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/practice/handbook_gl36/README.md) |
+| Градиентная оптимизация в DL              | [`d.4.2`](../d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F.md) §1–2 |
 | Нормализация / регуляризация в DL         | `d.4.3` §1–2; пример шага → `d.4.3.1`                   |
 
 ## Практика PyTorch (когда готовишься / повторяешь)
@@ -67,7 +68,7 @@ $$`. Инлайн-формулы в одну строку с текстом и �
 12. Чеклист: что уже достаточно знать
 13. Шпаргалка
 
-> Практика handbook: [`handbook_gl33/`](./practice/handbook_gl33/README.md) · [`handbook_gl34/`](./practice/handbook_gl34/README.md) · [`handbook_gl35/`](./practice/handbook_gl35/README.md) (код только в подпапках).
+> Практика handbook: [`handbook_gl33/`](./practice/handbook_gl33/README.md) · [`handbook_gl34/`](./practice/handbook_gl34/README.md) · [`handbook_gl35/`](./practice/handbook_gl35/README.md) (код только в подпапках). Гл.36 (оптимизация) — в [`d.4.2/handbook_gl36/`](../d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/practice/handbook_gl36/README.md).
 
 > Все числа игрушечные. Цель — чтобы формула «ожила», а не чтобы решать олимпиаду.
 
@@ -1290,7 +1291,7 @@ optimizer.step()        # сдвинуть веса
 | скорость на больших данных | медленно           | быстро          |
 | на практике в DL           | редко              | почти всегда    |
 
-Подробнее с числами (средний лосс / средний градиент по объектам → один шаг) — [`d.4.2` §2.2](../d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F.md#22-sgd--%D0%B1%D0%B0%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9-%D1%88%D0%B0%D0%B3).  
+Подробнее с числами (средний лосс / средний градиент по объектам → один шаг) — [`d.4.2` §2.2](../d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F.md#22-sgd--%D0%B1%D0%B0%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9-%D1%88%D0%B0%D0%B3).  
 Что такое градиент и α «с нуля» — [`d.4.1.1`](../../d.0%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20%D0%B8%20%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE%20%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B8.md#2-%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F--%D1%81%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D1%8C-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F).  
 Матричный GD/SGD на линейной регрессии — [`Градиент MSE и SGD…`../../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1.4%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20MSE%20%D0%B8%20SGD%20%D0%B4%D0%BB%D1%8F%20%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9%20%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B8.md#%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82-mse--gd--sgd-%D0%B4%D0%BB%D1%8F-%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9-%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B8).
 

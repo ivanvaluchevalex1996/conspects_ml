@@ -8,7 +8,7 @@
 | # | Файл | О чём |
 |:---|:---|:---|
 | d.4.1 | [d.4.1](d.4.1%20Полносвязные%20нейронные%20сети/d.4.1%20Полносвязные%20нейронные%20сети.md) | MLP, активации, backprop; handbook [гл.33](d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl33/README.md), [гл.34](d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl34/README.md), [гл.35](d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl35/README.md) |
-| d.4.2 | [d.4.2](d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F.md) | SGD, Momentum, Adam, LR, батчи |
+| d.4.2 | [d.4.2](d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F.md); handbook [гл.36](d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/practice/handbook_gl36/README.md) | SGD, Momentum, Adam, LR, батчи |
 | d.4.3 | [d.4.3](d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning.md) | Нормализация входа, weight decay, dropout, BatchNorm… |
 | d.4.3.1 | [d.4.3.1](d.4.3%20Регуляризация%20в%20Deep%20Learning/d.4.3.1%20Пример%20—%20нормализация%20и%20один%20шаг%20обучения.md) | пример: нормализация входа, один шаг |
 | d.4.3.2 | [d.4.3.2](d.4.3%20Регуляризация%20в%20Deep%20Learning/d.4.3.2%20Пример%20—%20зачем%20BatchNorm.md) | пример: зачем BatchNorm (W¹, h, W²) |
@@ -33,7 +33,7 @@ PDF лекции по оптимизации/регуляризации лежи
 | Конспект | Что открыть в PyTorch |
 | --- | --- |
 | **d.4.1** §5–11 (MLP, активации, loss, обучение) | handbook гл.33 — [`handbook_gl33/`](d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl33/README.md); гл.34 — [`practice/handbook_gl34/`](d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl34/README.md); курс — [`08/`](../../../учеба%20мл/pytorch/08/08_активации_потери_оптимизатор.ipynb), [`09/`](../../../учеба%20мл/pytorch/09/09_классы_нейросетей.ipynb); формулы softmax+CE — [`homework…/формулы-конспект-код.md`](../../../учеба%20мл/homework_linear_models_and_knn/формулы-конспект-код.md); loss/метрики — `d.1.2`, `d.3.1`; цикл — видео 11 |
-| **d.4.2** (SGD, Adam, lr) | `08/` блок 5; подробнее — видео 12 |
+| **d.4.2** (SGD, Adam, lr) | [`handbook_gl36/`](d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/practice/handbook_gl36/README.md); `08/` блок 5; видео 12 |
 | **d.4.3** (нормализация, dropout, BN, early stop) | [`07/`](../../../учеба%20мл/pytorch/07/07_transforms_v2.ipynb) (Normalize); пример цифр — `d.4.3.1`; видео 14–16 |
 | **d.4.4** (micrograd / backprop руками) | смысл → [`08/`](../../../учеба%20мл/pytorch/08/08_активации_потери_оптимизатор.ipynb) блок 5 (`backward`/`step`) |
 | батчи / Dataset | [`04/`](../../../учеба%20мл/pytorch/04/04_dataset_dataloader_1.ipynb)–[`06/`](../../../учеба%20мл/pytorch/06/06_dataset_dataloader_3.ipynb) (+ отсылка в intro `06/`) |

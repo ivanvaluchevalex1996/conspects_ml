@@ -1,16 +1,18 @@
 *(Как учить нейросеть: инициализация, оптимизаторы, learning rate. Лекция DLS «Градиентная оптимизация». Опора: Яндекс 5.4. Всё на простых примерах с числами, без тяжёлых выводов.)*
 
-**Практика PyTorch:** один шаг Adam / SGD и lr — [`pytorch/08`](../../../учеба%20мл/pytorch/08/08_активации_потери_оптимизатор.ipynb) блок 5; scheduler — [`pytorch/12`](../../../учеба%20мл/pytorch/12/12_lr_scheduler.ipynb); AMP — [`pytorch/24_amp`](../../../учеба%20мл/pytorch/24_amp/24_amp.ipynb) (§2.8); карта → [`0_как_учить_pytorch.md`](../../../учеба%20мл/pytorch/0_как_учить_pytorch.md).
+**Практика (handbook / Deep-ML):** [`practice/README.md`](./practice/README.md) → гл.36 [dl-optimization](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-optimization.html). Код только в подпапках.
 
-Архитектура MLP, активации, смысл backprop → [`d.4.1`](d.4.1%20%D0%9F%D0%BE%D0%BB%D0%BD%D0%BE%D1%81%D0%B2%D1%8F%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B5%D1%82%D0%B8.md#113-%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%B1%D0%B0%D1%82%D1%87%D0%B8-%D0%B8-sgd) (§11.3 — кратко про батчи).  
-Что такое градиент, шаг α, правило цепочки, запись ∇ → [`d.4.1.1`](../d.0%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20%D0%B8%20%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE%20%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B8.md#11-%D1%87%D1%82%D0%BE-%D0%B7%D0%BD%D0%B0%D1%87%D0%B8%D1%82-%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82--0-%D0%BD%D0%B5-%D0%B7%D1%83%D0%B1%D1%80%D0%B8%D1%82%D1%8C-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE-%D0%B7%D0%BD%D0%B0%D1%82%D1%8C).  
-Матричный GD/SGD на линейной регрессии → [`Градиент MSE и SGD…`](../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1.4%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20MSE%20%D0%B8%20SGD%20%D0%B4%D0%BB%D1%8F%20%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9%20%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B8.md#%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82-mse--gd--sgd-%D0%B4%D0%BB%D1%8F-%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9-%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B8).  
-DeepML (θ, m) → [`d.3.9`](../d.3%20Classic%20ML/d.3.9%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D1%8F%20%E2%80%94%20%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BF%D1%83%D1%81%D0%BA.md#4-%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1-1-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B5%D1%81%D0%B0-%D0%B7%D0%B0-%D0%BE%D0%B4%D0%B8%D0%BD-%D1%88%D0%B0%D0%B3).  
-Нормализация входа, регуляризация, Dropout, BatchNorm, early stopping → [`d.4.3`](d.4.3%20Регуляризация%20в%20Deep%20Learning/d.4.3%20Регуляризация%20в%20Deep%20Learning.md); пример одного шага без/с нормализацией → [`d.4.3.1`](d.4.3%20Регуляризация%20в%20Deep%20Learning/d.4.3.1%20Пример%20—%20нормализация%20и%20один%20шаг%20обучения.md).
+**Практика PyTorch:** один шаг Adam / SGD и lr — [`pytorch/08`](../../../../учеба%20мл/pytorch/08/08_активации_потери_оптимизатор.ipynb) блок 5; scheduler — [`pytorch/12`](../../../../учеба%20мл/pytorch/12/12_lr_scheduler.ipynb); AMP — [`pytorch/24_amp`](../../../../учеба%20мл/pytorch/24_amp/24_amp.ipynb) (§2.8); карта → [`0_как_учить_pytorch.md`](../../../../учеба%20мл/pytorch/0_как_учить_pytorch.md).
+
+Архитектура MLP, активации, смысл backprop → [`d.4.1`](../d.4.1%20Полносвязные%20нейронные%20сети/d.4.1%20Полносвязные%20нейронные%20сети.md#113-%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%B1%D0%B0%D1%82%D1%87%D0%B8-%D0%B8-sgd) (§11.3 — кратко про батчи).  
+Что такое градиент, шаг α, правило цепочки, запись ∇ → [`d.4.1.1`](../../d.0%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20%D0%B8%20%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE%20%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B8.md#11-%D1%87%D1%82%D0%BE-%D0%B7%D0%BD%D0%B0%D1%87%D0%B8%D1%82-%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82--0-%D0%BD%D0%B5-%D0%B7%D1%83%D0%B1%D1%80%D0%B8%D1%82%D1%8C-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE-%D0%B7%D0%BD%D0%B0%D1%82%D1%8C).  
+Матричный GD/SGD на линейной регрессии → [`Градиент MSE и SGD…`](../../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1.4%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20MSE%20%D0%B8%20SGD%20%D0%B4%D0%BB%D1%8F%20%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9%20%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B8.md#%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82-mse--gd--sgd-%D0%B4%D0%BB%D1%8F-%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9-%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B8).  
+DeepML (θ, m) → [`d.3.9`](../../d.3%20Classic%20ML/d.3.9%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D1%8F%20%E2%80%94%20%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BF%D1%83%D1%81%D0%BA.md#4-%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1-1-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B5%D1%81%D0%B0-%D0%B7%D0%B0-%D0%BE%D0%B4%D0%B8%D0%BD-%D1%88%D0%B0%D0%B3).  
+Нормализация входа, регуляризация, Dropout, BatchNorm, early stopping → [`d.4.3`](../../d.4.3%20Регуляризация%20в%20Deep%20Learning/d.4.3%20Регуляризация%20в%20Deep%20Learning.md); пример одного шага без/с нормализацией → [`d.4.3.1`](../../d.4.3%20Регуляризация%20в%20Deep%20Learning/d.4.3.1%20Пример%20—%20нормализация%20и%20один%20шаг%20обучения.md).
 
 > Preview: важные формулы в `$$`, в тексте — обычные символы.
 
-**Deep-ML:** [#29](https://www.deep-ml.com/problems/29) `shuffle_data`, [#30](https://www.deep-ml.com/problems/30) `batch_iterator` — [`12_deep_ml_machine_learning.py`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/12_deep_ml_machine_learning.py). Указатель: [`Deep-ML — задачи ↔ конспекты`](../Deep-ML%20%E2%80%94%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%20%E2%86%94%20%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B.md).
+**Deep-ML:** [#49](https://www.deep-ml.com/problems/49) Adam, [#146](https://www.deep-ml.com/problems/146) momentum, PyTorch Basics [#1234](https://www.deep-ml.com/problems/1234)–[#1236](https://www.deep-ml.com/problems/1236) — тренажёры [`practice/handbook_gl36/deep_ml/`](./practice/handbook_gl36/deep_ml/README.md). Батчи [#29](https://www.deep-ml.com/problems/29), [#30](https://www.deep-ml.com/problems/30) — [`12_deep_ml_machine_learning.py`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/12_deep_ml_machine_learning.py). Указатель: [`Deep-ML — задачи ↔ конспекты`](../../Deep-ML%20%E2%80%94%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%20%E2%86%94%20%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B.md).
 
 ---
 
@@ -21,18 +23,19 @@ DeepML (θ, m) → [`d.3.9`](../d.3%20Classic%20ML/d.3.9%20%D0%9B%D0%B8%D0%BD%D0
 1. С каких весов стартовать (§1).
 2. Как шагать быстрее и стабильнее (§2: SGD → Momentum → Adam, learning rate).
 
-Дальше: нормализация входа, не переобучить, метрики/валидация → [`d.4.3`](d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning.md#1-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8-data-normalization) (+ `d.3.1`, `d.3.2`).
+Дальше: нормализация входа, не переобучить, метрики/валидация → [`d.4.3`](../../d.4.3%20Регуляризация%20в%20Deep%20Learning/d.4.3%20Регуляризация%20в%20Deep%20Learning.md#1-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8-data-normalization) (+ `d.3.1`, `d.3.2`).
 
-| Лекция | Где |
+| Лекция / handbook | Где |
 | --- | --- |
 | История DL; понятия DL; backprop (смысл); активации; CNN/RNN обзор; MLP | `d.4.1` |
-| Градиентная оптимизация в DL | §1–2 **здесь** |
-| Нормализация входа + регуляризация в DL | [`d.4.3`](d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning.md#1-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8-data-normalization) §1–2 |
+| Градиентная оптимизация в DL (лекция) | §1–2 **здесь** |
+| [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-optimization.html) гл.36 | теория §1–§2 + сайт §36.2–36.4; практика — [`practice/handbook_gl36/`](./practice/handbook_gl36/README.md) |
+| Нормализация входа + регуляризация в DL | [`d.4.3`](../../d.4.3%20Регуляризация%20в%20Deep%20Learning/d.4.3%20Регуляризация%20в%20Deep%20Learning.md#1-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8-data-normalization) §1–2 |
 | Метрики и валидация | `d.4.3` §3 (+ `d.3.1`, `d.3.2`) |
 
 Опора: [Яндекс 5.4](https://contest.yandex.ru/tracks/ml/deep-learning-introduction/training-techniques)
 
-Слайды: [`Оптимизация_и_регуляризация_в_Deep_Learning.pdf`](../Оптимизация_и_регуляризация_в_Deep_Learning.pdf) (видео: [оптимизация](https://www.youtube.com/watch?v=6CvpMOO-DB4)). Регуляризация — отдельное видео → `d.4.3`.
+Слайды: [`Оптимизация_и_регуляризация_в_Deep_Learning.pdf`](../../%D0%9E%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F_%D0%B8_%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F_%D0%B2_Deep_Learning.pdf) (видео: [оптимизация](https://www.youtube.com/watch?v=6CvpMOO-DB4)). Регуляризация — отдельное видео → `d.4.3`.
 
 ---
 
@@ -84,13 +87,13 @@ DeepML (θ, m) → [`d.3.9`](../d.3%20Classic%20ML/d.3.9%20%D0%9B%D0%B8%D0%BD%D0
 
 Один проход по (почти) всем данным = **эпоха**.
 
-В коде PyTorch перед `backward` обычно вызывают `optimizer.zero_grad()`: `.grad` **накапливается**, а не перезаписывается. Иначе следующий батч «приедет» поверх старого градиента. Подробнее — [`d.4.1`](d.4.1%20Полносвязные%20нейронные%20сети.md) **§11.2** (абзац про `zero_grad`).
+В коде PyTorch перед `backward` обычно вызывают `optimizer.zero_grad()`: `.grad` **накапливается**, а не перезаписывается. Иначе следующий батч «приедет» поверх старого градиента. Подробнее — [`d.4.1`](../d.4.1%20Полносвязные%20нейронные%20сети/d.4.1%20Полносвязные%20нейронные%20сети.md) **§11.2** (абзац про `zero_grad`).
 
 **Оптимизатор** — это правило «как именно сдвинуть веса, зная градиент». Самое простое правило — SGD. Остальные — его улучшения.
 
 ### 2.2. SGD — базовый шаг
 
-То же правило, что в [`d.4.1.1`](../d.0%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20%D0%B8%20%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE%20%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B8.md#84-%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D1%80%D0%B0%D0%BD%D1%8C%D1%88%D0%B5-%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B8-%D0%BD%D0%B5-%D0%B1%D1%8B%D0%BB%D0%BE-%D0%B2%D0%B8%D0%B4%D0%BD%D0%BE):
+То же правило, что в [`d.4.1.1`](../../d.0%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20%D0%B8%20%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE%20%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B8.md#84-%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D1%80%D0%B0%D0%BD%D1%8C%D1%88%D0%B5-%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B8-%D0%BD%D0%B5-%D0%B1%D1%8B%D0%BB%D0%BE-%D0%B2%D0%B8%D0%B4%D0%BD%D0%BE):
 
 $$
 \Large w \leftarrow w - \alpha \cdot \nabla_w L
@@ -352,7 +355,7 @@ $$
 
 #### Что бывает при разном α
 
-Пример из [`d.4.1.1`](../d.0%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20%D0%B8%20%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE%20%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B8.md#84-%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D1%80%D0%B0%D0%BD%D1%8C%D1%88%D0%B5-%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B8-%D0%BD%D0%B5-%D0%B1%D1%8B%D0%BB%D0%BE-%D0%B2%D0%B8%D0%B4%D0%BD%D0%BE): f(w) = w², стоим в w = 3, производная 2w = 6, минимум в w = 0.
+Пример из [`d.4.1.1`](../../d.0%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20%D0%B8%20%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE%20%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B8.md#84-%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D1%80%D0%B0%D0%BD%D1%8C%D1%88%D0%B5-%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B8-%D0%BD%D0%B5-%D0%B1%D1%8B%D0%BB%D0%BE-%D0%B2%D0%B8%D0%B4%D0%BD%D0%BE): f(w) = w², стоим в w = 3, производная 2w = 6, минимум в w = 0.
 
 α — learning rate (множитель), **шаг = α · g** (на сколько реально сдвинется вес).
 
@@ -419,8 +422,8 @@ $$
 1. Учим градиентным спуском по батчам (SGD); градиенты считает **autograd** (`loss.backward()`).  
 2. SGD шумный → **Momentum** (инерция) и адаптивные методы (**Adagrad → RMSProp**, свой шаг каждому весу) → **Adam = Momentum + RMSProp**; на практике чаще **Adam/AdamW**.  
 3. Даже для Adam важен **learning rate**; используем **lr decay / schedule**.  
-4. Вход **нормализуем** (mean/std по train) — [`d.4.3`](d.4.3%20Регуляризация%20в%20Deep%20Learning/d.4.3%20Регуляризация%20в%20Deep%20Learning.md) §1; числовой разбор одного шага → [`d.4.3.1`](d.4.3%20Регуляризация%20в%20Deep%20Learning/d.4.3.1%20Пример%20—%20нормализация%20и%20один%20шаг%20обучения.md).  
-5. **Следим за качеством** (train/val лосс и метрики) по ходу обучения — подробно в [`d.4.3`](d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning.md#1-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8-data-normalization) §3.
+4. Вход **нормализуем** (mean/std по train) — [`d.4.3`](../d.4.3%20Регуляризация%20в%20Deep%20Learning/d.4.3%20Регуляризация%20в%20Deep%20Learning.md) §1; числовой разбор одного шага → [`d.4.3.1`](../d.4.3%20Регуляризация%20в%20Deep%20Learning/d.4.3.1%20Пример%20—%20нормализация%20и%20один%20шаг%20обучения.md).  
+5. **Следим за качеством** (train/val лосс и метрики) по ходу обучения — подробно в [`d.4.3`](../d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning.md#1-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8-data-normalization) §3.
 
 ### 2.8. AMP — Automatic Mixed Precision *(не было у Дубинина; дал ментор)*
 
@@ -603,7 +606,7 @@ scaler.update()
 | --- | --- |
 | Инициализация весов | §1 здесь |
 | Оптимизация (SGD, Momentum, Adam, lr schedule) | §2 здесь |
-| Нормализация входа / регуляризация / val / метрики | [`d.4.3`](d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning.md#1-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8-data-normalization) |
+| Нормализация входа / регуляризация / val / метрики | [`d.4.3`](../d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning.md#1-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8-data-normalization) |
 
 ---
 
@@ -630,7 +633,7 @@ scaler.update()
 | GradScaler | масштабирует loss/grads против underflow в fp16 |
 | седловая точка | градиент ≈ 0, но это не минимум; SGD может застрять |
 
-Нормализация входа — в словаре [`d.4.3`](d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning.md#1-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8-data-normalization).
+Нормализация входа — в словаре [`d.4.3`](../d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning.md#1-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8-data-normalization).
 
 ---
 
@@ -642,4 +645,4 @@ scaler.update()
 - стартуем со **случайных** весов;
 - шагаем **Adam/AdamW**, следим за **learning rate** и уменьшаем его по ходу.
 
-Нормализация входа и «не переобучить» → [`d.4.3`](d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning.md#1-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8-data-normalization).
+Нормализация входа и «не переобучить» → [`d.4.3`](../d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning.md#1-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8-data-normalization).
