@@ -3,7 +3,7 @@
 
 Связка к семинару МФТИ (практика `part_1_linear_regression.ipynb`).
 
-**Практика PyTorch:** шаг SGD/Adam — [`pytorch/08`](../../../../учеба%20мл/pytorch/08/08_активации_потери_оптимизатор.ipynb) блок 5; Adam/lr — [`d.4.2`](../../d.4%20Deep%20Learning/d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F.md).
+**Практика PyTorch:** шаг SGD/Adam — [`pytorch/08`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/08/08_активации_потери_оптимизатор.ipynb) блок 5; Adam/lr — [`d.4.2`](../../d.4%20Deep%20Learning/d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F.md).
 
 Связанные конспекты:
 

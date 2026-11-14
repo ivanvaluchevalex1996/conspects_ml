@@ -2,7 +2,7 @@
 
 **Практика (handbook / Deep-ML):** [`practice/README.md`](./practice/README.md) → гл.37 [dl-regularization](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-regularization.html). Код только в подпапках.
 
-**Практика PyTorch:** нормализация входа — [`pytorch/07`](../../../../учеба%20мл/pytorch/07/07_transforms_v2.ipynb); early stop — [`pytorch/14`](../../../../учеба%20мл/pytorch/14/14_early_stopping.ipynb); Dropout — [`pytorch/15`](../../../../учеба%20мл/pytorch/15/15_dropout.ipynb); BatchNorm — [`pytorch/16`](../../../../учеба%20мл/pytorch/16/16_batchnorm.ipynb); карта → [`0_как_учить_pytorch.md`](../../../../учеба%20мл/pytorch/0_как_учить_pytorch.md).
+**Практика PyTorch:** нормализация входа — [`pytorch/07`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/07/07_transforms_v2.ipynb); early stop — [`pytorch/14`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/14/14_early_stopping.ipynb); Dropout — [`pytorch/15`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/15/15_dropout.ipynb); BatchNorm — [`pytorch/16`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/16/16_batchnorm.ipynb); карта → [`0_как_учить_pytorch.md`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/0_как_учить_pytorch.md).
 
 Архитектура → [`d.4.1`](../d.4.1%20%D0%9F%D0%BE%D0%BB%D0%BD%D0%BE%D1%81%D0%B2%D1%8F%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B5%D1%82%D0%B8.md#0-%D0%BF%D0%BB%D0%B0%D0%BD-%D0%BA%D1%83%D0%B4%D0%B0-%D0%B8%D0%B4%D1%91%D0%BC).  
 Как шагать (SGD → Adam, lr) → [`d.4.2`](../d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F.md#2-%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F-%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2-dl-%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F).  
@@ -162,7 +162,7 @@ PyTorch: `nn.Dropout(p=0.5)`, обязательно переключать `mod
 > **Не путать с регуляризацией «против зубрёжки».** Главное у BN — чтобы `h` / `z = W·h` не скакали по масштабу и обучение не разваливалось. В конспекте про регуляризацию он лежит, потому что так устроена лекция; эффект «чуть меньше переобучения» — побочный.
 
 Числовой разбор «зачем, если h раздулся» (W¹, h, W², градиенты) → [`d.4.3.2`](d.4.3.2%20Пример%20—%20зачем%20BatchNorm.md).  
-Практика PyTorch → [`pytorch/16`](../../../../учеба%20мл/pytorch/16/16_batchnorm.ipynb).
+Практика PyTorch → [`pytorch/16`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/16/16_batchnorm.ipynb).
 
 ##### С нуля: нейрон, батч, где тут BN (чтобы не путаться)
 
@@ -280,7 +280,7 @@ $$
 
 После 3-й эпохи val loss растёт — сеть начала зубрить. Останавливаемся и берём веса с эпохи 3. Обычно ждут несколько эпох без улучшения («терпение», patience), чтобы не остановиться из-за случайного скачка.
 
-В коде (видео 14): счётчик `bad` / класс `EarlyStop` + при улучшении val — `torch.save(best)`; после стопа — load best. **Test** — один раз на одной выбранной модели (не перебирать checkpoint’ы, глядя на test: подгонка идёт через *твой выбор*, даже если веса test не «видели»). Практика: [`pytorch/14`](../../../../учеба%20мл/pytorch/14/14_early_stopping.ipynb).
+В коде (видео 14): счётчик `bad` / класс `EarlyStop` + при улучшении val — `torch.save(best)`; после стопа — load best. **Test** — один раз на одной выбранной модели (не перебирать checkpoint’ы, глядя на test: подгонка идёт через *твой выбор*, даже если веса test не «видели»). Практика: [`pytorch/14`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/14/14_early_stopping.ipynb).
 
 **Классификация:** всегда `sorted` при сборке `class_to_idx` + сохранять словарь в checkpoint. Без сортировки после load метки съезжают → accuracy как у случайного угадывания.
 

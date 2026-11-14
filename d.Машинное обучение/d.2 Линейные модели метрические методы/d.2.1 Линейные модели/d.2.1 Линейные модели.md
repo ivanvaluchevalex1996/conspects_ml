@@ -1666,7 +1666,7 @@ $$
 >
 > **Перцептрон / Hinge / Log Loss** — как мерить плохость в классификации.
 
-В домашке <https://github.com/ivanvaluchevalex1996/homework_linear_models_and_knn> у тебя как раз линейный классификатор + softmax + cross-entropy — это многоклассовый вариант Log Loss. Формулы ↔ код: [`формулы-конспект-код.md`](../../../../учеба%20мл/homework_linear_models_and_knn/формулы-конспект-код.md). В PyTorch то же модулем — [`pytorch/08`](../../../../учеба%20мл/pytorch/08/08_активации_потери_оптимизатор.ipynb) (`CrossEntropyLoss`); смысл в DL — [`d.4.1`](../../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети.md) §10.2.
+В домашке <https://github.com/ivanvaluchevalex1996/homework_linear_models_and_knn> у тебя как раз линейный классификатор + softmax + cross-entropy — это многоклассовый вариант Log Loss. Формулы ↔ код: [`формулы-конспект-код.md`](../../../../учеба%20мл/homework_linear_models_and_knn/формулы-конспект-код.md). В PyTorch то же модулем — [`pytorch/08`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/08/08_активации_потери_оптимизатор.ipynb) (`CrossEntropyLoss`); смысл в DL — [`d.4.1`](../../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети.md) §10.2.
 
 ### Многоклассовая классификация
 

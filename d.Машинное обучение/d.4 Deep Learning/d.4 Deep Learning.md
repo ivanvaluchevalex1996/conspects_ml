@@ -28,14 +28,15 @@ PDF лекции по оптимизации/регуляризации лежи
 
 ## Практика PyTorch (курс Дубинина)
 
-Смысл — здесь в `d.4.x`. Код — в [`учеба мл/pytorch`](../../../учеба%20мл/pytorch/0_как_учить_pytorch.md) (гайд `0_как_учить_pytorch.md` = полная карта видео ↔ конспект).
+Смысл — здесь в `d.4.x`. Код — [`pytorch/pytorch дубинин`](../../../учеба%20мл/pytorch/pytorch%20дубинин/0_как_учить_pytorch.md) (видео) и [`pytorch handbook`](../../../учеба%20мл/pytorch/pytorch%20handbook/README.md) (гл.38+ сайта, без дубля курса). Гайд курса = `0_как_учить_pytorch.md`.
 
 | Конспект | Что открыть в PyTorch |
 | --- | --- |
-| **d.4.1** §5–11 (MLP, активации, loss, обучение) | handbook гл.33 — [`handbook_gl33/`](d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl33/README.md); гл.34 — [`practice/handbook_gl34/`](d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl34/README.md); курс — [`08/`](../../../учеба%20мл/pytorch/08/08_активации_потери_оптимизатор.ipynb), [`09/`](../../../учеба%20мл/pytorch/09/09_классы_нейросетей.ipynb); формулы softmax+CE — [`homework…/формулы-конспект-код.md`](../../../учеба%20мл/homework_linear_models_and_knn/формулы-конспект-код.md); loss/метрики — `d.1.2`, `d.3.1`; цикл — видео 11 |
+| **d.4.1** §5–11 (MLP, активации, loss, обучение) | handbook гл.33 — [`handbook_gl33/`](d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl33/README.md); гл.34 — [`practice/handbook_gl34/`](d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl34/README.md); курс — [`08/`](../../../учеба%20мл/pytorch/pytorch%20дубинин/08/08_активации_потери_оптимизатор.ipynb), [`09/`](../../../учеба%20мл/pytorch/pytorch%20дубинин/09/09_классы_нейросетей.ipynb); формулы softmax+CE — [`homework…/формулы-конспект-код.md`](../../../учеба%20мл/homework_linear_models_and_knn/формулы-конспект-код.md); loss/метрики — `d.1.2`, `d.3.1`; цикл — видео 11 |
 | **d.4.2** (SGD, Adam, lr) | [`handbook_gl36/`](d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/practice/handbook_gl36/README.md); `08/` блок 5; видео 12 |
-| **d.4.3** (нормализация, dropout, BN, early stop) | [`handbook_gl37/`](d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/practice/handbook_gl37/README.md); [`07/`](../../../учеба%20мл/pytorch/07/07_transforms_v2.ipynb); `14`–`16` |
-| **d.4.4** (micrograd / backprop руками) | смысл → [`08/`](../../../учеба%20мл/pytorch/08/08_активации_потери_оптимизатор.ipynb) блок 5 (`backward`/`step`) |
-| батчи / Dataset | [`04/`](../../../учеба%20мл/pytorch/04/04_dataset_dataloader_1.ipynb)–[`06/`](../../../учеба%20мл/pytorch/06/06_dataset_dataloader_3.ipynb) (+ отсылка в intro `06/`) |
+| **d.4.3** (нормализация, dropout, BN, early stop) | [`handbook_gl37/`](d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/practice/handbook_gl37/README.md); [`07/`](../../../учеба%20мл/pytorch/pytorch%20дубинин/07/07_transforms_v2.ipynb); `14`–`16` |
+| **d.4.4** (micrograd / backprop руками) | смысл → [`08/`](../../../учеба%20мл/pytorch/pytorch%20дубинин/08/08_активации_потери_оптимизатор.ipynb) блок 5 (`backward`/`step`) |
+| батчи / Dataset | [`04/`](../../../учеба%20мл/pytorch/pytorch%20дубинин/04/04_dataset_dataloader_1.ipynb)–[`06/`](../../../учеба%20мл/pytorch/pytorch%20дубинин/06/06_dataset_dataloader_3.ipynb) (+ отсылка в intro `06/`) |
 | train/val/test, переобучение | видео 2; конспекты `d.1.4`, `d.3.2` |
-| сквозной проект | [`project/fashion_mnist.ipynb`](../../../учеба%20мл/pytorch/project/fashion_mnist.ipynb) |
+| сквозной проект | [`project/fashion_mnist.ipynb`](../../../учеба%20мл/pytorch/pytorch%20дубинин/project/fashion_mnist.ipynb) |
+| сайт **гл.38** PyTorch intro | [`handbook_gl38`](../../../учеба%20мл/pytorch/pytorch%20handbook/handbook_gl38/README.md) · курс `03/`–`10/` |
