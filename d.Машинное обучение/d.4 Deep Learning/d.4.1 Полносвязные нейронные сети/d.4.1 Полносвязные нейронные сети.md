@@ -68,7 +68,7 @@ $$`. Инлайн-формулы в одну строку с текстом и �
 12. Чеклист: что уже достаточно знать
 13. Шпаргалка
 
-> Практика handbook: [`handbook_gl33/`](./practice/handbook_gl33/README.md) · [`handbook_gl34/`](./practice/handbook_gl34/README.md) · [`handbook_gl35/`](./practice/handbook_gl35/README.md) (код только в подпапках). Гл.36 (оптимизация) — в [`d.4.2/handbook_gl36/`](../d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/practice/handbook_gl36/README.md).
+> Практика handbook: [`handbook_gl33/`](./practice/handbook_gl33/README.md) · [`handbook_gl34/`](./practice/handbook_gl34/README.md) · [`handbook_gl35/`](./practice/handbook_gl35/README.md) (код только в подпапках). Гл.36 — [`d.4.2/handbook_gl36/`](../d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/practice/handbook_gl36/README.md). Гл.37 — [`d.4.3/handbook_gl37/`](../d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/practice/handbook_gl37/README.md).
 
 > Все числа игрушечные. Цель — чтобы формула «ожила», а не чтобы решать олимпиаду.
 

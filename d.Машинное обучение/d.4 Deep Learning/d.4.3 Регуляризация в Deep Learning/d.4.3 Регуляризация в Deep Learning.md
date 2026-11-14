@@ -1,5 +1,7 @@
 *(Как подготовить вход и не дать нейросети зазубрить train: нормализация, weight decay, Dropout, BatchNorm, аугментации, early stopping; плюс val и метрики. Лекция DLS «Регуляризация». Опора: Яндекс 5.4.)*
 
+**Практика (handbook / Deep-ML):** [`practice/README.md`](./practice/README.md) → гл.37 [dl-regularization](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-regularization.html). Код только в подпапках.
+
 **Практика PyTorch:** нормализация входа — [`pytorch/07`](../../../../учеба%20мл/pytorch/07/07_transforms_v2.ipynb); early stop — [`pytorch/14`](../../../../учеба%20мл/pytorch/14/14_early_stopping.ipynb); Dropout — [`pytorch/15`](../../../../учеба%20мл/pytorch/15/15_dropout.ipynb); BatchNorm — [`pytorch/16`](../../../../учеба%20мл/pytorch/16/16_batchnorm.ipynb); карта → [`0_как_учить_pytorch.md`](../../../../учеба%20мл/pytorch/0_как_учить_pytorch.md).
 
 Архитектура → [`d.4.1`](../d.4.1%20%D0%9F%D0%BE%D0%BB%D0%BD%D0%BE%D1%81%D0%B2%D1%8F%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B5%D1%82%D0%B8.md#0-%D0%BF%D0%BB%D0%B0%D0%BD-%D0%BA%D1%83%D0%B4%D0%B0-%D0%B8%D0%B4%D1%91%D0%BC).  
@@ -20,9 +22,10 @@
 2. Регуляризация (§2): weight decay, Dropout, аугментации, early stopping; рядом по лекции — BatchNorm (главное — стабильность, не «антизубрёжка»).
 3. Метрики и валидация в DL (§3): train/val/test, лосс ≠ метрика.
 
-| Лекция | Где |
+| Лекция / handbook | Где |
 | --- | --- |
 | Градиентная оптимизация | [`d.4.2`](../d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F.md#2-%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F-%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2-dl-%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F) |
+| [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-regularization.html) гл.37 | теория §1–3 + сайт; практика — [`practice/handbook_gl37/`](./practice/handbook_gl37/README.md) |
 | Нормализация входа | §1 **здесь** |
 | Регуляризация в DL | §2 **здесь** |
 | Метрики / валидация | §3 здесь (+ `d.3.1`, `d.3.2`) |

@@ -61,7 +61,8 @@
 
 Практика **ML Handbook гл.34**: [`practice/handbook_gl34/`](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl34/README.md) (`handbook/` + `deep_ml/`).  
 Практика **гл.35 backprop**: [`practice/handbook_gl35/deep_ml/`](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl35/deep_ml/README.md).  
-Практика **гл.36 optimization**: [`practice/handbook_gl36/`](../d.4%20Deep%20Learning/d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/practice/handbook_gl36/README.md).
+Практика **гл.36 optimization**: [`practice/handbook_gl36/`](../d.4%20Deep%20Learning/d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/practice/handbook_gl36/README.md).  
+Практика **гл.37 regularization**: [`practice/handbook_gl37/`](../d.4%20Deep%20Learning/d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/practice/handbook_gl37/README.md).
 
 | # | Задача | Функция | Конспект |
 |---|--------|---------|----------|
@@ -88,6 +89,10 @@
 | [1234](https://www.deep-ml.com/problems/1234) | One SGD step (torch) | `sgd_step` | PyTorch Basics, [`1234_sgd_step/`](../d.4%20Deep%20Learning/d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/practice/handbook_gl36/deep_ml/1234_sgd_step/) |
 | [1235](https://www.deep-ml.com/problems/1235) | Momentum step (torch) | `momentum_step` | [`1235_momentum_step/`](../d.4%20Deep%20Learning/d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/practice/handbook_gl36/deep_ml/1235_momentum_step/) |
 | [1236](https://www.deep-ml.com/problems/1236) | One Adam step (torch) | `adam_step` | [`1236_adam_step/`](../d.4%20Deep%20Learning/d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/practice/handbook_gl36/deep_ml/1236_adam_step/) |
+| [151](https://www.deep-ml.com/problems/151) | Dropout (NumPy) | `DropoutLayer` | [`d.4.3` §2](../d.4%20Deep%20Learning/d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning.md), [`151_dropout_layer/`](../d.4%20Deep%20Learning/d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/practice/handbook_gl37/deep_ml/151_dropout_layer/) |
+| [901](https://www.deep-ml.com/problems/901) | Inverted dropout (torch) | `dropout` | [`901_dropout_torch/`](../d.4%20Deep%20Learning/d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/practice/handbook_gl37/deep_ml/901_dropout_torch/) |
+| [1230](https://www.deep-ml.com/problems/1230) | Dropout train vs eval | `dropout_demo` | [`1230_dropout_demo/`](../d.4%20Deep%20Learning/d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/practice/handbook_gl37/deep_ml/1230_dropout_demo/) |
+| [1231](https://www.deep-ml.com/problems/1231) | BatchNorm1d eval | `bn_eval` | [`1231_bn_eval/`](../d.4%20Deep%20Learning/d.4.3%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20Deep%20Learning/practice/handbook_gl37/deep_ml/1231_bn_eval/) |
 
 ---
 
