@@ -1,11 +1,6 @@
-# Практика · d.4.1 (ML Handbook гл. 33)
+# d.4.1 · Полносвязные нейронные сети
 
-Локальная копия кода с [«Нейрон и полносвязная сеть»](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html) — **в той же папке**, что и конспект.
-
-| Файл | Содержимое |
-|------|------------|
-| [`handbook_gl33_практика.ipynb`](./handbook_gl33_практика.ipynb) | **тренажёр**: `...` / TODO, сверка с handbook |
-| [`handbook_gl33_практика_решения.ipynb`](./handbook_gl33_практика_решения.ipynb) | эталонный код — **после** своей попытки |
-| [`d.4.1 Полносвязные нейронные сети.md`](./d.4.1%20Полносвязные%20нейронные%20сети.md) | теория §0–§13 |
-
-**Нужно:** `numpy`, `torch` (окружение как в [`учеба мл/pytorch`](../../../../учеба%20мл/pytorch/0_как_учить_pytorch.md)).
+| | |
+|---|---|
+| **Теория** | [`d.4.1 Полносвязные нейронные сети.md`](./d.4.1%20Полносвязные%20нейронные%20сети.md) |
+| **Практика** | [`practice/README.md`](./practice/README.md) → [`handbook_gl33/`](./practice/handbook_gl33/README.md), [`handbook_gl34/`](./practice/handbook_gl34/README.md) |
