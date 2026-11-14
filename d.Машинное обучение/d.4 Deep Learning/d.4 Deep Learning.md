@@ -28,7 +28,7 @@ PDF лекции по оптимизации/регуляризации лежи
 
 ## Практика PyTorch (курс Дубинина)
 
-Смысл — здесь в `d.4.x`. Код — [`pytorch/pytorch дубинин`](../../../учеба%20мл/pytorch/pytorch%20дубинин/0_как_учить_pytorch.md) (видео) и [`pytorch handbook`](../../../учеба%20мл/pytorch/pytorch%20handbook/README.md) (гл.38+ сайта, без дубля курса). Гайд курса = `0_как_учить_pytorch.md`.
+Смысл — здесь в `d.4.x`. Код — [`pytorch/pytorch дубинин`](../../../учеба%20мл/pytorch/pytorch%20дубинин/0_как_учить_pytorch.md) (видео). Практика handbook на сайте: гл.38 [`handbook_gl38`](../../../учеба%20мл/pytorch/pytorch%20handbook/handbook_gl38/README.md), гл.39 [`handbook_gl39`](../../../учеба%20мл/pytorch/pytorch%20handbook/handbook_gl39/README.md). Гайд курса = `0_как_учить_pytorch.md`.
 
 | Конспект | Что открыть в PyTorch |
 | --- | --- |
@@ -39,4 +39,5 @@ PDF лекции по оптимизации/регуляризации лежи
 | батчи / Dataset | [`04/`](../../../учеба%20мл/pytorch/pytorch%20дубинин/04/04_dataset_dataloader_1.ipynb)–[`06/`](../../../учеба%20мл/pytorch/pytorch%20дубинин/06/06_dataset_dataloader_3.ipynb) (+ отсылка в intro `06/`) |
 | train/val/test, переобучение | видео 2; конспекты `d.1.4`, `d.3.2` |
 | сквозной проект | [`project/fashion_mnist.ipynb`](../../../учеба%20мл/pytorch/pytorch%20дубинин/project/fashion_mnist.ipynb) |
-| сайт **гл.38** PyTorch intro | [`handbook_gl38`](../../../учеба%20мл/pytorch/pytorch%20handbook/handbook_gl38/README.md) · курс `03/`–`10/` |
+| сайт **гл.38** PyTorch intro | [`handbook_gl38`](../../../учеба%20мл/pytorch/pytorch%20handbook/handbook_gl38/README.md) → практика на сайте; теория в коде курса `03/`–`10/` |
+| сайт **гл.39** PyTorch на практике | [`handbook_gl39`](../../../учеба%20мл/pytorch/pytorch%20handbook/handbook_gl39/README.md) → практика на сайте; курс `04/`–`14/`, `project/` |
