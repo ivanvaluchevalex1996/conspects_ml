@@ -10,7 +10,7 @@ $$`. Инлайн-формулы в одну строку с текстом и �
 
 ### Deep-ML: решено в коде
 
-Файл [`13_deep_ml_deep_learning.py`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py) — задачи [#22](https://www.deep-ml.com/problems/22) sigmoid, [#23](https://www.deep-ml.com/problems/23) softmax, [#24](https://www.deep-ml.com/problems/24) один нейрон + MSE, [#39](https://www.deep-ml.com/problems/39) log-softmax, [#42](https://www.deep-ml.com/problems/42) ReLU, [#44](https://www.deep-ml.com/problems/44) Leaky ReLU, [#96](https://www.deep-ml.com/problems/96) hard sigmoid, [#97](https://www.deep-ml.com/problems/97) ELU, [#99](https://www.deep-ml.com/problems/99) softplus, [#100](https://www.deep-ml.com/problems/100) softsign, [#102](https://www.deep-ml.com/problems/102) swish, [#113](https://www.deep-ml.com/problems/113) residual block. Таблица всех решений: [`Deep-ML — задачи ↔ конспекты`](../Deep-ML%20%E2%80%94%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%20%E2%86%94%20%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B.md).
+Файл [`13_deep_ml_deep_learning.py`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py) — задачи [#22](https://www.deep-ml.com/problems/22) sigmoid, [#23](https://www.deep-ml.com/problems/23) softmax, [#24](https://www.deep-ml.com/problems/24) один нейрон + MSE, [#39](https://www.deep-ml.com/problems/39) log-softmax, [#42](https://www.deep-ml.com/problems/42) ReLU, [#44](https://www.deep-ml.com/problems/44) Leaky ReLU, [#96](https://www.deep-ml.com/problems/96) hard sigmoid, [#97](https://www.deep-ml.com/problems/97) ELU, [#99](https://www.deep-ml.com/problems/99) softplus, [#100](https://www.deep-ml.com/problems/100) softsign, [#102](https://www.deep-ml.com/problems/102) swish, [#113](https://www.deep-ml.com/problems/113) residual block. Таблица всех решений: [`Deep-ML — задачи ↔ конспекты`](../../Deep-ML%20%E2%80%94%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%20%E2%86%94%20%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B.md).
 
 ---
 
@@ -24,24 +24,24 @@ $$`. Инлайн-формулы в одну строку с текстом и �
 | Функции активации                         | §8–9 здесь                                              |
 | Краткий обзор CNN и RNN                   | §9.5 здесь                                              |
 | Полносвязная нейронная сеть               | весь этот файл                                          |
-| [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html) гл.33 | **§7.В** = **33.5** forward 2→2→1; §8 — 33.4, 33.6, PyTorch |
+| [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html) гл.33 | теория — этот `.md`; практика — [`handbook_gl33_практика.ipynb`](./handbook_gl33_практика.ipynb) |
 | Градиентная оптимизация в DL              | `d.4.2` §1–2                                            |
 | Нормализация / регуляризация в DL         | `d.4.3` §1–2; пример шага → `d.4.3.1`                   |
 
 ## Практика PyTorch (когда готовишься / повторяешь)
 
-Теория здесь → код в [`учеба мл/pytorch`](../../../учеба%20мл/pytorch/0_как_учить_pytorch.md). Обратная карта (видео → §) — в том же гайде и в [`d.4 Deep Learning.md`](d.4%20Deep%20Learning.md).
+Теория здесь → код в [`учеба мл/pytorch`](../../../../учеба%20мл/pytorch/0_как_учить_pytorch.md). Обратная карта (видео → §) — в том же гайде и в [`d.4 Deep Learning.md`](../d.4%20Deep%20Learning.md).
 
 | Тема в этом файле | Ноутбук / видео курса |
 | --- | --- |
-| §5–7 один нейрон, слои, MLP; **§7.В handbook 2→2→1**; **§8** MLP 3→4→4→1 | видео 8 блок Linear; [`pytorch/09`](../../../учеба%20мл/pytorch/09/09_классы_нейросетей.ipynb) (`Sequential`, `nn.Module`, ModuleList) |
-| §8–9 активации, softmax, **log-softmax §9.3.1** | [`08/…активации…`](../../../учеба%20мл/pytorch/08/08_активации_потери_оптимизатор.ipynb) блоки 1–2 |
-| §10 головы + loss (CE, BCE, MSE) | `08/` блок 3; **формулы CE руками** — [`homework…/формулы-конспект-код.md`](../../../учеба%20мл/homework_linear_models_and_knn/формулы-конспект-код.md); идея loss — [`d.1.2`](../d.1%20Введение%20в%20мл/d.1.2%20Loss%20и%20эмпирический%20риск.md); метрики — [`d.3.1`](../d.3%20Classic%20ML/d.3.1%20Метрики%20классификации%20и%20регрессии.md); склейка loss+Adam к модели — [`pytorch/10`](../../../учеба%20мл/pytorch/10/10_создание_нейросетей.ipynb) |
-| §10–11 метрики, петля, backprop смысл | `08/` блоки 4–5; `state_dict` / `train`·`eval` — [`10/`](../../../учеба%20мл/pytorch/10/10_создание_нейросетей.ipynb); полный цикл — [`11/`](../../../учеба%20мл/pytorch/11/11_цикл_обучения.ipynb); save/load best — [`13/`](../../../учеба%20мл/pytorch/13/13_save_load.ipynb) (§11.5) |
+| §5–7 один нейрон, слои, MLP; **§7.В handbook 2→2→1**; **§8** MLP 3→4→4→1 | видео 8 блок Linear; [`pytorch/09`](../../../../учеба%20мл/pytorch/09/09_классы_нейросетей.ipynb) (`Sequential`, `nn.Module`, ModuleList) |
+| §8–9 активации, softmax, **log-softmax §9.3.1** | [`08/…активации…`](../../../../учеба%20мл/pytorch/08/08_активации_потери_оптимизатор.ipynb) блоки 1–2 |
+| §10 головы + loss (CE, BCE, MSE) | `08/` блок 3; **формулы CE руками** — [`homework…/формулы-конспект-код.md`](../../../../учеба%20мл/homework_linear_models_and_knn/формулы-конспект-код.md); идея loss — [`d.1.2`../../d.1%20Введение%20в%20мл/d.1.2%20Loss%20и%20эмпирический%20риск.md); метрики — [`d.3.1`../../d.3%20Classic%20ML/d.3.1%20Метрики%20классификации%20и%20регрессии.md); склейка loss+Adam к модели — [`pytorch/10`](../../../../учеба%20мл/pytorch/10/10_создание_нейросетей.ipynb) |
+| §10–11 метрики, петля, backprop смысл | `08/` блоки 4–5; `state_dict` / `train`·`eval` — [`10/`](../../../../учеба%20мл/pytorch/10/10_создание_нейросетей.ipynb); полный цикл — [`11/`](../../../../учеба%20мл/pytorch/11/11_цикл_обучения.ipynb); save/load best — [`13/`](../../../../учеба%20мл/pytorch/13/13_save_load.ipynb) (§11.5) |
 | §11.3 батчи | `04/`–`06/` Dataset/DataLoader |
 | шпаргалка §13 | весь `08/` + проект FashionMNIST |
 
-Проект: [`project/fashion_mnist.ipynb`](../../../учеба%20мл/pytorch/project/fashion_mnist.ipynb) (классификация как пример Б «цифры», регрессия центра — как «голова» §10.3).
+Проект: [`project/fashion_mnist.ipynb`](../../../../учеба%20мл/pytorch/project/fashion_mnist.ipynb) (классификация как пример Б «цифры», регрессия центра — как «голова» §10.3).
 
 ---
 
@@ -63,6 +63,8 @@ $$`. Инлайн-формулы в одну строку с текстом и �
 12. Чеклист: что уже достаточно знать
 13. Шпаргалка
 
+> Практика handbook гл.33 — [`handbook_gl33_практика.ipynb`](./handbook_gl33_практика.ipynb) в этой папке (не в `.md`).
+
 > Все числа игрушечные. Цель — чтобы формула «ожила», а не чтобы решать олимпиаду.
 
 **Два сквозных примера** (не смешивай при повторном чтении):
@@ -83,7 +85,7 @@ $$`. Инлайн-формулы в одну строку с текстом и �
 | --- | --- | --- |
 | Учусь с нуля, forward + слои | **только А** §5 → §6 → **§7.А** | Б, В, батч в конце §7.А |
 | Классификация, softmax | **Б** §7.Б + §9.3 | handbook |
-| Прохожу ML Handbook гл.33 | **В** → [33.5 на сайте](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html#forward-%D0%BF%D1%80%D0%BE%D1%85%D0%BE%D0%B4-%D1%80%D1%83%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BF%D0%BE-%D1%88%D0%B0%D0%B3%D0%B0%D0%BC) | §7.В — только ссылка, код не в конспекте |
+| Прохожу ML Handbook гл.33 | этот файл §0–§13; код — [`handbook_gl33_практика.ipynb`](./handbook_gl33_практика.ipynb) | |
 | Зачем нелинейность, XOR | §2 таблица + §8 | картинки handbook по желанию |
 
 **Не примеры, а иллюстрации:** §2 XOR (почему нейросеть); §8 PyTorch 3→4→4→1 (другая архитектура, handbook 33.4). **Не смешивай** размеры: А = **2→3→1**, handbook = **2→2→1**, Б = много пикселей → 10 классов.
@@ -157,7 +159,7 @@ $$
 
 В классике ты бы пошёл чинить признаки руками, например добавил бы произведение x1 · x2.
 
-(Это как раз **feature engineering** — см. [`d.2.1.1`](../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1.1%20feature%20engineering%20%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B.md).)
+(Это как раз **feature engineering** — см. [`d.2.1.1`../../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1.1%20feature%20engineering%20%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B.md).)
 
 Нейросеть делает похожее **сама**: внутри появляются новые числа-признаки, и уже по ним финальная «логистическая» легко разделяет классы.
 
@@ -719,7 +721,7 @@ X = 3 × 2                 W = 2 × 4                 XW + b = 3 × 4
 Файл картинки (если в Notion не открылась — вставь вручную): `images/mlp-digits-lecture.jpg`  
 Полный путь: `d.Машинное обучение/images/mlp-digits-lecture.jpg`
 
-![Многослойный перцептрон: распознавание цифры + формула нейрона](../images/mlp-digits-lecture.jpg)
+![Многослойный перцептрон: распознавание цифры + формула нейрона](../../images/mlp-digits-lecture.jpg)
 
 **Как читать схему (слева → направо):**
 
@@ -737,7 +739,7 @@ X = 3 × 2                 W = 2 × 4                 XW + b = 3 × 4
 Файл: `images/mlp-parameters-lecture.jpg`  
 Полный путь: `d.Машинное обучение/images/mlp-parameters-lecture.jpg`
 
-![Параметры нейронной сети: W1, W2, W3, b1, b2, b3](../images/mlp-parameters-lecture.jpg)
+![Параметры нейронной сети: W1, W2, W3, b1, b2, b3](../../images/mlp-parameters-lecture.jpg)
 
 1. **W₁, b₁** — входы (пиксели) → 1-й скрытый слой.
 2. **W₂, b₂** — 1-й скрытый → 2-й скрытый.
@@ -750,9 +752,7 @@ X = 3 × 2                 W = 2 × 4                 XW + b = 3 × 4
 
 ### 7.В. Forward 2→2→1 — указатель на handbook **§33.5**
 
-> **Код, веса и вывод (a₂ ≈ 0.57) — на сайте, не дублируем здесь:**  
-> [**ML Handbook → 33.5 Forward-проход руками по шагам**](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html#forward-%D0%BF%D1%80%D0%BE%D1%85%D0%BE%D0%B4-%D1%80%D1%83%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BF%D0%BE-%D1%88%D0%B0%D0%B3%D0%B0%D0%BC)  
-> Якорь страницы: `#forward-проход-руками-по-шагам` (оглавление слева на сайте тоже ведёт сюда).
+> Код §33.5 — в [`handbook_gl33_практика.ipynb`](./handbook_gl33_практика.ipynb). Эталон — [handbook §33.5](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html#forward-%D0%BF%D1%80%D0%BE%D1%85%D0%BE%D0%B4-%D1%80%D1%83%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BF%D0%BE-%D1%88%D0%B0%D0%B3%D0%B0%D0%BC).
 
 **Зачем строка в конспекте:** после **§7.А** (свои числа, ReLU, квартира) — соседний пример handbook: сеть **2→2→1**, **sigmoid**, бинарный **выход-вероятность**.
 
@@ -797,7 +797,7 @@ ReLU между слоями это ломает: часть сигналов о
 
 - Таблица и «одна прямая не разделит» — §2.
 - **[Handbook 33.6 XOR](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html#%D0%BD%D0%B0%D0%B3%D0%BB%D1%8F%D0%B4%D0%BD%D0%BE-%D0%B7%D0%B0%D1%87%D0%B5%D0%BC-%D0%BD%D0%B5%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D1%81%D1%82%D1%8C-xor)** — картинка: слева прямая бессильна, справа граница с нелинейностью.
-- Обученная **изогнутая** граница на 2D-данных — [`d.4.4` …micrograd…](d.4.4%20Разбор%20backword%20и%20простой%20нейросети/d.4.4%20Разбор%20backword%20и%20простой%20нейросети.md) (`demo.ipynb`, make_moons) — не классический XOR, но та же мысль «нелинейная граница».
+- Обученная **изогнутая** граница на 2D-данных — [`d.4.4` …micrograd…](../d.4.4%20Разбор%20backword%20и%20простой%20нейросети/d.4.4%20Разбор%20backword%20и%20простой%20нейросети.md) (`demo.ipynb`, make_moons) — не классический XOR, но та же мысль «нелинейная граница».
 
 #### Почему DL любит матрицы и GPU
 
@@ -826,15 +826,9 @@ print(sum(p.numel() for p in net.parameters()))  # 41
 | Linear(4, 1) | 4 | 1 | 5 |
 | **итого** | | | **41** |
 
-Подробнее про `Sequential` / `nn.Linear` — [`pytorch/09`](../../../учеба%20мл/pytorch/09/09_классы_нейросетей.ipynb), [`pytorch/10`](../../../учеба%20мл/pytorch/10/10_создание_нейросетей.ipynb). Документация: [torch.nn.Linear](https://pytorch.org/docs/stable/generated/torch.nn.Linear.html), [nn.Sequential](https://pytorch.org/docs/stable/generated/torch.nn.Sequential.html).
+Подробнее про `Sequential` / `nn.Linear` — [`pytorch/09`](../../../../учеба%20мл/pytorch/09/09_классы_нейросетей.ipynb), [`pytorch/10`](../../../../учеба%20мл/pytorch/10/10_создание_нейросетей.ipynb). Документация: [torch.nn.Linear](https://pytorch.org/docs/stable/generated/torch.nn.Linear.html), [nn.Sequential](https://pytorch.org/docs/stable/generated/torch.nn.Sequential.html).
 
-#### Домашка handbook ↔ твой код
-
-| Handbook | Что сделать | Где у тебя |
-| --- | --- | --- |
-| **Single Linear Neuron Forward** — φ(Wx+b) на NumPy, затем тот же слой в PyTorch | посчитать forward, **сверить** выход | Deep-ML [#24](https://www.deep-ml.com/problems/24) `single_neuron_model` в [`13_deep_ml_deep_learning.py`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py); PyTorch — `nn.Linear` + активация в `pytorch/09` |
-| forward 2→2→1 руками (handbook **§33.5**) | код на сайте | [§7.В](#7v-handbook-33-5) → [33.5](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html#forward-%D0%BF%D1%80%D0%BE%D1%85%D0%BE%D0%B4-%D1%80%D1%83%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BF%D0%BE-%D1%88%D0%B0%D0%B3%D0%B0%D0%BC) |
-| полная MLP 3→4→4→1 | `net(x)` и 41 параметр | блок PyTorch в этом §8 |
+Домашка handbook — в [`handbook_gl33_практика.ipynb`](./handbook_gl33_практика.ipynb).
 
 ---
 
@@ -903,7 +897,7 @@ $$
 | 0   | 0.5      | 0.25 (макс.) |
 | 5   | ≈0.993   | ≈0.007       |
 
-**Deep-ML [#96](https://www.deep-ml.com/problems/96)** — упрощённая **hard sigmoid** (без `exp`, как в Keras): на среднем участке линейно `0.2·z + 0.5`, с обрезкой в `[0, 1]` — функция `hard_sigmoid` в [`13_deep_ml_deep_learning.py`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py). Для сравнения с σ — [#22](https://www.deep-ml.com/problems/22) `sigmoid` в том же файле.
+**Deep-ML [#96](https://www.deep-ml.com/problems/96)** — упрощённая **hard sigmoid** (без `exp`, как в Keras): на среднем участке линейно `0.2·z + 0.5`, с обрезкой в `[0, 1]` — функция `hard_sigmoid` в [`13_deep_ml_deep_learning.py`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py). Для сравнения с σ — [#22](https://www.deep-ml.com/problems/22) `sigmoid` в том же файле.
 
 ### 9.3. Softmax — активация **выходного** слоя (много классов)
 
@@ -977,11 +971,11 @@ $$
 $$
 
 Считают стабильно (max-trick): z_k − max_j z_j − log Σ exp(z_j − max). Deep-ML [#39](https://www.deep-ml.com/problems/39) — `13_deep_ml_deep_learning.py`.  
-**PyTorch:** `nn.CrossEntropyLoss` принимает **логиты**, softmax снаружи не нужен — [`pytorch/08`](../../../учеба%20мл/pytorch/08/08_активации_потери_оптимизатор.ipynb).
+**PyTorch:** `nn.CrossEntropyLoss` принимает **логиты**, softmax снаружи не нужен — [`pytorch/08`](../../../../учеба%20мл/pytorch/08/08_активации_потери_оптимизатор.ipynb).
 
 ### 9.4. Редкие активации (кратко) + Deep-ML
 
-В проде и на экзамене: **ReLU** в скрытых, **sigmoid / softmax / без φ** на выходе (§8). Ниже — всё остальное **одной таблицей**; реализации — [`13_deep_ml_deep_learning.py`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py). С `exp`/`log` — [`a.NumPy/8`](../../a.NumPy/8.%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8.md).
+В проде и на экзамене: **ReLU** в скрытых, **sigmoid / softmax / без φ** на выходе (§8). Ниже — всё остальное **одной таблицей**; реализации — [`13_deep_ml_deep_learning.py`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py). С `exp`/`log` — [`a.NumPy/8`](../../a.NumPy/8.%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8.md).
 
 **Swish / SiLU** — вторая по частоте в скрытых (после ReLU), не вынесена в длинный текст:
 
@@ -1021,7 +1015,7 @@ MLP (этот файл) — универсальный конструктор, �
 На лекции показывали: CNN учит иерархию признаков (low → mid → high), RNN умеет генерировать текст «в стиле» данных.  
 Детали свёрток и RNN — **отдельные** конспекты позже. Сейчас достаточно знать, **когда какую семью звать**.
 
-Трек **recsys/NLP:** видео **17–23 (CNN)** пропускаем одной папкой: [`pytorch/17-23_cnn/17-23_cnn_обзор.md`](../../../учеба%20мл/pytorch/17-23_cnn/17-23_cnn_обзор.md). Хватит §9.5 + тот файл; ядро трека позже — эмбеддинги / Transformer.
+Трек **recsys/NLP:** видео **17–23 (CNN)** пропускаем одной папкой: [`pytorch/17-23_cnn/17-23_cnn_обзор.md`](../../../../учеба%20мл/pytorch/17-23_cnn/17-23_cnn_обзор.md). Хватит §9.5 + тот файл; ядро трека позже — эмбеддинги / Transformer.
 
 #### 9.5.1. Остаточный блок (shortcut) — Deep-ML [#113](https://www.deep-ml.com/problems/113)
 
@@ -1045,7 +1039,7 @@ MLP (этот файл) — универсальный конструктор, �
 
 Пример с единичными W1 и W2 = 0.5·I → ответ **[1.5, 3.0]**.
 
-**Где код.** `residual_block` — [`13_deep_ml_deep_learning.py`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py). ReLU по массиву: `np.maximum(0, …)`; слои: `@` ([`a.NumPy/11`](../../a.NumPy/11.%D1%83%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%E2%80%94%20star%2C%20at%2C%20dot.md)).
+**Где код.** `residual_block` — [`13_deep_ml_deep_learning.py`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py). ReLU по массиву: `np.maximum(0, …)`; слои: `@` ([`a.NumPy/11`](../../a.NumPy/11.%D1%83%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%E2%80%94%20star%2C%20at%2C%20dot.md)).
 
 **Твой трек (NLP / recsys).** Сейчас **хватит этой идеи**. Полный ResNet под фото — **не обязателен**; подробно копать ResNet/EfficientNet имеет смысл только если идёшь в **Computer Vision** (см. обзор CNN выше в §9.5).
 
@@ -1162,7 +1156,7 @@ $$
 
 Пока тебе нужно понять **петлю**, а не вывести все производные.
 
-**Градиент, правило цепочки, один шаг на игрушке** `ŷ = w·x` — подробно в [`d.4.1.1 Градиент и правило цепочки`](../d.0%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20%D0%B8%20%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE%20%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B8.md#84-%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D1%80%D0%B0%D0%BD%D1%8C%D1%88%D0%B5-%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B8-%D0%BD%D0%B5-%D0%B1%D1%8B%D0%BB%D0%BE-%D0%B2%D0%B8%D0%B4%D0%BD%D0%BE). Здесь только петля сети и backprop.
+**Градиент, правило цепочки, один шаг на игрушке** `ŷ = w·x` — подробно в [`d.4.1.1 Градиент и правило цепочки`](../../d.0%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20%D0%B8%20%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE%20%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B8.md#84-%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D1%80%D0%B0%D0%BD%D1%8C%D1%88%D0%B5-%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B8-%D0%BD%D0%B5-%D0%B1%D1%8B%D0%BB%D0%BE-%D0%B2%D0%B8%D0%B4%D0%BD%D0%BE). Здесь только петля сети и backprop.
 
 Кратко: лосс зависит от веса через цепочку w → ŷ → L; `∂L/∂w` считают правилом цепочки; вес обновляют `w ← w − α · (градиент)`. В реальной сети то же делает backprop/autograd — руками по слоям не считаешь.
 
@@ -1181,7 +1175,7 @@ $$
 
 Новое — шаг 4 для **длинной** цепочки слоёв.
 
-**Практика в коде:** [`pytorch/11`](../../../учеба%20мл/pytorch/11/11_цикл_обучения.ipynb) блок 1 — те же шаги как `zero_grad` → `backward` → `step`; §11.2 ниже = зачем `backward` и `step` разные строки.
+**Практика в коде:** [`pytorch/11`](../../../../учеба%20мл/pytorch/11/11_цикл_обучения.ipynb) блок 1 — те же шаги как `zero_grad` → `backward` → `step`; §11.2 ниже = зачем `backward` и `step` разные строки.
 
 ### 11.2. Backpropagation — что запомнить
 
@@ -1216,7 +1210,7 @@ loss.backward()         # записать градиент текущего б�
 optimizer.step()        # сдвинуть веса
 ```
 
-Это особенность autograd, не отдельная теория оптимизации. Практика: урок [`03/`](../../../учеба%20мл/pytorch/03/03_знакомство_с_pytorch.ipynb) (накопление `.grad`), цикл — [`11/`](../../../учеба%20мл/pytorch/11/11_цикл_обучения.ipynb) блок 1.
+Это особенность autograd, не отдельная теория оптимизации. Практика: урок [`03/`](../../../../учеба%20мл/pytorch/03/03_знакомство_с_pytorch.ipynb) (накопление `.grad`), цикл — [`11/`](../../../../учеба%20мл/pytorch/11/11_цикл_обучения.ipynb) блок 1.
 
 #### Пример: как градиент идёт назад
 
@@ -1307,9 +1301,9 @@ optimizer.step()        # сдвинуть веса
 | скорость на больших данных | медленно           | быстро          |
 | на практике в DL           | редко              | почти всегда    |
 
-Подробнее с числами (средний лосс / средний градиент по объектам → один шаг) — [`d.4.2` §2.2](d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F.md#22-sgd--%D0%B1%D0%B0%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9-%D1%88%D0%B0%D0%B3).  
-Что такое градиент и α «с нуля» — [`d.4.1.1`](../d.0%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20%D0%B8%20%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE%20%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B8.md#2-%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F--%D1%81%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D1%8C-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F).  
-Матричный GD/SGD на линейной регрессии — [`Градиент MSE и SGD…`](../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1.4%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20MSE%20%D0%B8%20SGD%20%D0%B4%D0%BB%D1%8F%20%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9%20%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B8.md#%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82-mse--gd--sgd-%D0%B4%D0%BB%D1%8F-%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9-%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B8).
+Подробнее с числами (средний лосс / средний градиент по объектам → один шаг) — [`d.4.2` §2.2](../d.4.2%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F.md#22-sgd--%D0%B1%D0%B0%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9-%D1%88%D0%B0%D0%B3).  
+Что такое градиент и α «с нуля» — [`d.4.1.1`](../../d.0%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20%D0%B8%20%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE%20%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B8.md#2-%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F--%D1%81%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D1%8C-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F).  
+Матричный GD/SGD на линейной регрессии — [`Градиент MSE и SGD…`../../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1.4%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20MSE%20%D0%B8%20SGD%20%D0%B4%D0%BB%D1%8F%20%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9%20%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B8.md#%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82-mse--gd--sgd-%D0%B4%D0%BB%D1%8F-%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9-%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B8).
 
 ### 11.4. Что пока можно не учить
 
@@ -1381,7 +1375,7 @@ if best_val - val_loss > threshold:
 1. Папки классов собирать через **`sorted`**, иначе `class_to_idx` может плавать → после load accuracy ≈ 1/число_классов (на 10 классах ~10%), хотя веса нормальные.
 2. В checkpoint рядом с весами сохранять **`class_to_idx`** — какая метка что значит; пригодится при load на другом ПК / в проде.
 
-Практика: [`13/`](../../../учеба%20мл/pytorch/13/13_save_load.ipynb), [`14/`](../../../учеба%20мл/pytorch/14/14_early_stopping.ipynb) блок 4; проект — `ImageDataset` уже с `sorted`. EarlyStopping — видео 14 / `d.4.3`.
+Практика: [`13/`](../../../../учеба%20мл/pytorch/13/13_save_load.ipynb), [`14/`](../../../../учеба%20мл/pytorch/14/14_early_stopping.ipynb) блок 4; проект — `ImageDataset` уже с `sorted`. EarlyStopping — видео 14 / `d.4.3`.
 
 ---
 
@@ -1416,6 +1410,7 @@ if best_val - val_loss > threshold:
 | Классика vs сеть (§3)       | классика = сразу ответ; сеть = конвейер признаков → ответ в конце                     |
 | Два примера                 | А квартира→цена (§7.А); Б цифры→класс (§7.Б + §9.3)                                   |
 | W¹ и W²                     | номер слоя, не «в квадрате»                                                           |
+| Практика handbook гл.33     | [`handbook_gl33_практика.ipynb`](./handbook_gl33_практика.ipynb) |
 
 ---
 
@@ -1450,19 +1445,19 @@ if best_val - val_loss > threshold:
 | ------------------------------------------------------- | ------------------------------------ |
 | Градиент, производная, цепочка, α «с нуля»              | `d.4.1.1` / `d.0`                    |
 | Линейная регрессия, GD                                  | `d.3.9`, пример с квартирами         |
-| Матричный GD / SGD на MSE                               | [`d.2.1.4`](../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1.4%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20MSE%20%D0%B8%20SGD%20%D0%B4%D0%BB%D1%8F%20%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9%20%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B8.md#2-%D0%B7%D0%B0%D1%87%D0%B5%D0%BC-gd-%D0%B5%D1%81%D0%BB%D0%B8-%D0%B5%D1%81%D1%82%D1%8C-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5) |
+| Матричный GD / SGD на MSE                               | [`d.2.1.4`../../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1.4%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20MSE%20%D0%B8%20SGD%20%D0%B4%D0%BB%D1%8F%20%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9%20%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B8.md#2-%D0%B7%D0%B0%D1%87%D0%B5%D0%BC-gd-%D0%B5%D1%81%D0%BB%D0%B8-%D0%B5%D1%81%D1%82%D1%8C-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5) |
 | SGD в DL: батч, шум, формулы L и ∇L по объектам         | `d.4.2` §2.2                         |
 | Log loss, MSE, метрики                                  | `d.3.1` (+ связка с DL в `d.4.3` §3) |
 | Валидация / CV                                          | `d.3.2` (+ `d.4.3` §3)               |
 | Этот файл                                               | архитектура MLP «с нуля»             |
 | Градиентная оптимизация (Adam, lr, SGD)                 | `d.4.2`                              |
 | Регуляризация (dropout, BatchNorm, early stopping)      | `d.4.3`                              |
-| **Практика PyTorch** (активации, loss, Adam, Linear)    | [`pytorch/08`](../../../учеба%20мл/pytorch/08/08_активации_потери_оптимизатор.ipynb); карта — [`0_как_учить_pytorch.md`](../../../учеба%20мл/pytorch/0_как_учить_pytorch.md) |
-| Softmax + CE с расчётами (NumPy, домашка)               | [`формулы-конспект-код.md`](../../../учеба%20мл/homework_linear_models_and_knn/формулы-конспект-код.md) |
-| Loss / метрики (классика)                               | [`d.1.2`](../d.1%20Введение%20в%20мл/d.1.2%20Loss%20и%20эмпирический%20риск.md), [`d.3.1`](../d.3%20Classic%20ML/d.3.1%20Метрики%20классификации%20и%20регрессии.md) |
+| **Практика PyTorch** (активации, loss, Adam, Linear)    | [`pytorch/08`](../../../../учеба%20мл/pytorch/08/08_активации_потери_оптимизатор.ipynb); карта — [`0_как_учить_pytorch.md`](../../../../учеба%20мл/pytorch/0_как_учить_pytorch.md) |
+| Softmax + CE с расчётами (NumPy, домашка)               | [`формулы-конспект-код.md`](../../../../учеба%20мл/homework_linear_models_and_knn/формулы-конспект-код.md) |
+| Loss / метрики (классика)                               | [`d.1.2`../../d.1%20Введение%20в%20мл/d.1.2%20Loss%20и%20эмпирический%20риск.md), [`d.3.1`../../d.3%20Classic%20ML/d.3.1%20Метрики%20классификации%20и%20регрессии.md) |
 | Активации: §9.1–9.3 подробно; §9.4 таблица + Deep-ML     | этот файл |
 | `exp` для ELU / Swish на отрицательных x                  | [`a.NumPy/8`](../../a.NumPy/8.%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8.md) |
-| Общий указатель Deep-ML ↔ конспекты                       | [`Deep-ML — задачи ↔ конспекты`](../Deep-ML%20%E2%80%94%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%20%E2%86%94%20%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B.md) |
+| Общий указатель Deep-ML ↔ конспекты                       | [`Deep-ML — задачи ↔ конспекты`](../../Deep-ML%20%E2%80%94%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%20%E2%86%94%20%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B.md) |
 
 ### Deep-ML: активации в `13_deep_ml_deep_learning.py`
 
@@ -1477,7 +1472,7 @@ if best_val - val_loss > threshold:
 | [100](https://www.deep-ml.com/problems/100) | `softsign` | §9.4 |
 | [102](https://www.deep-ml.com/problems/102) | `swish` | §9.4 |
 
-Файл: [`13_deep_ml_deep_learning.py`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py).
+Файл: [`13_deep_ml_deep_learning.py`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py).
 
 ---
 
