@@ -40,4 +40,4 @@ PDF лекции по оптимизации/регуляризации лежи
 | train/val/test, переобучение | видео 2; конспекты `d.1.4`, `d.3.2` |
 | сквозной проект | [`project/fashion_mnist.ipynb`](../../../учеба%20мл/pytorch/pytorch%20дубинин/project/fashion_mnist.ipynb) |
 | сайт **гл.38** PyTorch intro | [`handbook_gl38`](../../../учеба%20мл/pytorch/pytorch%20handbook/handbook_gl38/README.md) → практика на сайте; теория в коде курса `03/`–`10/` |
-| сайт **гл.39** PyTorch на практике | [`handbook_gl39`](../../../учеба%20мл/pytorch/pytorch%20handbook/handbook_gl39/README.md) → практика на сайте; курс `04/`–`14/`, `project/` |
+| сайт **гл.39** PyTorch на практике | [`handbook_gl39/README`](../../../учеба%20мл/pytorch/pytorch%20handbook/handbook_gl39/README.md) (статус + Deep-ML; проект — `pytorch дубинин/project`); курс `04/`–`14/` |
