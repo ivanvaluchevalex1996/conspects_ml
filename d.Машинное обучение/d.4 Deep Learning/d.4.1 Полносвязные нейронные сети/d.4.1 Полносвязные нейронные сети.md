@@ -28,6 +28,7 @@ $$`. Инлайн-формулы в одну строку с текстом и �
 | Полносвязная нейронная сеть               | весь этот файл                                          |
 | [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html) гл.33 | теория — этот `.md`; практика — [`practice/handbook_gl33/`](./practice/handbook_gl33/README.md) |
 | [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/activations.html) гл.34 | теория §8–9; практика — [`practice/handbook_gl34/`](./practice/handbook_gl34/README.md) |
+| [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/backprop.html) гл.35 | теория §11; практика — [`practice/handbook_gl35/`](./practice/handbook_gl35/README.md) |
 | Градиентная оптимизация в DL              | `d.4.2` §1–2                                            |
 | Нормализация / регуляризация в DL         | `d.4.3` §1–2; пример шага → `d.4.3.1`                   |
 
@@ -66,7 +67,7 @@ $$`. Инлайн-формулы в одну строку с текстом и �
 12. Чеклист: что уже достаточно знать
 13. Шпаргалка
 
-> Практика handbook: [`handbook_gl33/`](./practice/handbook_gl33/README.md) · [`handbook_gl34/`](./practice/handbook_gl34/README.md) (код только в подпапках, без дубля в этом `.md`).
+> Практика handbook: [`handbook_gl33/`](./practice/handbook_gl33/README.md) · [`handbook_gl34/`](./practice/handbook_gl34/README.md) · [`handbook_gl35/`](./practice/handbook_gl35/README.md) (код только в подпапках).
 
 > Все числа игрушечные. Цель — чтобы формула «ожила», а не чтобы решать олимпиаду.
 
@@ -89,7 +90,8 @@ $$`. Инлайн-формулы в одну строку с текстом и �
 | Учусь с нуля, forward + слои | **только А** §5 → §6 → **§7.А** | Б, В, батч в конце §7.А |
 | Классификация, softmax | **Б** §7.Б + §9.3 | handbook |
 | Прохожу ML Handbook гл.33 | теория §0–§13; код — [`handbook_gl33/`](./practice/handbook_gl33/README.md) | |
-| Прохожу ML Handbook гл.34 | §8–9; [`practice/`](./practice/README.md) (Deep-ML + §34.4–6) | |
+| Прохожу ML Handbook гл.34 | §8–9; [`handbook_gl34/`](./practice/handbook_gl34/README.md) | |
+| Прохожу ML Handbook гл.35 | §11; [`handbook_gl35/`](./practice/handbook_gl35/README.md) | |
 | Зачем нелинейность, XOR | §2 таблица + §8 | картинки handbook по желанию |
 
 **Не примеры, а иллюстрации:** §2 XOR (почему нейросеть); §8 PyTorch 3→4→4→1 (другая архитектура, handbook 33.4). **Не смешивай** размеры: А = **2→3→1**, handbook = **2→2→1**, Б = много пикселей → 10 классов.
@@ -1160,7 +1162,9 @@ $$
 
 Новое — шаг 4 для **длинной** цепочки слоёв.
 
-**Практика в коде:** [`pytorch/11`](../../../../учеба%20мл/pytorch/11/11_цикл_обучения.ipynb) блок 1 — те же шаги как `zero_grad` → `backward` → `step`; §11.2 ниже = зачем `backward` и `step` разные строки.
+**Практика handbook гл.35** (XOR NumPy → PyTorch → grad check; Deep-ML [#25](https://www.deep-ml.com/problems/25), [#26](https://www.deep-ml.com/problems/26)): [`practice/handbook_gl35/`](./practice/handbook_gl35/README.md) (`site/` + `deep_ml/`) — **до** полного цикла на батчах.
+
+**Практика в коде (курс):** [`pytorch/11`](../../../../учеба%20мл/pytorch/11/11_цикл_обучения.ipynb) блок 1 — `zero_grad` → `backward` → `step`; §11.2 ниже = зачем это разные строки.
 
 ### 11.2. Backpropagation — что запомнить
 
@@ -1397,6 +1401,7 @@ if best_val - val_loss > threshold:
 | W¹ и W²                     | номер слоя, не «в квадрате»                                                           |
 | Практика handbook гл.33     | [`practice/handbook_gl33/`](./practice/handbook_gl33/README.md) |
 | Практика handbook гл.34     | [`practice/handbook_gl34/`](./practice/handbook_gl34/README.md) |
+| Практика handbook гл.35     | [`practice/handbook_gl35/`](./practice/handbook_gl35/README.md) |
 
 ---
 

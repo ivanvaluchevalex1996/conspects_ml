@@ -6,3 +6,4 @@
 |----------|--------|
 | гл. 33 | [`handbook_gl33/`](./handbook_gl33/README.md) |
 | гл. 34 | [`handbook_gl34/`](./handbook_gl34/README.md) |
+| гл. 35 (backprop) | [`handbook_gl35/`](./handbook_gl35/README.md) |

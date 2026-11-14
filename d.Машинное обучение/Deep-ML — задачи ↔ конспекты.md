@@ -59,13 +59,16 @@
 
 ## Deep Learning (`13_…`)
 
-Практика **ML Handbook гл.34**: [`practice/handbook_gl34/`](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl34/README.md) (`handbook/` + `deep_ml/`).
+Практика **ML Handbook гл.34**: [`practice/handbook_gl34/`](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl34/README.md) (`handbook/` + `deep_ml/`).  
+Практика **гл.35 backprop**: [`practice/handbook_gl35/deep_ml/`](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl35/deep_ml/README.md).
 
 | # | Задача | Функция | Конспект |
 |---|--------|---------|----------|
 | [22](https://www.deep-ml.com/problems/22) | Sigmoid | `sigmoid` | [`d.4.1` §5, §8–9](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/d.4.1%20Полносвязные%20нейронные%20сети.md), практика [`22_sigmoid/`](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl34/deep_ml/22_sigmoid/) |
 | [23](https://www.deep-ml.com/problems/23) | Softmax | `softmax` | [`d.4.1` §9.3](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/d.4.1%20Полносвязные%20нейронные%20сети.md), [`23_softmax/`](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl34/deep_ml/23_softmax/), [`a.NumPy/11`](../a.NumPy/11.%D1%83%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%E2%80%94%20star%2C%20at%2C%20dot.md) |
 | [24](https://www.deep-ml.com/problems/24) | Single neuron + MSE | `single_neuron_model` | [`d.4.1` §5](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/d.4.1%20Полносвязные%20нейронные%20сети.md), [`11.…dot`](../a.NumPy/11.%D1%83%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%E2%80%94%20star%2C%20at%2C%20dot.md) |
+| [25](https://www.deep-ml.com/problems/25) | Single neuron + backprop | `train_neuron` | [`d.4.1` §11](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/d.4.1%20Полносвязные%20нейронные%20сети.md), тренажёр [`25_single_neuron_backprop/`](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl35/deep_ml/25_single_neuron_backprop/) (ещё не в `13_…`) |
+| [26](https://www.deep-ml.com/problems/26) | Basic autograd (`Value`) | — | §11, [`26_basic_autograd/`](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl35/deep_ml/26_basic_autograd/) (ещё не в `13_…`) |
 | [39](https://www.deep-ml.com/problems/39) | Log-softmax | `log_softmax` | [`d.4.1` §9.3.1](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/d.4.1%20Полносвязные%20нейронные%20сети.md), [`39_log_softmax/`](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl34/deep_ml/39_log_softmax/) |
 | [42](https://www.deep-ml.com/problems/42) | ReLU | `relu` | [`d.4.1` §8–9](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/d.4.1%20Полносвязные%20нейронные%20сети.md), [`42_relu/`](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl34/deep_ml/42_relu/) |
 | [44](https://www.deep-ml.com/problems/44) | Leaky ReLU | `leaky_relu` | [`d.4.1`](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/d.4.1%20Полносвязные%20нейронные%20сети.md), [`44_leaky_relu/`](../d.4%20Deep%20Learning/d.4.1%20Полносвязные%20нейронные%20сети/practice/handbook_gl34/deep_ml/44_leaky_relu/), [`d.4.3.3`](../d.4%20Deep%20Learning/d.4.3%20Регуляризация%20в%20Deep%20Learning/d.4.3.3%20Пример%20—%20Dropout%20и%20чем%20он%20отличается%20от%20ReLU.md) |
