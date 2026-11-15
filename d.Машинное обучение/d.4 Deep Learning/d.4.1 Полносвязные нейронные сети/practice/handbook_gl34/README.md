@@ -6,6 +6,7 @@
 |-----|-----|
 | §34.4–advanced (PyTorch / NumPy) | [`handbook/`](./handbook/README.md) — по папке на блок |
 | Deep-ML #22…#98 | [`deep_ml/`](./deep_ml/README.md) — по папке на задачу |
+| Выход vs производная · ReLU / sigmoid (теория) | [`d.4.1 … §9.2.1`](../../d.4.1%20Полносвязные%20нейронные%20сети.md) |
 
 **Порядок ментора:** допиши код в подпапке → сверка с handbook → (для Deep-ML) NumPy ↔ PyTorch → submit на [deep-ml.com](https://www.deep-ml.com). Архив: [`13_deep_ml…`](../../../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py).
 
