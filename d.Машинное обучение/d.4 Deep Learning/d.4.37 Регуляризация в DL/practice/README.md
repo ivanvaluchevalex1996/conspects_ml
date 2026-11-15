@@ -1,6 +1,6 @@
 # Практика · handbook гл. 37 (DL regularization)
 
-Теория — [`d.4.3 … .md`](../../d.4.37%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20DL.md). Вход handbook: [`d.4.37`](../../d.4.37%20Регуляризация%20%D0%B2%20DL/d.4.37%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20DL.md). На сайте: [dl-regularization](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-regularization.html).
+Теория — [`d.4.3 … .md`](../d.4.37%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20DL.md). Вход handbook: [`d.4.37`](../d.4.37%20Регуляризация%20%D0%B2%20DL/d.4.37%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20DL.md). На сайте: [dl-regularization](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-regularization.html).
 
 | Что | Где |
 |-----|-----|
