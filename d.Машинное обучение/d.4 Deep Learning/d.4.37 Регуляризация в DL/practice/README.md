@@ -1,6 +1,6 @@
 # Практика · handbook гл. 37 (DL regularization)
 
-Теория — [`d.4.3 … .md`](../d.4.37%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20DL.md). Вход handbook: [`d.4.37`](../d.4.37%20Регуляризация%20%D0%B2%20DL/d.4.37%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20DL.md). На сайте: [dl-regularization](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-regularization.html).
+Теория — [`d.4.37 … .md`](../d.4.37%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20DL/d.4.37%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D0%B0%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20DL.md). Вход handbook: [`d.4.37`](../d.4.37%20Регуляризация%20%D0%B2%20DL/d.4.37%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20DL.md). На сайте: [dl-regularization](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-regularization.html).
 
 | Что | Где |
 |-----|-----|
@@ -10,7 +10,7 @@
 | NumPy ↔ torch сверка | [`site/37_compare_numpy_torch/`](./site/37_compare_numpy_torch/) |
 | Домашка Deep-ML / PyTorch Basics | [`deep_ml/`](./deep_ml/) |
 
-§37.1, §37.3–37.6, §37.8 — **прочитать** на сайте / в `d.4.3`; early stop в курсе [`pytorch/14`](../../../../../../учеба%20мл/pytorch/pytorch%20дубинин/14/14_early_stopping.ipynb).
+§37.1, §37.3–37.6, §37.8 — **прочитать** на сайте / в `d.4.37`; early stop в курсе [`pytorch/14`](../../../../../../учеба%20мл/pytorch/pytorch%20дубинин/14/14_early_stopping.ipynb).
 
 **Порядок ментора:** Dropout NumPy [#151](https://www.deep-ml.com/problems/151) → BatchNorm NumPy → torch [#901](https://www.deep-ml.com/problems/901), [#1230](https://www.deep-ml.com/problems/1230), [#1231](https://www.deep-ml.com/problems/1231) → сверка → MLP lab → `pytorch/15`–`16`.
 
