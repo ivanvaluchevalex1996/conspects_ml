@@ -10,4 +10,4 @@
 | ☐ | [1230_dropout_demo](./1230_dropout_demo/) | [#1230](https://www.deep-ml.com/problems/1230) train vs eval |
 | ☐ | [1231_bn_eval](./1231_bn_eval/) | [#1231](https://www.deep-ml.com/problems/1231) `bn_eval` |
 
-После — [`../site/37_compare_numpy_torch/`](../site/37_compare_numpy_torch/) и submit на deep-ml.com.
+После — NumPy ↔ torch в [`handbook_gl37_практика.ipynb`](../handbook_gl37_практика.ipynb) и submit на deep-ml.com.

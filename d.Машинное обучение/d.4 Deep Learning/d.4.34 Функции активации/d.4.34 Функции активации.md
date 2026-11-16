@@ -12,7 +12,7 @@
 | 34.2 | ReLU | [§9.1](#91-relu--активация-для-скрытых-слоёв) |
 | 34.3 | Leaky, ELU, GELU… | [§9.4](#94-редкие-активации-кратко--deep-ml) |
 | 34.4 | softmax | [§9.3](#93-softmax--активация-выходного-слоя-много-классов), [§9.3.1](#931-log-softmax--для-ce-кратко) |
-| 34.5–34.6 | vanishing, dead ReLU | [§9.2.1](#921-затухающий-градиент--почему-relu-в-скрытых-а-не-sigmoid), практика [`34_4_relu_softmax`](./practice/handbook/34_4_relu_softmax/) · [`34_5_vanishing/`](./practice/handbook/34_5_vanishing/) |
+| 34.5–34.6 | vanishing, dead ReLU | [§9.2.1](#921-затухающий-градиент--почему-relu-в-скрытых-а-не-sigmoid), практика [`handbook_gl34_практика.ipynb`](./practice/handbook_gl34_практика.ipynb) (§34.4–34.6) |
 | шпаргалка | hidden ReLU, выход по задаче | [§10](#10-как-выбрать-голову-сети-под-задачу) |
 
 Дальше: [d.4.35](../d.4.35%20Backpropagation/d.4.35%20Backpropagation.md).
@@ -56,9 +56,9 @@ Forward MLP — цепочка **матричных умножений** (сло
 
 #### Handbook 3→4→4→1 (код — только в практике)
 
-Собрать `Sequential`, **41** параметр — тренажёр [`33_4_sequential/`](../d.4.33%20%D0%9D%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%20%D0%B8%20%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D1%81%D0%B2%D1%8F%D0%B7%D0%BD%D0%B0%D1%8F%20%D1%81%D0%B5%D1%82%D1%8C/practice/33_4_sequential/). `nn.Linear` / `Sequential` — [`pytorch/09`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/09/09_классы_нейросетей.ipynb), [`pytorch/10`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/10/10_создание_нейросетей.ipynb).
+Собрать `Sequential`, **41** параметр — тренажёр [`handbook_gl33_практика.ipynb`](../d.4.33%20%D0%9D%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%20%D0%B8%20%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D1%81%D0%B2%D1%8F%D0%B7%D0%BD%D0%B0%D1%8F%20%D1%81%D0%B5%D1%82%D1%8C/practice/handbook_gl33_практика.ipynb) (§33.4). `nn.Linear` / `Sequential` — [`pytorch/09`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/09/09_классы_нейросетей.ipynb), [`pytorch/10`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/10/10_создание_нейросетей.ipynb).
 
-Практика гл.33 (Sequential): [`33_4_sequential/`](../d.4.33%20%D0%9D%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%20%D0%B8%20%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D1%81%D0%B2%D1%8F%D0%B7%D0%BD%D0%B0%D1%8F%20%D1%81%D0%B5%D1%82%D1%8C/practice/33_4_sequential/).
+Практика гл.33 (Sequential): [`handbook_gl33_практика.ipynb`](../d.4.33%20%D0%9D%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%20%D0%B8%20%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D1%81%D0%B2%D1%8F%D0%B7%D0%BD%D0%B0%D1%8F%20%D1%81%D0%B5%D1%82%D1%8C/practice/handbook_gl33_практика.ipynb) (§33.4).
 
 ---
 
@@ -143,7 +143,7 @@ $$
 
 ### 9.2.1. Затухающий градиент — почему ReLU в скрытых, а не sigmoid
 
-> Разбор перед практикой **гл. 34**. Сами функции ReLU и σ — **§9.1–9.2** выше; здесь — **производные**, backprop и ответ «почему ReLU в hidden». Правило цепочки — [d.0](../../d.0%20Градиент%20и%20правило%20цепочки.md). Практика: [practice/](./practice/README.md), затухание — [34_5_vanishing/](./practice/handbook/34_5_vanishing/). Deep-ML [#22](https://www.deep-ml.com/problems/22), [#42](https://www.deep-ml.com/problems/42).
+> Разбор перед практикой **гл. 34**. Сами функции ReLU и σ — **§9.1–9.2** выше; здесь — **производные**, backprop и ответ «почему ReLU в hidden». Правило цепочки — [d.0](../../d.0%20Градиент%20и%20правило%20цепочки.md). Практика: [practice/](./practice/README.md), затухание — [`handbook_gl34_практика.ipynb`](./practice/handbook_gl34_практика.ipynb) (§34.5). Deep-ML [#22](https://www.deep-ml.com/problems/22), [#42](https://www.deep-ml.com/problems/42).
 
 **z** — значение **до** активации (после `×W + b`).  
 **Выход** — что отдаёт функция активации.  
@@ -549,7 +549,7 @@ $$
 \Large \mathrm{GELU}(z) = z \cdot \Phi(z)
 $$
 
-Φ — функция распределения стандартной нормали (CDF). На отрицательных z даёт небольшой отрицательный «хвост», не обнуляет жёстко. Сверка с `F.relu` / `F.gelu` — [`practice/handbook/34_6_compare/`](./practice/handbook/34_6_compare/).
+Φ — функция распределения стандартной нормали (CDF). На отрицательных z даёт небольшой отрицательный «хвост», не обнуляет жёстко. Сверка с `F.relu` / `F.gelu` — [`handbook_gl34_практика.ipynb`](./practice/handbook_gl34_практика.ipynb) (§34.6).
 
 | Имя | Обычно где | Формула (текст) | Зачем одной фразой | `exp`? | Deep-ML |
 | --- | --- | --- | --- | --- | --- |
@@ -557,7 +557,7 @@ $$
 | **Leaky ReLU** | скрытые | x или α·x (α≈0.01) | градиент при x < 0 | нет | [#44](https://www.deep-ml.com/problems/44) |
 | **Swish (SiLU)** | скрытые | x·σ(x) | самогейт, часто вместо ReLU | да | [#102](https://www.deep-ml.com/problems/102) |
 | **ELU** | скрытые | x или α(e^x−1) | «пол» слева, не «мёртвый» ноль | да | [#97](https://www.deep-ml.com/problems/97) |
-| **GELU** | скрытые, **трансформеры** | z·Φ(z) | гладкая; дефолт во многих LLM | да | [`34_6_compare/`](./practice/handbook/34_6_compare/) |
+| **GELU** | скрытые, **трансформеры** | z·Φ(z) | гладкая; дефолт во многих LLM | да | [`handbook_gl34_практика.ipynb`](./practice/handbook_gl34_практика.ipynb) (§34.6) |
 | **Softplus** | редко скрытые | ln(1+e^x); стабильно через log1p (см. a.NumPy/8) | гладкий «почти ReLU» | да | [#99](https://www.deep-ml.com/problems/99) |
 | **Softsign** | редко | x/(1+\|x\|) | сжатие в (−1,1), без exp | нет | [#100](https://www.deep-ml.com/problems/100) |
 | **PReLU** | скрытые | как Leaky, α **учится** | Leaky с обучаемым α | нет | [#98](https://www.deep-ml.com/problems/98) |

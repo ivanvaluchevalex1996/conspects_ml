@@ -12,10 +12,10 @@
 |:---:|:---|:---|
 | 35.1 | forward + backward | [§11.1](#111-петля-обучения--почти-как-в-градиентном-спуске-из-классики)–[§11.2](#112-backpropagation--что-запомнить) |
 | 35.2 | цепное правило | [§11.2](#112-backpropagation--что-запомнить), [d.0 §8–9](../../d.0%20Градиент%20и%20правило%20цепочки.md) |
-| 35.3 | XOR NumPy | [`35_3_xor_numpy/`](./practice/site/35_3_xor_numpy/) |
-| 35.4 | autograd / `backward` | [§11.2](#backprop-только-считает-градиенты--веса-обновляет-оптимизатор), [`35_4_xor_torch/`](./practice/site/35_4_xor_torch/) |
+| 35.3 | XOR NumPy | [`handbook_gl35_практика.ipynb`](./practice/handbook_gl35_практика.ipynb) (§35.3) |
+| 35.4 | autograd / `backward` | [§11.2](#backprop-только-считает-градиенты--веса-обновляет-оптимизатор), [`handbook_gl35_практика.ipynb`](./practice/handbook_gl35_практика.ipynb) (§35.4) |
 | 35.5 | вычислительный граф | e.1 · [d.0 §8](../../d.0%20Градиент%20и%20правило%20цепочки.md) |
-| 35.6 | grad check | [`35_6_grad_check/`](./practice/site/35_6_grad_check/) |
+| 35.6 | grad check | [`handbook_gl35_практика.ipynb`](./practice/handbook_gl35_практика.ipynb) (§35.6) |
 
 Дальше: [d.4.36](../d.4.36%20%D0%9E%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B8%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20DL/d.4.36%20%D0%9E%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B8%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20DL.md).
 
@@ -44,7 +44,7 @@
 
 Новое — шаг 4 для **длинной** цепочки слоёв.
 
-**Практика handbook гл.35** (XOR NumPy → PyTorch → grad check; Deep-ML [#25](https://www.deep-ml.com/problems/25), [#26](https://www.deep-ml.com/problems/26)): [`practice/`](./practice/README.md) (`site/` + `deep_ml/`) — **до** полного цикла на батчах.
+**Практика handbook гл.35** (XOR NumPy → PyTorch → grad check; Deep-ML [#25](https://www.deep-ml.com/problems/25), [#26](https://www.deep-ml.com/problems/26)): [`handbook_gl35_практика.ipynb`](./practice/handbook_gl35_практика.ipynb) + [`deep_ml/`](./practice/deep_ml/) — **до** полного цикла на батчах.
 
 **Практика в коде (курс):** [`pytorch/11`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/11/11_цикл_обучения.ipynb) блок 1 — `zero_grad` → `backward` → `step`; §11.2 ниже = зачем это разные строки.
 

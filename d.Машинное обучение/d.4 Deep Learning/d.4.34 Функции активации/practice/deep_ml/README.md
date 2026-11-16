@@ -1,6 +1,6 @@
 # Handbook гл.34 · домашка Deep-ML по папкам
 
-Handbook **§34.4–advanced** (код по разделам): [`../handbook/`](../handbook/README.md). Чеклист: [`handbook_gl34_практика.ipynb`](../handbook/handbook_gl34_практика.ipynb). Эталоны Deep-ML: `*_решения.ipynb` в подпапке (есть [`22_sigmoid_решения`](./22_sigmoid/22_sigmoid_решения.ipynb)).
+Handbook **§34.4–advanced**: [`../handbook_gl34_практика.ipynb`](../handbook_gl34_практика.ipynb). Эталоны Deep-ML: `*_решения.ipynb` в подпапке (есть [`22_sigmoid_решения`](./22_sigmoid/22_sigmoid_решения.ipynb)).
 
 | ☐ | Папка | Deep-ML | Теория |
 |---|--------|---------|--------|

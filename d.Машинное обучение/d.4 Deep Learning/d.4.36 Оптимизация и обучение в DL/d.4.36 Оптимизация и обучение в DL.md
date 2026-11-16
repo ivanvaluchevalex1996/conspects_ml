@@ -7,11 +7,11 @@
 | § | Ментор | Якорь в этом файле |
 |:---:|:---|:---|
 | 36.1 | Adam, AdamW, SGD+Momentum | [§2.2–2.5](#22-sgd--базовый-шаг) |
-| 36.2 | инициализация Xavier / He | [§1](#1-инициализация-весов-спрашивают-на-собесах) · практика [`36_5_he_init/`](./practice/site/36_5_he_init/) |
-| 36.3 | BatchNorm | [§2.2 BN в `d.4.37`](../d.4.37%20Регуляризация%20%D0%B2%20DL/d.4.37%20Регуляризация%20%D0%B2%20DL.md#22-batch-normalization-batchnorm--нормализация-внутри-сети), [`36_3_batchnorm/`](./practice/site/36_3_batchnorm/) |
+| 36.2 | инициализация Xavier / He | [§1](#1-инициализация-весов-спрашивают-на-собесах) · практика [`handbook_gl36_практика.ipynb`](./practice/handbook_gl36_практика.ipynb) (§36.5) |
+| 36.3 | BatchNorm | [§2.2 BN в `d.4.37`](../d.4.37%20Регуляризация%20%D0%B2%20DL/d.4.37%20Регуляризация%20%D0%B2%20DL.md#22-batch-normalization-batchnorm--нормализация-внутри-сети), [`handbook_gl36_практика.ipynb`](./practice/handbook_gl36_практика.ipynb) (§36.3) |
 | 36.4 | LR schedule, warmup, residual | [§2.6](#26-learning-rate-как-выбрать-и-как-менять), residual — [`d.4.34` §9.5.1](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md#951-остаточный-блок-shortcut--deep-ml-113) |
-| 36.5 | наглядно: инициализация | [`36_5_he_init/`](./practice/site/36_5_he_init/) |
-| 36.6 | BN ускоряет обучение | [`36_6_bn_training/`](./practice/site/36_6_bn_training/) |
+| 36.5 | наглядно: инициализация | [`handbook_gl36_практика.ipynb`](./practice/handbook_gl36_практика.ipynb) (§36.5) |
+| 36.6 | BN ускоряет обучение | [`handbook_gl36_практика.ipynb`](./practice/handbook_gl36_практика.ipynb) (§36.6) |
 
 Дальше: [d.4.37](../d.4.37%20Регуляризация%20%D0%B2%20DL/d.4.37%20Регуляризация%20%D0%B2%20DL.md).
 
@@ -19,7 +19,7 @@
 
 *(Как учить нейросеть: инициализация, оптимизаторы, learning rate. Лекция DLS «Градиентная оптимизация». Опора: Яндекс 5.4. Всё на простых примерах с числами, без тяжёлых выводов.)*
 
-**Практика (handbook / Deep-ML):** [`practice/README.md`](./practice/README.md) → гл.36 [dl-optimization](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-optimization.html). Код только в подпапках.
+**Практика (handbook / Deep-ML):** [`handbook_gl36_практика.ipynb`](./practice/handbook_gl36_практика.ipynb) + [`deep_ml/`](./practice/deep_ml/) → гл.36 [dl-optimization](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-optimization.html).
 
 **Практика PyTorch:** один шаг Adam / SGD и lr — [`pytorch/08`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/08/08_активации_потери_оптимизатор.ipynb) блок 5; scheduler — [`pytorch/12`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/12/12_lr_scheduler.ipynb); AMP — [`pytorch/24_amp`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/24_amp/24_amp.ipynb) (§2.8); карта → [`0_как_учить_pytorch.md`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/0_как_учить_pytorch.md).
 

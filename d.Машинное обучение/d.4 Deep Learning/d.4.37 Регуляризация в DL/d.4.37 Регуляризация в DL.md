@@ -8,12 +8,12 @@
 | § | Ментор | Якорь в этом файле / practice |
 |:---:|:---|:---|
 | 37.1 | train vs val, переобучение | [§3](#3-метрики-и-валидация-в-dl), [§2.4](#24-early-stopping--остановиться-вовремя) |
-| 37.2 | Dropout train / eval | [§2.2](#dropout--случайно-выключаем-нейроны-на-обучении) · [`37_2_dropout_train_eval/`](./practice/site/37_2_dropout_train_eval/) |
+| 37.2 | Dropout train / eval | [§2.2](#dropout--случайно-выключаем-нейроны-на-обучении) · [`handbook_gl37_практика.ipynb`](./practice/handbook_gl37_практика.ipynb) (§37.2) |
 | 37.3 | weight decay (L2) | [§2.1](#21-через-лосс--штраф-за-большие-веса-weight-decay) |
 | 37.4 | early stopping | [§2.4](#24-early-stopping--остановиться-вовремя) · [`pytorch/14`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/14/14_early_stopping.ipynb) |
 | 37.5 | аугментации | [§2.3](#23-через-данные--аугментации) |
 | 37.6 | BatchNorm (регуляризация) | [§2.2 BN](#batch-normalization-batchnorm--нормализация-внутри-сети) · [`d.4.3.2`](./d.4.3.2%20Пример%20—%20зачем%20BatchNorm.md) |
-| 37.7 | dropout vs переобучение (демо) | [`37_7_dropout_overfit/`](./practice/site/37_7_dropout_overfit/) |
+| 37.7 | dropout vs переобучение (демо) | [`handbook_gl37_практика.ipynb`](./practice/handbook_gl37_практика.ipynb) (§37.7) |
 | 37.8 | таблица приёмов | [§2.5](#25-итог-по-регуляризации) |
 | — | нормализация входа | [§1](#1-нормализация-входных-данных-пункт-лекции-data-normalization) · [`d.4.3.1`](./d.4.3.1%20Пример%20—%20нормализация%20и%20один%20шаг%20обучения.md) |
 
@@ -23,7 +23,7 @@
 
 *(Как подготовить вход и не дать нейросети зазубрить train: нормализация, weight decay, Dropout, BatchNorm, аугментации, early stopping; плюс val и метрики. Лекция DLS «Регуляризация». Опора: Яндекс 5.4.)*
 
-**Практика (handbook / Deep-ML):** [`practice/README.md`](./practice/README.md) → гл.37 [dl-regularization](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-regularization.html). Код только в подпапках.
+**Практика (handbook / Deep-ML):** [`handbook_gl37_практика.ipynb`](./practice/handbook_gl37_практика.ipynb) + [`deep_ml/`](./practice/deep_ml/) → гл.37 [dl-regularization](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-regularization.html).
 
 **Практика PyTorch:** нормализация входа — [`pytorch/07`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/07/07_transforms_v2.ipynb); early stop — [`pytorch/14`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/14/14_early_stopping.ipynb); Dropout — [`pytorch/15`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/15/15_dropout.ipynb); BatchNorm — [`pytorch/16`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/16/16_batchnorm.ipynb); карта → [`0_как_учить_pytorch.md`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/0_как_учить_pytorch.md).
 

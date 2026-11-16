@@ -10,7 +10,7 @@
 | 33.2 | слой \(Wx+b\) | [§6](#6-шаг-2-несколько-нейронов--несколько-новых-признаков) |
 | 33.3 | MLP | [§7](#7-шаг-3-несколько-таких-блоков-подряд--нейросеть) |
 | 33.4 | без нелинейности — линейно | [§8 (кратко)](#8-10-активации-и-голову-сети) · полностью [d.4.34](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md) |
-| 33.5 | forward 2→2→1 | [§7.В](#7v-handbook-33-5) · [`33_5_forward/`](./practice/33_5_forward/) |
+| 33.5 | forward 2→2→1 | [§7.В](#7v-handbook-33-5) · [`handbook_gl33_практика.ipynb`](./practice/handbook_gl33_практика.ipynb) (§33.5) |
 | 33.6 | XOR | [§2](#2-где-классика-ломается-зачем-вообще-нейросети) · [handbook 33.6](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html#%D0%BD%D0%B0%D0%B3%D0%BB%D1%8F%D0%B4%D0%BD%D0%BE-%D0%B7%D0%B0%D1%87%D0%B5%D0%BC-%D0%BD%D0%B5%D0%BB%D0%B8%D0%B5%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D1%81%D1%82%D1%8C-xor) · [d.4.34 §8](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md#8-зачем-активации--иначе-сеть-бесполезна) |
 
 
@@ -777,7 +777,7 @@ X = 3 × 2                 W = 2 × 4                 XW + b = 3 × 4
 
 ### 7.В. Forward 2→2→1 — указатель на handbook **§33.5**
 
-> Код §33.5 — [`33_5_forward/`](./practice/33_5_forward/). Эталон на сайте — [handbook §33.5](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html#forward-%D0%BF%D1%80%D0%BE%D1%85%D0%BE%D0%B4-%D1%80%D1%83%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BF%D0%BE-%D1%88%D0%B0%D0%B3%D0%B0%D0%BC).
+> Код §33.5 — [`handbook_gl33_практика.ipynb`](./practice/handbook_gl33_практика.ipynb). Эталон на сайте — [handbook §33.5](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html#forward-%D0%BF%D1%80%D0%BE%D1%85%D0%BE%D0%B4-%D1%80%D1%83%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BF%D0%BE-%D1%88%D0%B0%D0%B3%D0%B0%D0%BC).
 
 **Зачем строка в конспекте:** после **§7.А** (свои числа, ReLU, квартира) — соседний пример handbook: сеть **2→2→1**, **sigmoid**, бинарный **выход-вероятность**.
 

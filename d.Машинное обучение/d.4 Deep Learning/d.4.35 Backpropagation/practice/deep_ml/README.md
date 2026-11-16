@@ -1,6 +1,6 @@
 # Handbook гл.35 · домашка Deep-ML
 
-Сначала [`../site/`](../site/) (XOR §35.3–35.4) — тот же смысл «NumPy руками → torch.backward».
+Сначала [`../handbook_gl35_практика.ipynb`](../handbook_gl35_практика.ipynb) (§35.3–35.4) — тот же смысл «NumPy руками → torch.backward».
 
 | ☐ | Папка | Deep-ML | Заметка |
 |---|--------|---------|---------|
