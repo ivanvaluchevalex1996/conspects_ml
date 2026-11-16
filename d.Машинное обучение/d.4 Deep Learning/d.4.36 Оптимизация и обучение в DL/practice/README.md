@@ -7,7 +7,7 @@
 | §36.3, §36.5–36.6, сравнение оптимизаторов | [`handbook_gl36_практика.ipynb`](./handbook_gl36_практика.ipynb) |
 | Домашка Deep-ML | [`deep_ml/`](./deep_ml/) |
 
-§36.1–36.2, §36.4 (AdamW, warmup, residual) — **прочитать** на сайте / в §2 конспекта; residual подробнее в [`d.4.34` §9.5.1](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md#951-остаточный-блок-shortcut--deep-ml-113).
+§36.1–36.2, §36.4 (AdamW, warmup, residual) — **прочитать** на сайте / в §2 конспекта; residual — [Deep-ML #113](https://www.deep-ml.com/problems/113) (без отдельного раздела в d.4.34).
 
 **Порядок ментора:** He init (§36.5) → BatchNorm (§36.3) → Adam NumPy [#49](https://www.deep-ml.com/problems/49) → PyTorch steps [#1234](https://www.deep-ml.com/problems/1234)→[#1236](https://www.deep-ml.com/problems/1236) → сравнение сходимости (§36.4 в ноутбуке) → `pytorch/12` (scheduler).
 

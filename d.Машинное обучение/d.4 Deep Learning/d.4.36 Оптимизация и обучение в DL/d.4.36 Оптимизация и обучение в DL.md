@@ -9,7 +9,7 @@
 | 36.1 | Adam, AdamW, SGD+Momentum | [§2.2–2.5](#22-sgd--базовый-шаг) |
 | 36.2 | инициализация Xavier / He | [§1](#1-инициализация-весов-спрашивают-на-собесах) · практика [`handbook_gl36_практика.ipynb`](./practice/handbook_gl36_практика.ipynb) (§36.5) |
 | 36.3 | BatchNorm | [§2.2 BN в `d.4.37`](../d.4.37%20Регуляризация%20%D0%B2%20DL/d.4.37%20Регуляризация%20%D0%B2%20DL.md#22-batch-normalization-batchnorm--нормализация-внутри-сети), [`handbook_gl36_практика.ipynb`](./practice/handbook_gl36_практика.ipynb) (§36.3) |
-| 36.4 | LR schedule, warmup, residual | [§2.6](#26-learning-rate-как-выбрать-и-как-менять), residual — [`d.4.34` §9.5.1](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md#951-остаточный-блок-shortcut--deep-ml-113) |
+| 36.4 | LR schedule, warmup, residual | [§2.6](#26-learning-rate-как-выбрать-и-как-менять), residual — [Deep-ML #113](https://www.deep-ml.com/problems/113) · [`13_deep_ml…`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py) |
 | 36.5 | наглядно: инициализация | [`handbook_gl36_практика.ipynb`](./practice/handbook_gl36_практика.ipynb) (§36.5) |
 | 36.6 | BN ускоряет обучение | [`handbook_gl36_практика.ipynb`](./practice/handbook_gl36_практика.ipynb) (§36.6) |
 
