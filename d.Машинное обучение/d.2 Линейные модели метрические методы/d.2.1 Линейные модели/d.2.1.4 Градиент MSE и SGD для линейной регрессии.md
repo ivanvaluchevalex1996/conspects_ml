@@ -3,7 +3,7 @@
 
 Связка к семинару МФТИ (практика `part_1_linear_regression.ipynb`).
 
-**Практика PyTorch:** шаг SGD/Adam — [`pytorch/08`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/08/08_активации_потери_оптимизатор.ipynb) блок 5; Adam/lr — [`d.4.36`](../../d.4%20Deep%20Learning/d.4.36%20Оптимизация%20%D0%B8%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20DL/d.4.36%20Оптимизация%20%D0%B8%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20DL.md).
+**Практика PyTorch:** шаг SGD/Adam — [`pytorch/08`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/08/08_активации_потери_оптимизатор.ipynb) блок 5; Adam/lr — [`d.4.36`](../../d.4%20Deep%20Learning/d.4.36%20Оптимизация%20%D0%B8%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20DL/d.4.36%20Оптимизация%20%D0%B8%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20DL.md).
 
 Связанные конспекты:
 
@@ -18,7 +18,7 @@
 
 > **Этот файл** — про матричный градиент MSE `(2/ℓ) Xᵀ(ŷ−y)`, полный GD vs SGD и семинар МФТИ.  
 > **Буквы здесь:** w, ℓ, множитель 2/ℓ.  
-> **Та же формула в задачах DeepML** (`d.3.9`, [#15](https://www.deep-ml.com/problems/15), файл [`12_deep_ml_machine_learning.py`](../../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/12_deep_ml_machine_learning.py)): w→θ, ℓ→ m, часто 2/ℓ → 1/m. Словарь соответствий — в начале `d.3.9`.
+> **Та же формула в задачах DeepML** (`d.3.9`, [#15](https://www.deep-ml.com/problems/15), файл [`12_deep_ml_machine_learning.py`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/12_deep_ml_machine_learning.py)): w→θ, ℓ→ m, часто 2/ℓ → 1/m. Словарь соответствий — в начале `d.3.9`.
 
 ---
 

@@ -12,4 +12,4 @@
 
 **Порядок:** #49 NumPy → #1234 → #1235 → #1236 → submit → сверка с §36.4 в [`handbook_gl36_практика.ipynb`](../handbook_gl36_практика.ipynb).
 
-Архив решений: [`13_deep_ml…`](../../../../../../../учеба%20мл/python_base/13_deep_ml_deep_learning.py) (#49, #146 пока нет).
+Архив решений: [`13_deep_ml…`](../../../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py) (#49, #146 пока нет).

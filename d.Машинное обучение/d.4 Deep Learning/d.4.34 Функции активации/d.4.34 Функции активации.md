@@ -56,7 +56,7 @@ Forward MLP — цепочка **матричных умножений** (сло
 
 #### Handbook 3→4→4→1 (код — только в практике)
 
-Собрать `Sequential`, **41** параметр — тренажёр [`handbook_gl33_практика.ipynb`](../d.4.33%20%D0%9D%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%20%D0%B8%20%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D1%81%D0%B2%D1%8F%D0%B7%D0%BD%D0%B0%D1%8F%20%D1%81%D0%B5%D1%82%D1%8C/practice/handbook_gl33_практика.ipynb) (§33.4). `nn.Linear` / `Sequential` — [`pytorch/09`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/09/09_классы_нейросетей.ipynb), [`pytorch/10`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/10/10_создание_нейросетей.ipynb).
+Собрать `Sequential`, **41** параметр — тренажёр [`handbook_gl33_практика.ipynb`](../d.4.33%20%D0%9D%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%20%D0%B8%20%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D1%81%D0%B2%D1%8F%D0%B7%D0%BD%D0%B0%D1%8F%20%D1%81%D0%B5%D1%82%D1%8C/practice/handbook_gl33_практика.ipynb) (§33.4). `nn.Linear` / `Sequential` — [`pytorch/09`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/09/09_классы_нейросетей.ipynb), [`pytorch/10`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/10/10_создание_нейросетей.ipynb).
 
 Практика гл.33 (Sequential): [`handbook_gl33_практика.ipynb`](../d.4.33%20%D0%9D%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%20%D0%B8%20%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D1%81%D0%B2%D1%8F%D0%B7%D0%BD%D0%B0%D1%8F%20%D1%81%D0%B5%D1%82%D1%8C/practice/handbook_gl33_практика.ipynb) (§33.4).
 
@@ -529,7 +529,7 @@ $$
 $$
 
 Считают стабильно (max-trick): z_k − max_j z_j − log Σ exp(z_j − max). Deep-ML [#39](https://www.deep-ml.com/problems/39) — `13_deep_ml_deep_learning.py`.  
-**PyTorch:** `nn.CrossEntropyLoss` принимает **логиты**, softmax снаружи не нужен — [`pytorch/08`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/08/08_активации_потери_оптимизатор.ipynb).
+**PyTorch:** `nn.CrossEntropyLoss` принимает **логиты**, softmax снаружи не нужен — [`pytorch/08`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/08/08_активации_потери_оптимизатор.ipynb).
 
 ### 9.4. Редкие активации (кратко) + Deep-ML
 
@@ -582,7 +582,7 @@ MLP (этот файл) — универсальный конструктор, �
 На лекции показывали: CNN учит иерархию признаков (low → mid → high), RNN умеет генерировать текст «в стиле» данных.  
 Детали свёрток и RNN — **отдельные** конспекты позже. Сейчас достаточно знать, **когда какую семью звать**.
 
-Трек **recsys/NLP:** видео **17–23 (CNN)** пропускаем одной папкой: [`pytorch/17-23_cnn/17-23_cnn_обзор.md`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/17-23_cnn/17-23_cnn_обзор.md). Хватит §9.5 + тот файл; ядро трека позже — эмбеддинги / Transformer. Residual / [#113](https://www.deep-ml.com/problems/113) — только Deep-ML и [`13_deep_ml…`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py), когда дойдёшь; в конспекте активаций не разбираем.
+Трек **recsys/NLP:** видео **17–23 (CNN)** пропускаем одной папкой: [`pytorch/17-23_cnn/17-23_cnn_обзор.md`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/17-23_cnn/17-23_cnn_обзор.md). Хватит §9.5 + тот файл; ядро трека позже — эмбеддинги / Transformer. Residual / [#113](https://www.deep-ml.com/problems/113) — только Deep-ML и [`13_deep_ml…`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py), когда дойдёшь; в конспекте активаций не разбираем.
 
 ## 10. Как выбрать «голову» сети под задачу
 

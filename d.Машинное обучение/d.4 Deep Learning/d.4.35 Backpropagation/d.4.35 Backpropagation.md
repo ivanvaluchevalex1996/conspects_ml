@@ -46,7 +46,7 @@
 
 **Практика handbook гл.35** (XOR NumPy → PyTorch → grad check; Deep-ML [#25](https://www.deep-ml.com/problems/25), [#26](https://www.deep-ml.com/problems/26)): [`handbook_gl35_практика.ipynb`](./practice/handbook_gl35_практика.ipynb) + [`deep_ml/`](./practice/deep_ml/) — **до** полного цикла на батчах.
 
-**Практика в коде (курс):** [`pytorch/11`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/11/11_цикл_обучения.ipynb) блок 1 — `zero_grad` → `backward` → `step`; §11.2 ниже = зачем это разные строки.
+**Практика в коде (курс):** [`pytorch/11`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/11/11_цикл_обучения.ipynb) блок 1 — `zero_grad` → `backward` → `step`; §11.2 ниже = зачем это разные строки.
 
 ### 11.2. Backpropagation — что запомнить
 
@@ -81,7 +81,7 @@ loss.backward()         # записать градиент текущего б�
 optimizer.step()        # сдвинуть веса
 ```
 
-Это особенность autograd, не отдельная теория оптимизации. Практика: урок [`03/`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/03/03_знакомство_с_pytorch.ipynb) (накопление `.grad`), цикл — [`11/`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/11/11_цикл_обучения.ipynb) блок 1.
+Это особенность autograd, не отдельная теория оптимизации. Практика: урок [`03/`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/03/03_знакомство_с_pytorch.ipynb) (накопление `.grad`), цикл — [`11/`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/11/11_цикл_обучения.ipynb) блок 1.
 
 #### Пример: как градиент идёт назад
 
@@ -246,6 +246,6 @@ if best_val - val_loss > threshold:
 1. Папки классов собирать через **`sorted`**, иначе `class_to_idx` может плавать → после load accuracy ≈ 1/число_классов (на 10 классах ~10%), хотя веса нормальные.
 2. В checkpoint рядом с весами сохранять **`class_to_idx`** — какая метка что значит; пригодится при load на другом ПК / в проде.
 
-Практика: [`13/`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/13/13_save_load.ipynb), [`14/`](../../../../учеба%20мл/pytorch/pytorch%20дубинин/14/14_early_stopping.ipynb) блок 4; проект — `ImageDataset` уже с `sorted`. EarlyStopping — видео 14 / [`d.4.37`](../d.4.37%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20DL/d.4.37%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D0%B0%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20DL.md).
+Практика: [`13/`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/13/13_save_load.ipynb), [`14/`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/14/14_early_stopping.ipynb) блок 4; проект — `ImageDataset` уже с `sorted`. EarlyStopping — видео 14 / [`d.4.37`](../d.4.37%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20DL/d.4.37%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D0%B0%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20DL.md).
 
 ---
