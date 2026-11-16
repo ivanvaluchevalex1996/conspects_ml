@@ -1,6 +1,6 @@
 # Handbook гл.34 · домашка Deep-ML по папкам
 
-Handbook **§34.4–advanced**: [`../handbook_gl34_практика.ipynb`](../handbook_gl34_практика.ipynb). Эталоны Deep-ML: `*_решения.ipynb` в подпапке (есть [`22_sigmoid_решения`](./22_sigmoid/22_sigmoid_решения.ipynb)).
+Handbook **§34.4–advanced**: [`../handbook_gl34_практика.ipynb`](../handbook_gl34_практика.ipynb) → эталон [`handbook_gl34_практика_решения.ipynb`](../handbook_gl34_практика_решения.ipynb). Deep-ML: в каждой папке `*_решения.ipynb` **после** своей попытки.
 
 | ☐ | Папка | Deep-ML | Теория |
 |---|--------|---------|--------|
@@ -11,6 +11,6 @@ Handbook **§34.4–advanced**: [`../handbook_gl34_практика.ipynb`](../h
 | ☐ | [39_log_softmax](./39_log_softmax/) | [#39](https://www.deep-ml.com/problems/39) | [d.4.34 §9.3.1](../../d.4.34%20%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8%20%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%B0%D1%86%D0%B8%D0%B8.md#931-log-softmax--для-ce-кратко) |
 | ☐ | [98_prelu](./98_prelu/) | [#98](https://www.deep-ml.com/problems/98) | [d.4.34 §9.4](../../d.4.34%20%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8%20%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%B0%D1%86%D0%B8%D0%B8.md#94-редкие-активации-кратко--deep-ml) |
 
-**Порядок:** NumPy (+ ∂ и график) → PyTorch → `need` → deep-ml.com → по желанию [`13_deep_ml…`](../../../../../../../учеба%20мл/python_base/13_deep_ml_deep_learning.py).
+**Порядок:** NumPy (+ ∂ и график) → PyTorch → `need` → deep-ml.com → по желанию [`13_deep_ml…`](../../../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py).
 
 Указатель гл.34: [`../README.md`](../README.md).
