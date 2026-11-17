@@ -2,9 +2,9 @@
 
 # e.1. Карпати — разбираем micrograd
 
-**Практика PyTorch (тот же смысл на тензорах):** шаг `backward` / Adam — [`pytorch/08`](../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/08/08_активации_потери_оптимизатор.ipynb) блок 5; карта курса — [`0_как_учить_pytorch.md`](../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/0_как_учить_pytorch.md).
+**Видео (YouTube):** [building micrograd — backprop с нуля](https://www.youtube.com/watch?v=VMj-3S1tku0) · репо: [karpathy/micrograd](https://github.com/karpathy/micrograd)
 
-Видео: [The spelled-out intro to neural networks and backpropagation: building micrograd](https://www.youtube.com/watch?v=VMj-3S1tku0) · репо: [karpathy/micrograd](https://github.com/karpathy/micrograd)
+**Практика PyTorch (тот же смысл на тензорах):** шаг `backward` / Adam — [`pytorch/08`](../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/08/08_активации_потери_оптимизатор.ipynb) блок 5; карта курса — [`0_как_учить_pytorch.md`](../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/0_как_учить_pytorch.md).
 
 ---
 

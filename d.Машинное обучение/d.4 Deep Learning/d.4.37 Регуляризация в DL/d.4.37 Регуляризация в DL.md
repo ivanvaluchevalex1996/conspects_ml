@@ -1,5 +1,7 @@
 # d.4.37 · ML Handbook гл. 37 — Регуляризация в Deep Learning
 
+**Лекция DLS (YouTube):** [регуляризация](https://www.youtube.com/watch?v=x72-oUjv1ew) · слайды: [`Оптимизация_и_регуляризация_в_Deep_Learning.pdf`](../../%D0%9E%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F_%D0%B8_%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F_%D0%B2_Deep_Learning.pdf) · видео «градиентная оптимизация» → [d.4.36](../d.4.36%20Оптимизация%20%D0%B8%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20DL/d.4.36%20Оптимизация%20%D0%B8%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20DL.md)
+
 Сайт: [dl-regularization.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-regularization.html) · [`README.md`](./README.md)
 
 **Примеры:** [`d.4.37.1`](./d.4.37.1%20Пример%20—%20нормализация%20и%20один%20шаг%20обучения.md) · [`d.4.37.2`](./d.4.37.2%20Пример%20—%20Dropout%20и%20чем%20он%20отличается%20от%20ReLU.md) · BN на цифрах → [`d.4.36.1`](../d.4.36%20Оптимизация%20%D0%B8%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20DL/d.4.36.1%20Пример%20—%20зачем%20BatchNorm.md)  
@@ -53,7 +55,7 @@
 | Регуляризация в DL | §2 **здесь** |
 | Метрики / валидация | §3 здесь (+ `d.3.1`, `d.3.2`) |
 
-Лекция: [`Оптимизация_и_регуляризация_в_Deep_Learning.pdf`](../../Оптимизация_и_регуляризация_в_Deep_Learning.pdf) (видео: [регуляризация](https://www.youtube.com/watch?v=x72-oUjv1ew)).
+Видео DLS и PDF — в **шапке** файла.
 
 ---
 

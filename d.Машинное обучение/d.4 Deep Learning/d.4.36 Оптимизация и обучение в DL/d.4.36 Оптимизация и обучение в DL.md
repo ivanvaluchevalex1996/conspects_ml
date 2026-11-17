@@ -1,5 +1,7 @@
 # d.4.36 · ML Handbook гл. 36 — Оптимизация и обучение в DL
 
+**Лекция DLS (YouTube):** [градиентная оптимизация](https://www.youtube.com/watch?v=6CvpMOO-DB4) · слайды: [`Оптимизация_и_регуляризация_в_Deep_Learning.pdf`](../../%D0%9E%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F_%D0%B8_%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F_%D0%B2_Deep_Learning.pdf) · отдельное видео «регуляризация» → [d.4.37](../d.4.37%20Регуляризация%20%D0%B2%20DL/d.4.37%20Регуляризация%20%D0%B2%20DL.md)
+
 Сайт: [dl-optimization.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-optimization.html) · [`README-legacy.md`](./README-legacy.md)
 
 **Практика:** [`practice/`](./practice/README.md)
@@ -57,9 +59,7 @@ DeepML (θ, m) → [`d.3.9`](../../d.3%20Classic%20ML/d.3.9%20%D0%9B%D0%B8%D0%BD
 | Нормализация входа + регуляризация в DL | [`d.4.37`](../d.4.37%20Регуляризация%20%D0%B2%20DL/d.4.37%20Регуляризация%20в%20DL.md#1-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8-data-normalization) §1–2 |
 | Метрики и валидация | `d.4.37` §3 (+ `d.3.1`, `d.3.2`) |
 
-Опора: [Яндекс 5.4](https://contest.yandex.ru/tracks/ml/deep-learning-introduction/training-techniques)
-
-Слайды: [`Оптимизация_и_регуляризация_в_Deep_Learning.pdf`](../../%D0%9E%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F_%D0%B8_%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F_%D0%B2_Deep_Learning.pdf) (видео: [оптимизация](https://www.youtube.com/watch?v=6CvpMOO-DB4)). Регуляризация — отдельное видео → `d.4.37`.
+Опора: [Яндекс 5.4](https://contest.yandex.ru/tracks/ml/deep-learning-introduction/training-techniques) · видео DLS и PDF — в **шапке** файла.
 
 ---
 
