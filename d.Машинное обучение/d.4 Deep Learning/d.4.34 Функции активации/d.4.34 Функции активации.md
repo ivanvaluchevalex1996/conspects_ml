@@ -1,10 +1,10 @@
 # d.4.34 · ML Handbook гл. 34 — Функции активации
 
-Сайт: [activations.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/activations.html) · [`README.md`](./README.md)
+Сайт: [activations.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/activations.html) · [README.md](./README.md)
 
-**Контекст:** полносвязная сеть (гл.33) — [`d.4.33`](../d.4.33%20%D0%9D%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%20%D0%B8%20%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D1%81%D0%B2%D1%8F%D0%B7%D0%BD%D0%B0%D1%8F%20%D1%81%D0%B5%D1%82%D1%8C/d.4.33%20%D0%9D%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%20%D0%B8%20%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D1%81%D0%B2%D1%8F%D0%B7%D0%BD%D0%B0%D1%8F%20%D1%81%D0%B5%D1%82%D1%8C.md) §5–7.
+**Контекст:** полносвязная сеть (гл.33) — [d.4.33](../d.4.33%20Нейрон%20и%20полносвязная%20сеть/d.4.33%20Нейрон%20и%20полносвязная%20сеть.md) §5–7.
 
-**Практика:** [`practice/`](./practice/README.md) · затухание — [§9.2.1](#921-затухающий-градиент--почему-relu-в-скрытых-а-не-sigmoid)
+**Практика:** [practice/](./practice/README.md) · затухание — [§9.2.1](#921-затухающий-градиент--почему-relu-в-скрытых-а-не-sigmoid)
 
 | § | Ментор | Якорь здесь |
 |:---:|:---|:---|
@@ -12,7 +12,7 @@
 | 34.2 | ReLU | [§9.1](#91-relu--активация-для-скрытых-слоёв) |
 | 34.3 | Leaky, ELU, GELU… | [§9.4](#94-редкие-активации-кратко--deep-ml) |
 | 34.4 | softmax | [§9.3](#93-softmax--активация-выходного-слоя-много-классов), [§9.3.1](#931-log-softmax--для-ce-кратко) |
-| 34.5–34.6 | vanishing, dead ReLU | [§9.2.1](#921-затухающий-градиент--почему-relu-в-скрытых-а-не-sigmoid), практика [`handbook_gl34_практика.ipynb`](./practice/handbook_gl34_практика.ipynb) (§34.4–34.6) |
+| 34.5–34.6 | vanishing, dead ReLU | [§9.2.1](#921-затухающий-градиент--почему-relu-в-скрытых-а-не-sigmoid), практика [handbook_gl34_практика.ipynb](./practice/handbook_gl34_практика.ipynb) (§34.4–34.6) |
 | шпаргалка | hidden ReLU, выход по задаче | [§10](#10-как-выбрать-голову-сети-под-задачу) |
 
 Дальше: [d.4.35](../d.4.35%20Backpropagation/d.4.35%20Backpropagation.md).
@@ -48,23 +48,23 @@ ReLU между слоями это ломает: часть сигналов о
 
 - Таблица и «одна прямая не разделит» — §2.
 - **[Handbook 33.6 XOR](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html#%D0%BD%D0%B0%D0%B3%D0%BB%D1%8F%D0%B4%D0%BD%D0%BE-%D0%B7%D0%B0%D1%87%D0%B5%D0%BC-%D0%BD%D0%B5%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D1%81%D1%82%D1%8C-xor)** — картинка: слева прямая бессильна, справа граница с нелинейностью.
-- Обученная **изогнутая** граница на 2D-данных — [`e.1` · Карпати — micrograd](../../../e.%D0%9A%D0%B0%D1%80%D0%BF%D0%B0%D1%82%D0%B8%20%E2%80%94%20%D1%80%D0%B0%D0%B7%D0%B1%D0%B8%D1%80%D0%B0%D0%B5%D0%BC%20micrograd/e.1%20%D0%9A%D0%B0%D1%80%D0%BF%D0%B0%D1%82%D0%B8%20%E2%80%94%20%D1%80%D0%B0%D0%B7%D0%B1%D0%B8%D1%80%D0%B0%D0%B5%D0%BC%20micrograd.md) (`demo.ipynb`, make_moons) — не классический XOR, но та же мысль «нелинейная граница».
+- Обученная **изогнутая** граница на 2D-данных — [`e.1` · Карпати — micrograd](../../../e.Карпати%20—%20разбираем%20micrograd/e.1%20Карпати%20—%20разбираем%20micrograd.md) (`demo.ipynb`, make_moons) — не классический XOR, но та же мысль «нелинейная граница».
 
 #### Почему DL любит матрицы и GPU
 
-Forward MLP — цепочка **матричных умножений** (слой = W x + b на батче; у нас — `XW+b`, см. §7.А батч). На больших размерах это делают на **GPU** (параллельно много «точек» matmul). База: [`a.NumPy/11`](../../a.NumPy/11.%D1%83%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%E2%80%94%20star%2C%20at%2C%20dot.md), §0.1 (возврат DL + GPU).
+Forward MLP — цепочка **матричных умножений** (слой = W x + b на батче; у нас — `XW+b`, см. §7.А батч). На больших размерах это делают на **GPU** (параллельно много «точек» matmul). База: [a.NumPy/11](../../a.NumPy/11.умножение%20—%20star,%20at,%20dot.md), §0.1 (возврат DL + GPU).
 
 #### Handbook 3→4→4→1 (код — только в практике)
 
-Собрать `Sequential`, **41** параметр — тренажёр [`handbook_gl33_практика.ipynb`](../d.4.33%20%D0%9D%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%20%D0%B8%20%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D1%81%D0%B2%D1%8F%D0%B7%D0%BD%D0%B0%D1%8F%20%D1%81%D0%B5%D1%82%D1%8C/practice/handbook_gl33_практика.ipynb) (§33.4). `nn.Linear` / `Sequential` — [`pytorch/09`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/09/09_классы_нейросетей.ipynb), [`pytorch/10`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/10/10_создание_нейросетей.ipynb).
+Собрать `Sequential`, **41** параметр — тренажёр [handbook_gl33_практика.ipynb](../d.4.33%20Нейрон%20и%20полносвязная%20сеть/practice/handbook_gl33_практика.ipynb) (§33.4). `nn.Linear` / `Sequential` — [pytorch/09](../../../../pytorch/pytorch%20дубинин/09/09_классы_нейросетей.ipynb), [pytorch/10](../../../../pytorch/pytorch%20дубинин/10/10_создание_нейросетей.ipynb).
 
-Практика гл.33 (Sequential): [`handbook_gl33_практика.ipynb`](../d.4.33%20%D0%9D%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%20%D0%B8%20%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D1%81%D0%B2%D1%8F%D0%B7%D0%BD%D0%B0%D1%8F%20%D1%81%D0%B5%D1%82%D1%8C/practice/handbook_gl33_практика.ipynb) (§33.4).
+Практика гл.33 (Sequential): [handbook_gl33_практика.ipynb](../d.4.33%20Нейрон%20и%20полносвязная%20сеть/practice/handbook_gl33_практика.ipynb) (§33.4).
 
 ---
 
 ## 9. Какие активации бывают
 
-> Практика гл.34 (handbook + Deep-ML): [`practice/`](./practice/README.md).
+> Практика гл.34 (handbook + Deep-ML): [practice/](./practice/README.md).
 
 **Подробно** — три частых (§9.1–9.3): ReLU, sigmoid, softmax (+ log-softmax для CE). **Производные, backprop, ReLU vs σ в hidden** — [§9.2.1](#921-затухающий-градиент--почему-relu-в-скрытых-а-не-sigmoid). **Остальные** — одна таблица в §9.4 (+ коротко Swish).
 
@@ -129,7 +129,7 @@ $$
 | 0   | 0.5      | 0.25 (макс.) |
 | 5   | ≈0.993   | ≈0.007       |
 
-**Deep-ML [#96](https://www.deep-ml.com/problems/96)** — упрощённая **hard sigmoid** (без `exp`, как в Keras): на среднем участке линейно `0.2·z + 0.5`, с обрезкой в `[0, 1]` — функция `hard_sigmoid` в [`13_deep_ml_deep_learning.py`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py). Для сравнения с σ — [#22](https://www.deep-ml.com/problems/22) `sigmoid` в том же файле.
+**Deep-ML [#96](https://www.deep-ml.com/problems/96)** — упрощённая **hard sigmoid** (без `exp`, как в Keras): на среднем участке линейно `0.2·z + 0.5`, с обрезкой в `[0, 1]` — функция `hard_sigmoid` в [13_deep_ml_deep_learning.py](../../../../python_base/13_deep_ml_deep_learning.py). Для сравнения с σ — [#22](https://www.deep-ml.com/problems/22) `sigmoid` в том же файле.
 
 #### Tanh — «сигмоида, но по центру» (handbook **34.1**)
 
@@ -143,7 +143,7 @@ $$
 
 ### 9.2.1. Затухающий градиент — почему ReLU в скрытых, а не sigmoid
 
-> Разбор перед практикой **гл. 34**. Сами функции ReLU и σ — **§9.1–9.2** выше; здесь — **производные**, backprop и ответ «почему ReLU в hidden». Правило цепочки — [d.0](../../d.0%20Градиент%20и%20правило%20цепочки.md). Практика: [practice/](./practice/README.md), затухание — [`handbook_gl34_практика.ipynb`](./practice/handbook_gl34_практика.ipynb) (§34.5). Deep-ML [#22](https://www.deep-ml.com/problems/22), [#42](https://www.deep-ml.com/problems/42).
+> Разбор перед практикой **гл. 34**. Сами функции ReLU и σ — **§9.1–9.2** выше; здесь — **производные**, backprop и ответ «почему ReLU в hidden». Правило цепочки — [d.0](../../d.0%20Градиент%20и%20правило%20цепочки.md). Практика: [practice/](./practice/README.md), затухание — [handbook_gl34_практика.ipynb](./practice/handbook_gl34_практика.ipynb) (§34.5). Deep-ML [#22](https://www.deep-ml.com/problems/22), [#42](https://www.deep-ml.com/problems/42).
 
 **z** — значение **до** активации (после `×W + b`).  
 **Выход** — что отдаёт функция активации.  
@@ -455,7 +455,7 @@ $$
 4. **Почему ReLU в hidden:** при z > 0 градиент не умножается на ≤ 0.25 на каждом слое → ∂L/∂w больше → **веса (особенно нижние) меняются сильнее**, чем со sigmoid.
 5. **Плохой ReLU:** z ≤ 0 → градиент **0** → веса **не** обновляются.
 
-Deep-ML в коде: [`13_deep_ml_deep_learning.py`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py) — `sigmoid`, `relu`.
+Deep-ML в коде: [13_deep_ml_deep_learning.py](../../../../python_base/13_deep_ml_deep_learning.py) — `sigmoid`, `relu`.
 
 ### 9.3. Softmax — активация **выходного** слоя (много классов)
 
@@ -529,11 +529,11 @@ $$
 $$
 
 Считают стабильно (max-trick): z_k − max_j z_j − log Σ exp(z_j − max). Deep-ML [#39](https://www.deep-ml.com/problems/39) — `13_deep_ml_deep_learning.py`.  
-**PyTorch:** `nn.CrossEntropyLoss` принимает **логиты**, softmax снаружи не нужен — [`pytorch/08`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/08/08_активации_потери_оптимизатор.ipynb).
+**PyTorch:** `nn.CrossEntropyLoss` принимает **логиты**, softmax снаружи не нужен — [pytorch/08](../../../../pytorch/pytorch%20дубинин/08/08_активации_потери_оптимизатор.ipynb).
 
 ### 9.4. Редкие активации (кратко) + Deep-ML
 
-В проде и на экзамене: **ReLU** в скрытых, **sigmoid / softmax / без φ** на выходе (§8). Ниже — всё остальное **одной таблицей**; реализации — [`13_deep_ml_deep_learning.py`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py). С `exp`/`log` — [`a.NumPy/8`](../../a.NumPy/8.%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8.md).
+В проде и на экзамене: **ReLU** в скрытых, **sigmoid / softmax / без φ** на выходе (§8). Ниже — всё остальное **одной таблицей**; реализации — [13_deep_ml_deep_learning.py](../../../../python_base/13_deep_ml_deep_learning.py). С `exp`/`log` — [a.NumPy/8](../../a.NumPy/8.математические%20функции.md).
 
 **Swish / SiLU** — вторая по частоте в скрытых (после ReLU), не вынесена в длинный текст:
 
@@ -549,7 +549,7 @@ $$
 \Large \mathrm{GELU}(z) = z \cdot \Phi(z)
 $$
 
-Φ — функция распределения стандартной нормали (CDF). На отрицательных z даёт небольшой отрицательный «хвост», не обнуляет жёстко. Сверка с `F.relu` / `F.gelu` — [`handbook_gl34_практика.ipynb`](./practice/handbook_gl34_практика.ipynb) (§34.6).
+Φ — функция распределения стандартной нормали (CDF). На отрицательных z даёт небольшой отрицательный «хвост», не обнуляет жёстко. Сверка с `F.relu` / `F.gelu` — [handbook_gl34_практика.ipynb](./practice/handbook_gl34_практика.ipynb) (§34.6).
 
 | Имя | Обычно где | Формула (текст) | Зачем одной фразой | `exp`? | Deep-ML |
 | --- | --- | --- | --- | --- | --- |
@@ -557,7 +557,7 @@ $$
 | **Leaky ReLU** | скрытые | x или α·x (α≈0.01) | градиент при x < 0 | нет | [#44](https://www.deep-ml.com/problems/44) |
 | **Swish (SiLU)** | скрытые | x·σ(x) | самогейт, часто вместо ReLU | да | [#102](https://www.deep-ml.com/problems/102) |
 | **ELU** | скрытые | x или α(e^x−1) | «пол» слева, не «мёртвый» ноль | да | [#97](https://www.deep-ml.com/problems/97) |
-| **GELU** | скрытые, **трансформеры** | z·Φ(z) | гладкая; дефолт во многих LLM | да | [`handbook_gl34_практика.ipynb`](./practice/handbook_gl34_практика.ipynb) (§34.6) |
+| **GELU** | скрытые, **трансформеры** | z·Φ(z) | гладкая; дефолт во многих LLM | да | [handbook_gl34_практика.ipynb](./practice/handbook_gl34_практика.ipynb) (§34.6) |
 | **Softplus** | редко скрытые | ln(1+e^x); стабильно через log1p (см. a.NumPy/8) | гладкий «почти ReLU» | да | [#99](https://www.deep-ml.com/problems/99) |
 | **Softsign** | редко | x/(1+\|x\|) | сжатие в (−1,1), без exp | нет | [#100](https://www.deep-ml.com/problems/100) |
 | **PReLU** | скрытые | как Leaky, α **учится** | Leaky с обучаемым α | нет | [#98](https://www.deep-ml.com/problems/98) |
@@ -582,7 +582,7 @@ MLP (этот файл) — универсальный конструктор, �
 На лекции показывали: CNN учит иерархию признаков (low → mid → high), RNN умеет генерировать текст «в стиле» данных.  
 Детали свёрток и RNN — **отдельные** конспекты позже. Сейчас достаточно знать, **когда какую семью звать**.
 
-Трек **recsys/NLP:** видео **17–23 (CNN)** пропускаем одной папкой: [`pytorch/17-23_cnn/17-23_cnn_обзор.md`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/17-23_cnn/17-23_cnn_обзор.md). Хватит §9.5 + тот файл; ядро трека позже — эмбеддинги / Transformer. Residual / [#113](https://www.deep-ml.com/problems/113) — только Deep-ML и [`13_deep_ml…`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py), когда дойдёшь; в конспекте активаций не разбираем.
+Трек **recsys/NLP:** видео **17–23 (CNN)** пропускаем одной папкой: [pytorch/17-23_cnn/17-23_cnn_обзор.md](../../../../pytorch/pytorch%20дубинин/17-23_cnn/17-23_cnn_обзор.md). Хватит §9.5 + тот файл; ядро трека позже — эмбеддинги / Transformer. Residual / [#113](https://www.deep-ml.com/problems/113) — только Deep-ML и [13_deep_ml…](../../../../python_base/13_deep_ml_deep_learning.py), когда дойдёшь; в конспекте активаций не разбираем.
 
 ## 10. Как выбрать «голову» сети под задачу
 
@@ -706,5 +706,5 @@ $$
 | [100](https://www.deep-ml.com/problems/100) | `softsign` | §9.4 |
 | [102](https://www.deep-ml.com/problems/102) | `swish` | §9.4 |
 
-Файл: [`13_deep_ml_deep_learning.py`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py).
+Файл: [13_deep_ml_deep_learning.py](../../../../python_base/13_deep_ml_deep_learning.py).
 

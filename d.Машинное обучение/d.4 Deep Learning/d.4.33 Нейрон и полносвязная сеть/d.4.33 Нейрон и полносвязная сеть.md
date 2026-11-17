@@ -2,7 +2,7 @@
 
 Сайт: [neural-network.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html) · [карта DL](../d.4%20Deep%20Learning.md)
 
-**Теория:** этот файл (§0–§7, §12–§13); гл.34–35 — в соседних папках · **практика:** [`practice/`](./practice/README.md)
+**Теория:** этот файл (§0–§7, §12–§13); гл.34–35 — в соседних папках · **практика:** [practice/](./practice/README.md)
 
 | § | Ментор | Якорь в конспекте |
 |:---:|:---|:---|
@@ -10,7 +10,7 @@
 | 33.2 | слой \(Wx+b\) | [§6](#6-шаг-2-несколько-нейронов--несколько-новых-признаков) |
 | 33.3 | MLP | [§7](#7-шаг-3-несколько-таких-блоков-подряд--нейросеть) |
 | 33.4 | без нелинейности — линейно | [§8 (кратко)](#8-10-активации-и-голову-сети) · полностью [d.4.34](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md) |
-| 33.5 | forward 2→2→1 | [§7.В](#7v-handbook-33-5) · [`handbook_gl33_практика.ipynb`](./practice/handbook_gl33_практика.ipynb) (§33.5) |
+| 33.5 | forward 2→2→1 | [§7.В](#7v-handbook-33-5) · [handbook_gl33_практика.ipynb](./practice/handbook_gl33_практика.ipynb) (§33.5) |
 | 33.6 | XOR | [§2](#2-где-классика-ломается-зачем-вообще-нейросети) · [handbook 33.6](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html#%D0%BD%D0%B0%D0%B3%D0%BB%D1%8F%D0%B4%D0%BD%D0%BE-%D0%B7%D0%B0%D1%87%D0%B5%D0%BC-%D0%BD%D0%B5%D0%BB%D0%B8%D0%B5%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D1%81%D1%82%D1%8C-xor) · [d.4.34 §8](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md#8-зачем-активации--иначе-сеть-бесполезна) |
 
 
@@ -20,7 +20,7 @@
 
 **Соседние главы handbook:** [d.4.34](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md) · [d.4.35](../d.4.35%20Backpropagation/d.4.35%20Backpropagation.md) · [карта](../d.4%20Deep%20Learning.md)
 
-**Практика (handbook, Deep-ML):** [`practice/README.md`](./practice/README.md)
+**Практика (handbook, Deep-ML):** [practice/README.md](./practice/README.md)
 
 Опора: статья Яндекса про полносвязные сети + лекции DLS/МФТИ (Нейчев, Яровиков).
 
@@ -32,7 +32,7 @@ $$`. Инлайн-формулы в одну строку с текстом и �
 
 ### Deep-ML: решено в коде
 
-Файл [`13_deep_ml_deep_learning.py`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py) — задачи [#22](https://www.deep-ml.com/problems/22) sigmoid, [#23](https://www.deep-ml.com/problems/23) softmax, [#24](https://www.deep-ml.com/problems/24) один нейрон + MSE, [#39](https://www.deep-ml.com/problems/39) log-softmax, [#42](https://www.deep-ml.com/problems/42) ReLU, [#44](https://www.deep-ml.com/problems/44) Leaky ReLU, [#96](https://www.deep-ml.com/problems/96) hard sigmoid, [#97](https://www.deep-ml.com/problems/97) ELU, [#99](https://www.deep-ml.com/problems/99) softplus, [#100](https://www.deep-ml.com/problems/100) softsign, [#102](https://www.deep-ml.com/problems/102) swish, [#113](https://www.deep-ml.com/problems/113) residual block. Таблица всех решений: [`Deep-ML — задачи ↔ конспекты`](../../Deep-ML%20%E2%80%94%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%20%E2%86%94%20%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B.md).
+Файл [13_deep_ml_deep_learning.py](../../../../python_base/13_deep_ml_deep_learning.py) — задачи [#22](https://www.deep-ml.com/problems/22) sigmoid, [#23](https://www.deep-ml.com/problems/23) softmax, [#24](https://www.deep-ml.com/problems/24) один нейрон + MSE, [#39](https://www.deep-ml.com/problems/39) log-softmax, [#42](https://www.deep-ml.com/problems/42) ReLU, [#44](https://www.deep-ml.com/problems/44) Leaky ReLU, [#96](https://www.deep-ml.com/problems/96) hard sigmoid, [#97](https://www.deep-ml.com/problems/97) ELU, [#99](https://www.deep-ml.com/problems/99) softplus, [#100](https://www.deep-ml.com/problems/100) softsign, [#102](https://www.deep-ml.com/problems/102) swish, [#113](https://www.deep-ml.com/problems/113) residual block. Таблица всех решений: [Deep-ML — задачи ↔ конспекты](../../Deep-ML%20—%20задачи%20↔%20конспекты.md).
 
 ---
 
@@ -46,27 +46,27 @@ $$`. Инлайн-формулы в одну строку с текстом и �
 | Функции активации                         | [d.4.34](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md); производные ReLU/σ, затухание → [§9.2.1](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md#921-затухающий-градиент--почему-relu-в-скрытых-а-не-sigmoid) |
 | Краткий обзор CNN и RNN                   | [d.4.34 §9.5](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md#95-краткий-обзор-зачем-ещё-cnn-и-rnn-лекция) |
 | Полносвязная нейронная сеть               | весь этот файл                                          |
-| [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html) гл.33 | теория — этот `.md`; практика — [`practice/`](./practice/README.md) |
+| [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html) гл.33 | теория — этот `.md`; практика — [practice/](./practice/README.md) |
 | [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/activations.html) гл.34 | теория — [d.4.34](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md); практика — [d.4.34/practice](../d.4.34%20Функции%20активации/practice/README.md) |
 | [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/backprop.html) гл.35 | теория — [d.4.35](../d.4.35%20Backpropagation/d.4.35%20Backpropagation.md); практика — [d.4.35/practice](../d.4.35%20Backpropagation/practice/README.md) |
-| [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-optimization.html) гл.36 | теория — [d.4.36](../d.4.36%20Оптимизация%20%D0%B8%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20DL/d.4.36%20Оптимизация%20%D0%B8%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20DL.md) + [`d.4.36`](../d.4.36%20Оптимизация%20%D0%B8%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20DL/d.4.36%20%D0%9E%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B8%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20DL.md); практика — [`d.4.36/practice`](../d.4.36%20Оптимизация%20%D0%B8%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20DL/practice/README.md) |
-| Градиентная оптимизация в DL              | [`d.4.36`](../d.4.36%20Оптимизация%20%D0%B8%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20DL/d.4.36%20Оптимизация%20%D0%B8%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20DL.md) §1–2 |
+| [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-optimization.html) гл.36 | теория — [d.4.36](../d.4.36%20Оптимизация%20и%20обучение%20в%20DL/d.4.36%20Оптимизация%20и%20обучение%20в%20DL.md) + [d.4.36](../d.4.36%20Оптимизация%20и%20обучение%20в%20DL/d.4.36%20Оптимизация%20и%20обучение%20в%20DL.md); практика — [d.4.36/practice](../d.4.36%20Оптимизация%20и%20обучение%20в%20DL/practice/README.md) |
+| Градиентная оптимизация в DL              | [d.4.36](../d.4.36%20Оптимизация%20и%20обучение%20в%20DL/d.4.36%20Оптимизация%20и%20обучение%20в%20DL.md) §1–2 |
 | Нормализация / регуляризация в DL         | `d.4.37` §1–2; пример шага → `d.4.37.1`                   |
 
 ## Практика PyTorch (когда готовишься / повторяешь)
 
-Теория здесь → код в [`учеба мл/pytorch`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/0_как_учить_pytorch.md). Обратная карта (видео → §) — в том же гайде и в [`d.4 Deep Learning.md`](../d.4%20Deep%20Learning.md).
+Теория здесь → код в [учеба мл/pytorch](../../../../pytorch/pytorch%20дубинин/0_как_учить_pytorch.md). Обратная карта (видео → §) — в том же гайде и в [d.4 Deep Learning.md](../d.4%20Deep%20Learning.md).
 
 | Тема в этом файле | Ноутбук / видео курса |
 | --- | --- |
-| §5–7 один нейрон, слои, MLP; **§7.В handbook 2→2→1**; **§8** MLP 3→4→4→1 | видео 8 блок Linear; [`pytorch/09`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/09/09_классы_нейросетей.ipynb) (`Sequential`, `nn.Module`, ModuleList) |
-| §8–9 активации, softmax, **log-softmax §9.3.1** | [`08/…активации…`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/08/08_активации_потери_оптимизатор.ipynb) блоки 1–2 |
-| §10 головы + loss (CE, BCE, MSE) | `08/` блок 3; **формулы CE руками** — [`homework…/формулы-конспект-код.md`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/homework_linear_models_and_knn/формулы-конспект-код.md); идея loss — [`d.1.2`](../../d.1%20Введение%20в%20мл/d.1.2%20Loss%20и%20эмпирический%20риск.md); метрики — [`d.3.1`](../../d.3%20Classic%20ML/d.3.1%20Метрики%20классификации%20и%20регрессии.md); склейка loss+Adam к модели — [`pytorch/10`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/10/10_создание_нейросетей.ipynb) |
-| §10–11 метрики, петля, backprop смысл | `08/` блоки 4–5; `state_dict` / `train`·`eval` — [`10/`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/10/10_создание_нейросетей.ipynb); полный цикл — [`11/`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/11/11_цикл_обучения.ipynb); save/load best — [`13/`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/13/13_save_load.ipynb) (§11.5) |
+| §5–7 один нейрон, слои, MLP; **§7.В handbook 2→2→1**; **§8** MLP 3→4→4→1 | [видео 8](https://www.youtube.com/watch?v=PARx85j3W2M) блок Linear · [pytorch/08](../../../../pytorch/pytorch%20дубинин/08/08_активации_потери_оптимизатор.ipynb); [pytorch/09](../../../../pytorch/pytorch%20дубинин/09/09_классы_нейросетей.ipynb) (`Sequential`, `nn.Module`, ModuleList) |
+| §8–9 активации, softmax, **log-softmax §9.3.1** | [08/…активации…](../../../../pytorch/pytorch%20дубинин/08/08_активации_потери_оптимизатор.ipynb) блоки 1–2 |
+| §10 головы + loss (CE, BCE, MSE) | `08/` блок 3; **формулы CE руками** — [homework…/формулы-конспект-код.md](../../../../homework_linear_models_and_knn/формулы-конспект-код.md); идея loss — [d.1.2](../../d.1%20Введение%20в%20мл/d.1.2%20Loss%20и%20эмпирический%20риск.md); метрики — [d.3.1](../../d.3%20Classic%20ML/d.3.1%20Метрики%20классификации%20и%20регрессии.md); склейка loss+Adam к модели — [pytorch/10](../../../../pytorch/pytorch%20дубинин/10/10_создание_нейросетей.ipynb) |
+| §10–11 метрики, петля, backprop смысл | `08/` блоки 4–5; `state_dict` / `train`·`eval` — [10/](../../../../pytorch/pytorch%20дубинин/10/10_создание_нейросетей.ipynb); полный цикл — [11/](../../../../pytorch/pytorch%20дубинин/11/11_цикл_обучения.ipynb); save/load best — [13/](../../../../pytorch/pytorch%20дубинин/13/13_save_load.ipynb) (§11.5) |
 | §11.3 батчи | `04/`–`06/` Dataset/DataLoader |
 | шпаргалка §13 | весь `08/` + проект FashionMNIST |
 
-Проект: [`project/fashion_mnist.ipynb`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/project/fashion_mnist.ipynb) (классификация как пример Б «цифры», регрессия центра — как «голова» §10.3).
+Проект: [project/fashion_mnist.ipynb](../../../../pytorch/pytorch%20дубинин/project/fashion_mnist.ipynb) (классификация как пример Б «цифры», регрессия центра — как «голова» §10.3).
 
 ---
 
@@ -86,7 +86,7 @@ $$`. Инлайн-формулы в одну строку с текстом и �
 12. Чеклист: что уже достаточно знать
 13. Шпаргалка
 
-> Практика handbook: гл.33 — [`practice/`](./practice/README.md) · гл.34 — [`d.4.34/practice`](../d.4.34%20Функции%20активации/practice/README.md) · гл.35 — [`d.4.35/practice`](../d.4.35%20Backpropagation/practice/README.md). Гл.36 — [`d.4.36/practice`](../d.4.36%20Оптимизация%20%D0%B8%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20DL/practice/README.md). Гл.37 — [`d.4.37/practice`](../d.4.37%20%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%20DL/practice/README.md).
+> Практика handbook: гл.33 — [practice/](./practice/README.md) · гл.34 — [d.4.34/practice](../d.4.34%20Функции%20активации/practice/README.md) · гл.35 — [d.4.35/practice](../d.4.35%20Backpropagation/practice/README.md). Гл.36 — [d.4.36/practice](../d.4.36%20Оптимизация%20и%20обучение%20в%20DL/practice/README.md). Гл.37 — [d.4.37/practice](../d.4.37%20Регуляризация%20в%20DL/practice/README.md).
 
 > Все числа игрушечные. Цель — чтобы формула «ожила», а не чтобы решать олимпиаду.
 
@@ -108,7 +108,7 @@ $$`. Инлайн-формулы в одну строку с текстом и �
 | --- | --- | --- |
 | Учусь с нуля, forward + слои | **только А** §5 → §6 → **§7.А** | Б, В, батч в конце §7.А |
 | Классификация, softmax | **Б** §7.Б + §9.3 | handbook |
-| Прохожу ML Handbook гл.33 | теория §0–§7, §12–§13; код — [`practice/`](./practice/README.md) | |
+| Прохожу ML Handbook гл.33 | теория §0–§7, §12–§13; код — [practice/](./practice/README.md) | |
 | Прохожу ML Handbook гл.34 | [d.4.34](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md) | |
 | Прохожу ML Handbook гл.35 | [d.4.35](../d.4.35%20Backpropagation/d.4.35%20Backpropagation.md) | |
 | Зачем нелинейность, XOR | §2 · [d.4.34 §8](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md#8-зачем-активации--иначе-сеть-бесполезна) | [handbook 33.6](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html#%D0%BD%D0%B0%D0%B3%D0%BB%D1%8F%D0%B4%D0%BD%D0%BE-%D0%B7%D0%B0%D1%87%D0%B5%D0%BC-%D0%BD%D0%B5%D0%BB%D0%B8%D0%B5%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D1%81%D1%82%D1%8C-xor) |
@@ -184,7 +184,7 @@ $$
 
 В классике ты бы пошёл чинить признаки руками, например добавил бы произведение x1 · x2.
 
-(Это как раз **feature engineering** — см. [`d.2.1.1`../../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1.1%20feature%20engineering%20%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B.md).)
+(Это как раз **feature engineering** — см. [d.2.1.1](../../d.2%20Линейные%20модели%20метрические%20методы/d.2.1%20Линейные%20модели/d.2.1.1%20feature%20engineering%20примеры.md).)
 
 Нейросеть делает похожее **сама**: внутри появляются новые числа-признаки, и уже по ним финальная «логистическая» легко разделяет классы.
 
@@ -777,7 +777,7 @@ X = 3 × 2                 W = 2 × 4                 XW + b = 3 × 4
 
 ### 7.В. Forward 2→2→1 — указатель на handbook **§33.5**
 
-> Код §33.5 — [`handbook_gl33_практика.ipynb`](./practice/handbook_gl33_практика.ipynb). Эталон на сайте — [handbook §33.5](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html#forward-%D0%BF%D1%80%D0%BE%D1%85%D0%BE%D0%B4-%D1%80%D1%83%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BF%D0%BE-%D1%88%D0%B0%D0%B3%D0%B0%D0%BC).
+> Код §33.5 — [handbook_gl33_практика.ipynb](./practice/handbook_gl33_практика.ipynb). Эталон на сайте — [handbook §33.5](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html#forward-%D0%BF%D1%80%D0%BE%D1%85%D0%BE%D0%B4-%D1%80%D1%83%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BF%D0%BE-%D1%88%D0%B0%D0%B3%D0%B0%D0%BC).
 
 **Зачем строка в конспекте:** после **§7.А** (свои числа, ReLU, квартира) — соседний пример handbook: сеть **2→2→1**, **sigmoid**, бинарный **выход-вероятность**.
 
@@ -838,7 +838,7 @@ X = 3 × 2                 W = 2 × 4                 XW + b = 3 × 4
 | Классика vs сеть (§3)       | классика = сразу ответ; сеть = конвейер признаков → ответ в конце                     |
 | Два примера                 | А квартира→цена (§7.А); Б цифры→класс (§7.Б + §9.3)                                   |
 | W¹ и W²                     | номер слоя, не «в квадрате»                                                           |
-| Практика handbook гл.33     | [`practice/`](./practice/README.md) |
+| Практика handbook гл.33     | [practice/](./practice/README.md) |
 | Практика handbook гл.34     | [d.4.34/practice](../d.4.34%20Функции%20активации/practice/README.md) |
 | Практика handbook гл.35     | [d.4.35/practice](../d.4.35%20Backpropagation/practice/README.md) |
 
@@ -873,22 +873,22 @@ X = 3 × 2                 W = 2 × 4                 XW + b = 3 × 4
 
 | Тема                                                    | Куда смотреть                        |
 | ------------------------------------------------------- | ------------------------------------ |
-| Градиент, производная, цепочка, α «с нуля»              | [`d.0`](../../d.0%20Градиент%20и%20правило%20цепочки.md) |
+| Градиент, производная, цепочка, α «с нуля»              | [d.0](../../d.0%20Градиент%20и%20правило%20цепочки.md) |
 | Затухающий градиент · ReLU в скрытых, не sigmoid       | [d.4.34 §9.2.1](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md#921-затухающий-градиент--почему-relu-в-скрытых-а-не-sigmoid) |
 | Линейная регрессия, GD                                  | `d.3.9`, пример с квартирами         |
-| Матричный GD / SGD на MSE                               | [`d.2.1.4`../../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1.4%20%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%20MSE%20%D0%B8%20SGD%20%D0%B4%D0%BB%D1%8F%20%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9%20%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B8.md#2-%D0%B7%D0%B0%D1%87%D0%B5%D0%BC-gd-%D0%B5%D1%81%D0%BB%D0%B8-%D0%B5%D1%81%D1%82%D1%8C-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5) |
+| Матричный GD / SGD на MSE                               | [d.2.1.4](../../d.2%20Линейные%20модели%20метрические%20методы/d.2.1%20Линейные%20модели/d.2.1.4%20Градиент%20MSE%20и%20SGD%20для%20линейной%20регрессии.md#2-зачем-gd-если-есть-нормальное-уравнение) |
 | SGD в DL: батч, шум, формулы L и ∇L по объектам         | `d.4.36` §2.2                         |
 | Log loss, MSE, метрики                                  | `d.3.1` (+ связка с DL в `d.4.37` §3) |
 | Валидация / CV                                          | `d.3.2` (+ `d.4.37` §3)               |
 | Этот файл                                               | архитектура MLP «с нуля»             |
 | Градиентная оптимизация (Adam, lr, SGD)                 | `d.4.36`                              |
 | Регуляризация (dropout, BatchNorm, early stopping)      | `d.4.37`                              |
-| **Практика PyTorch** (активации, loss, Adam, Linear)    | [`pytorch/08`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/08/08_активации_потери_оптимизатор.ipynb); карта — [`0_как_учить_pytorch.md`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/pytorch/pytorch%20дубинин/0_как_учить_pytorch.md) |
-| Softmax + CE с расчётами (NumPy, домашка)               | [`формулы-конспект-код.md`](../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/homework_linear_models_and_knn/формулы-конспект-код.md) |
-| Loss / метрики (классика)                               | [`d.1.2`../../d.1%20Введение%20в%20мл/d.1.2%20Loss%20и%20эмпирический%20риск.md), [`d.3.1`../../d.3%20Classic%20ML/d.3.1%20Метрики%20классификации%20и%20регрессии.md) |
+| **Практика PyTorch** (активации, loss, Adam, Linear)    | [pytorch/08](../../../../pytorch/pytorch%20дубинин/08/08_активации_потери_оптимизатор.ipynb); карта — [0_как_учить_pytorch.md](../../../../pytorch/pytorch%20дубинин/0_как_учить_pytorch.md) |
+| Softmax + CE с расчётами (NumPy, домашка)               | [формулы-конспект-код.md](../../../../homework_linear_models_and_knn/формулы-конспект-код.md) |
+| Loss / метрики (классика)                               | [d.1.2](../../d.1%20Введение%20в%20мл/d.1.2%20Loss%20и%20эмпирический%20риск.md), [d.3.1](../../d.3%20Classic%20ML/d.3.1%20Метрики%20классификации%20и%20регрессии.md) |
 | Активации: §9.1–9.3 подробно; §9.4 таблица + Deep-ML     | [d.4.34](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md) |
-| `exp` для ELU / Swish на отрицательных x                  | [`a.NumPy/8`](../../a.NumPy/8.%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8.md) |
-| Общий указатель Deep-ML ↔ конспекты                       | [`Deep-ML — задачи ↔ конспекты`](../../Deep-ML%20%E2%80%94%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%20%E2%86%94%20%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B.md) |
+| `exp` для ELU / Swish на отрицательных x                  | [a.NumPy/8](../../a.NumPy/8.математические%20функции.md) |
+| Общий указатель Deep-ML ↔ конспекты                       | [Deep-ML — задачи ↔ конспекты](../../Deep-ML%20—%20задачи%20↔%20конспекты.md) |
 
 ## Главный вывод
 

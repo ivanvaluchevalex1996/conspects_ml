@@ -1,12 +1,12 @@
 # Handbook гл.35 · домашка Deep-ML
 
-Сначала [`../handbook_gl35_практика.ipynb`](../handbook_gl35_практика.ipynb) (§35.3–35.4) — тот же смысл «NumPy руками → torch.backward».
+Сначала [../handbook_gl35_практика.ipynb](../handbook_gl35_практика.ipynb) (§35.3–35.4) — тот же смысл «NumPy руками → torch.backward».
 
 | ☐ | Папка | Deep-ML | Заметка |
 |---|--------|---------|---------|
 | ☐ | [25_single_neuron_backprop](./25_single_neuron_backprop/) | [#25](https://www.deep-ml.com/problems/25) | `train_neuron`, MSE + σ, batch GD |
 | ☐ | [26_basic_autograd](./26_basic_autograd/) | [#26](https://www.deep-ml.com/problems/26) | класс `Value`, micrograd |
 
-**Порядок:** NumPy (`need`) → при желании сверка с PyTorch → submit на deep-ml.com → архив [`13_deep_ml…`](../../../../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/13_deep_ml_deep_learning.py) (пока нет #25/#26).
+**Порядок:** NumPy (`need`) → при желании сверка с PyTorch → submit на deep-ml.com → архив [13_deep_ml…](../../../../../../python_base/13_deep_ml_deep_learning.py) (пока нет #25/#26).
 
-Указатель: [`../README.md`](../README.md).
+Указатель: [../README.md](../README.md).

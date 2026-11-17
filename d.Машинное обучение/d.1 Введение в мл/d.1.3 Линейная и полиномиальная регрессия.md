@@ -1,8 +1,8 @@
 # d.1.3 Линейная и полиномиальная регрессия
 
-**Deep-ML [#84](https://www.deep-ml.com/problems/84)** — полиномиальные признаки `phi_transform` в [`11_deep_ml_linear_algebra copy.py`](../../../%D1%83%D1%87%D0%B5%D0%B1%D0%B0%20%D0%BC%D0%BB/python_base/11_deep_ml_linear_algebra%20copy.py).
+**Deep-ML [#84](https://www.deep-ml.com/problems/84)** — полиномиальные признаки `phi_transform` в [11_deep_ml_linear_algebra copy.py](../../../python_base/11_deep_ml_linear_algebra%20copy.py).
 
-Глубокий разбор весов, $\large{w_0}$, нормального уравнения, SGD — в [`d.2.1`](../d.2%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8/d.2.1%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8.md#%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B9-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8) и [`d.3.9`](../d.3%20Classic%20ML/d.3.9%20%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D1%8F%20%E2%80%94%20%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BF%D1%83%D1%81%D0%BA.md#4-%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1-1-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B5%D1%81%D0%B0-%D0%B7%D0%B0-%D0%BE%D0%B4%D0%B8%D0%BD-%D1%88%D0%B0%D0%B3). Здесь — идея для введения.
+Глубокий разбор весов, $\large{w_0}$, нормального уравнения, SGD — в [d.2.1](../d.2%20Линейные%20модели%20метрические%20методы/d.2.1%20Линейные%20модели/d.2.1%20Линейные%20модели.md#основы-линейной-модели) и [d.3.9](../d.3%20Classic%20ML/d.3.9%20Линейная%20регрессия%20—%20нормальное%20уравнение%20и%20градиентный%20спуск.md#4-способ-1-нормальное-уравнение-веса-за-один-шаг). Здесь — идея для введения.
 
 ## 1. Линейная регрессия одной фразой
 
@@ -80,7 +80,7 @@ $$
 \Large \text{недообучение} \;\longrightarrow\; \text{норма} \;\longrightarrow\; \text{переобучение}
 $$
 
-Подробнее про train/val и графики — [d.1.4](d.1.4%20%D0%9F%D0%B5%D1%80%D0%B5%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5.md#1-%D0%BE%D0%B4%D0%BD%D0%BE%D0%B9-%D1%84%D1%80%D0%B0%D0%B7%D0%BE%D0%B9).
+Подробнее про train/val и графики — [d.1.4](d.1.4%20Переобучение.md#1-одной-фразой).
 
 ## Запомнить
 

@@ -1,6 +1,6 @@
 # Deep-ML #42 · ReLU
 
-- [problems/42](https://www.deep-ml.com/problems/42) · [`42_relu.ipynb`](./42_relu.ipynb) · эталон [`42_relu_решения.ipynb`](./42_relu_решения.ipynb) · §9.1
+- [problems/42](https://www.deep-ml.com/problems/42) · [42_relu.ipynb](./42_relu.ipynb) · эталон [42_relu_решения.ipynb](./42_relu_решения.ipynb) · §9.1
 
 | ☐ | Шаг |
 |---|-----|
