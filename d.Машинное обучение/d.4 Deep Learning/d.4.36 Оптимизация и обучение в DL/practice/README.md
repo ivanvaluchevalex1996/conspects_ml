@@ -1,6 +1,6 @@
 # Практика · handbook гл. 36 (DL optimization)
 
-Теория — [d.4.36 … .md](../d.4.36%20Оптимизация%20и%20обучение%20в%20DL.md) **§1–2**. Вход handbook: [d.4.36](../d.4.36%20Оптимизация%20и%20обучение%20в%20DL.md). На сайте: [dl-optimization](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-optimization.html).
+Теория — [d.4.36 … .md](../d.4.36%20Оптимизация%20и%20обучение%20в%20DL/d.4.36%20Оптимизация%20и%20обучение%20в%20DL.md) **§1–2**. Вход handbook: [d.4.36](../d.4.36%20Оптимизация%20и%20обучение%20в%20DL/d.4.36%20Оптимизация%20и%20обучение%20в%20DL.md). На сайте: [dl-optimization](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-optimization.html).
 
 | Что | Где |
 |-----|-----|

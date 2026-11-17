@@ -1,6 +1,6 @@
 # Практика · handbook гл. 35 (backprop)
 
-Теория — [d.4.35 … .md](../d.4.35%20Backpropagation.md) **§11**. Вход handbook: [d.4.35](../d.4.35%20Backpropagation.md). На сайте: [backprop.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/backprop.html).
+Теория — [d.4.35 … .md](../d.4.35%20Backpropagation/d.4.35%20Backpropagation.md) **§11**. Вход handbook: [d.4.35](../d.4.35%20Backpropagation/d.4.35%20Backpropagation.md). На сайте: [backprop.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/backprop.html).
 
 | Что | Где |
 |-----|-----|

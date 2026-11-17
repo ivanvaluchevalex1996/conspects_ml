@@ -1,13 +1,13 @@
 # Практика · handbook гл. 34
 
-Теория — [d.4.34 … .md](../d.4.34%20Функции%20активации.md) §8–10. На сайте: [activations.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/activations.html).
+Теория — [d.4.34 … .md](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md) §8–10. На сайте: [activations.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/activations.html).
 
 | Что | Где |
 |-----|-----|
 | §34.4–advanced (PyTorch / NumPy) | [handbook_gl34_практика.ipynb](./handbook_gl34_практика.ipynb) · эталон [handbook_gl34_практика_решения.ipynb](./handbook_gl34_практика_решения.ipynb) |
 | Deep-ML #22…#98 | [deep_ml/](./deep_ml/README.md) — по папке на задачу |
-| Затухающий градиент · ReLU vs sigmoid (теория) | [§9.2.1](../d.4.34%20Функции%20активации.md#921-затухающий-градиент--почему-relu-в-скрытых-а-не-sigmoid); функции σ/ReLU — [§9.1–9.2](../d.4.34%20Функции%20активации.md#9-какие-активации-бывают) |
+| Затухающий градиент · ReLU vs sigmoid (теория) | [§9.2.1](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md); функции σ/ReLU — [§9.1–9.2](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md) |
 
 **Порядок ментора:** допиши код в [handbook_gl34_практика.ipynb](./handbook_gl34_практика.ipynb) → сверка с handbook → (для Deep-ML) NumPy ↔ PyTorch → submit на [deep-ml.com](https://www.deep-ml.com). Архив: [13_deep_ml…](../../../../../python_base/13_deep_ml_deep_learning.py).
 
-Таблица ↔ конспекты: [Deep-ML — задачи ↔ конспекты](../../../Deep-ML%20—%20задачи%20↔%20конспекты.md).
+Таблица ↔ конспекты: [Deep-ML — задачи ↔ конспекты](../../../1.Deep-ML%20—%20задачи%20↔%20конспекты.md).

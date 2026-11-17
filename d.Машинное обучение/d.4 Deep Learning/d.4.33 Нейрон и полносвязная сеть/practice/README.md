@@ -1,6 +1,6 @@
 # Практика · handbook гл. 33
 
-Теория — [d.4.33 … .md](../d.4.33%20Нейрон%20и%20полносвязная%20сеть.md). Вход handbook: [d.4.33](../d.4.33%20Нейрон%20и%20полносвязная%20сеть.md). На сайте: [neural-network.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html).
+Теория — [d.4.33 … .md](../d.4.33%20Нейрон%20и%20полносвязная%20сеть/d.4.33%20Нейрон%20и%20полносвязная%20сеть.md). Вход handbook: [d.4.33](../d.4.33%20Нейрон%20и%20полносвязная%20сеть/d.4.33%20Нейрон%20и%20полносвязная%20сеть.md). На сайте: [neural-network.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html).
 
 | Что | Где |
 |-----|-----|
