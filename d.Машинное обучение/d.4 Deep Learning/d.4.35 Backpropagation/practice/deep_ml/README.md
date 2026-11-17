@@ -1,6 +1,6 @@
 # Handbook гл.35 · домашка Deep-ML
 
-Сначала [../handbook_gl35_практика.ipynb](../handbook_gl35_практика.ipynb) (§35.3–35.4) — тот же смысл «NumPy руками → torch.backward».
+Handbook §35.3–35.6: [../handbook_gl35_практика.ipynb](../handbook_gl35_практика.ipynb) → эталон [../handbook_gl35_практика_решения.ipynb](../handbook_gl35_практика_решения.ipynb). Deep-ML: в каждой папке `*_решения.ipynb` **после** попытки.
 
 | ☐ | Папка | Deep-ML | Заметка |
 |---|--------|---------|---------|

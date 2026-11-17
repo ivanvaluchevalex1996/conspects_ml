@@ -1,6 +1,6 @@
 # Handbook гл.37 · NumPy + PyTorch Basics
 
-Два уровня с сайта: сначала NumPy, потом `nn.Dropout` / `nn.BatchNorm1d`.
+Handbook: [../handbook_gl37_практика.ipynb](../handbook_gl37_практика.ipynb) → эталон [../handbook_gl37_практика_решения.ipynb](../handbook_gl37_практика_решения.ipynb). Deep-ML: в каждой папке `*_решения.ipynb` **после** попытки. Сначала NumPy, потом torch.
 
 | ☐ | Папка | Задача |
 |---|--------|--------|

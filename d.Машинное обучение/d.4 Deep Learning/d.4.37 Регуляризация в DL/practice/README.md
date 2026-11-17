@@ -4,7 +4,7 @@
 
 | Что | Где |
 |-----|-----|
-| §37.2, §37.7, MLP, NumPy ↔ torch | [handbook_gl37_практика.ipynb](./handbook_gl37_практика.ipynb) |
+| §37.2, §37.7, MLP, NumPy ↔ torch | [handbook_gl37_практика.ipynb](./handbook_gl37_практика.ipynb) · эталон [handbook_gl37_практика_решения.ipynb](./handbook_gl37_практика_решения.ipynb) |
 | Домашка Deep-ML / PyTorch Basics | [deep_ml/](./deep_ml/) |
 
 §37.1, §37.3–37.6, §37.8 — **прочитать** на сайте / в `d.4.37`; early stop в курсе [pytorch/14](../../../../../pytorch/pytorch%20дубинин/14/14_early_stopping.ipynb).

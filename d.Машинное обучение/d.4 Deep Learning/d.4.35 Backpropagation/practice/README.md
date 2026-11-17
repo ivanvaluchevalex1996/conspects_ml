@@ -4,7 +4,7 @@
 
 | Что | Где |
 |-----|-----|
-| §35.3–35.6 (handbook) | [handbook_gl35_практика.ipynb](./handbook_gl35_практика.ipynb) |
+| §35.3–35.6 (handbook) | [handbook_gl35_практика.ipynb](./handbook_gl35_практика.ipynb) · эталон [handbook_gl35_практика_решения.ipynb](./handbook_gl35_практика_решения.ipynb) |
 | Домашка Deep-ML | [deep_ml/](./deep_ml/) — [#25](https://www.deep-ml.com/problems/25), [#26](https://www.deep-ml.com/problems/26) |
 
 §35.1–35.2, §35.5 (граф) — **прочитать** на сайте / в §11; кода нет.

@@ -1,6 +1,6 @@
 # Handbook гл.36 · домашка Deep-ML
 
-После [../handbook_gl36_практика.ipynb](../handbook_gl36_практика.ipynb) (§36.5) и §2 `d.4.36`.
+Handbook: [../handbook_gl36_практика.ipynb](../handbook_gl36_практика.ipynb) → эталон [../handbook_gl36_практика_решения.ipynb](../handbook_gl36_практика_решения.ipynb). Deep-ML: в каждой папке `*_решения.ipynb` **после** попытки.
 
 | ☐ | Папка | Deep-ML | Заметка |
 |---|--------|---------|---------|

@@ -1,5 +1,4 @@
 # Deep-ML #26 · Basic Autograd (`Value`)
 
-- [Условие](https://www.deep-ml.com/problems/26)
-- Тренажёр: [26_basic_autograd.ipynb](./26_basic_autograd.ipynb)
+- [problems/26](https://www.deep-ml.com/problems/26) · [26_basic_autograd.ipynb](./26_basic_autograd.ipynb) · эталон [26_basic_autograd_решения.ipynb](./26_basic_autograd_решения.ipynb) **после** попытки
 - Референс: [micrograd](https://github.com/karpathy/micrograd)
