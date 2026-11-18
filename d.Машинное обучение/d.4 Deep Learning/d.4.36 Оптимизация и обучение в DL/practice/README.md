@@ -5,7 +5,7 @@
 | Что | Где |
 |-----|-----|
 | §36.3, §36.5–36.6, сравнение оптимизаторов | [handbook_gl36_практика.ipynb](./handbook_gl36_практика.ipynb) · эталон [handbook_gl36_практика_решения.ipynb](./handbook_gl36_практика_решения.ipynb) |
-| Домашка Deep-ML | [deep_ml/](./deep_ml/) |
+| Домашка Deep-ML (easy / medium — [таблица](./deep_ml/README.md)) | [deep_ml/](./deep_ml/) |
 
 Теория §36.1–36.4 — в конспекте **§1–§2.6**, **§2.8** (рабочий рецепт). Код residual — [Deep-ML #113](https://www.deep-ml.com/problems/113).
 

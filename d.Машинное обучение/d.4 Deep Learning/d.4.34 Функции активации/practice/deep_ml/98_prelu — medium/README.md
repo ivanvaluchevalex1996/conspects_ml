@@ -1,0 +1,7 @@
+# Deep-ML #98 · PReLU forward + backward · **medium**
+**Уровень:** medium (Deep-ML).
+
+
+- [problems/98](https://www.deep-ml.com/problems/98) · [98_prelu.ipynb](./98_prelu.ipynb) · эталон [98_prelu_решения.ipynb](./98_prelu_решения.ipynb) · §9.4
+
+| ☐ | `prelu_forward` / `prelu_backward` (примеры с сайта) → submit (в `13_…` пока нет) |

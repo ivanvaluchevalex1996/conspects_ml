@@ -37,7 +37,7 @@ DeepML (θ, m) → [d.3.9](../../d.3%20Classic%20ML/d.3.9%20Линейная%20�
 
 > Preview: важные формулы в `$$`, в тексте — обычные символы.
 
-**Deep-ML:** [#49](https://www.deep-ml.com/problems/49) Adam, [#146](https://www.deep-ml.com/problems/146) momentum, PyTorch Basics [#1234](https://www.deep-ml.com/problems/1234)–[#1236](https://www.deep-ml.com/problems/1236) — тренажёры [practice/deep_ml/](./practice/deep_ml/README.md). Батчи [#29](https://www.deep-ml.com/problems/29), [#30](https://www.deep-ml.com/problems/30) — [12_deep_ml_machine_learning.py](../../../../python_base/12_deep_ml_machine_learning.py). Указатель: [Deep-ML — задачи ↔ конспекты](../../1.Deep-ML%20—%20задачи%20↔%20конспекты.md).
+**Deep-ML:** [#49](https://www.deep-ml.com/problems/49) Adam (**medium**), [#146](https://www.deep-ml.com/problems/146) momentum (**easy**, доп.), PyTorch [#1234](https://www.deep-ml.com/problems/1234)–[#1236](https://www.deep-ml.com/problems/1236) (**easy** в handbook) — уровни в [practice/deep_ml/](./practice/deep_ml/README.md). Батчи [#29](https://www.deep-ml.com/problems/29), [#30](https://www.deep-ml.com/problems/30) — [12_deep_ml_machine_learning.py](../../../../python_base/12_deep_ml_machine_learning.py). Указатель: [Deep-ML — задачи ↔ конспекты](../../1.Deep-ML%20—%20задачи%20↔%20конспекты.md).
 
 ---
 

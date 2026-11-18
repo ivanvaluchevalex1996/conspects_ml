@@ -5,7 +5,7 @@
 | Что | Где |
 |-----|-----|
 | §34.4–advanced (PyTorch / NumPy) | [handbook_gl34_практика.ipynb](./handbook_gl34_практика.ipynb) · эталон [handbook_gl34_практика_решения.ipynb](./handbook_gl34_практика_решения.ipynb) |
-| Deep-ML #22…#98 | [deep_ml/](./deep_ml/README.md) — по папке на задачу |
+| Deep-ML #22…#98 (easy / medium — [таблица](./deep_ml/README.md)) | [deep_ml/](./deep_ml/README.md) |
 | Затухающий градиент · ReLU vs sigmoid (теория) | [§9.2.1](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md); функции σ/ReLU — [§9.1–9.2](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md) |
 
 **Порядок ментора:** допиши код в [handbook_gl34_практика.ipynb](./handbook_gl34_практика.ipynb) → сверка с handbook → (для Deep-ML) NumPy ↔ PyTorch → submit на [deep-ml.com](https://www.deep-ml.com). Архив: [13_deep_ml…](../../../../../python_base/13_deep_ml_deep_learning.py).
