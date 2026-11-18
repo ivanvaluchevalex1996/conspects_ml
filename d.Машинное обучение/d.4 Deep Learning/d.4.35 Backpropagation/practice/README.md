@@ -12,3 +12,5 @@
 **Порядок ментора:** NumPy XOR (§35.3) → сверка print → PyTorch (§35.4) → grad check (§35.6) → Deep-ML (#25, #26) → дальше [pytorch/11](../../../../../pytorch/pytorch%20дубинин/11/11_цикл_обучения.ipynb).
 
 Чеклист и код: [handbook_gl35_практика.ipynb](./handbook_gl35_практика.ipynb).
+
+**Практика PyTorch (Дубинин):** [03/](../../../../../pytorch/pytorch%20дубинин/03/03_знакомство_с_pytorch.ipynb) · [11/](../../../../../pytorch/pytorch%20дубинин/11/11_цикл_обучения.ipynb) · [13/](../../../../../pytorch/pytorch%20дубинин/13/13_save_load.ipynb) · [14/](../../../../../pytorch/pytorch%20дубинин/14/14_early_stopping.ipynb) · карта [0_как_учить_pytorch.md](../../../../../pytorch/pytorch%20дубинин/0_как_учить_pytorch.md). Хаб главы — [README.md](../README.md).

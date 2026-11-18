@@ -12,3 +12,5 @@
 **Порядок ментора:** Dropout NumPy [#151](https://www.deep-ml.com/problems/151) → BatchNorm NumPy → torch [#901](https://www.deep-ml.com/problems/901), [#1230](https://www.deep-ml.com/problems/1230), [#1231](https://www.deep-ml.com/problems/1231) → сверка → MLP lab → `pytorch/15`–`16`.
 
 Чеклист и код: [handbook_gl37_практика.ipynb](./handbook_gl37_практика.ipynb).
+
+**Практика PyTorch (Дубинин):** [07/](../../../../../pytorch/pytorch%20дубинин/07/07_transforms_v2.ipynb) · [14/](../../../../../pytorch/pytorch%20дубинин/14/14_early_stopping.ipynb) · [15/](../../../../../pytorch/pytorch%20дубинин/15/15_dropout.ipynb) · [16/](../../../../../pytorch/pytorch%20дубинин/16/16_batchnorm.ipynb) · карта [0_как_учить_pytorch.md](../../../../../pytorch/pytorch%20дубинин/0_как_учить_pytorch.md). Хаб главы — [README.md](../README.md).

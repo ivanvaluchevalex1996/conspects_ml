@@ -2,7 +2,7 @@
 
 **Лекция DLS (YouTube):** [градиентная оптимизация](https://www.youtube.com/watch?v=6CvpMOO-DB4) · слайды: [Оптимизация_и_регуляризация_в_Deep_Learning.pdf](../../Оптимизация_и_регуляризация_в_Deep_Learning.pdf) · отдельное видео «регуляризация» → [d.4.37](../d.4.37%20Регуляризация%20в%20DL/d.4.37%20Регуляризация%20в%20DL.md)
 
-Сайт: [dl-optimization.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-optimization.html) · [README-legacy.md](./README-legacy.md)
+Сайт: [dl-optimization.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-optimization.html) · [README.md](./README.md)
 
 **Практика:** [practice/](./practice/README.md)
 

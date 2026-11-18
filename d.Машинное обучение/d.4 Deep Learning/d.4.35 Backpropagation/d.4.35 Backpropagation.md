@@ -1,12 +1,14 @@
 # d.4.35 · ML Handbook гл. 35 — Backpropagation
 
-Сайт: [backprop.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/backprop.html) · вход: этот файл.
+Сайт: [backprop.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/backprop.html) · [README.md](./README.md)
 
 **Контекст:** архитектура — [d.4.33](../d.4.33%20Нейрон%20и%20полносвязная%20сеть/d.4.33%20Нейрон%20и%20полносвязная%20сеть.md); активации и лосс — [d.4.34](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md).
 
 **База:** [d.0](../../d.0%20Градиент%20и%20правило%20цепочки.md) · **разбор руками:** [e.1 micrograd](../../../e.Карпати%20—%20разбираем%20micrograd/e.1%20Карпати%20—%20разбираем%20micrograd.md)
 
 **Практика:** [practice/](./practice/README.md)
+
+**Практика PyTorch:** autograd — [pytorch/03](../../../../pytorch/pytorch%20дубинин/03/03_знакомство_с_pytorch.ipynb); цикл `zero_grad` / `backward` / `step` — [pytorch/11](../../../../pytorch/pytorch%20дубинин/11/11_цикл_обучения.ipynb); save/load — [pytorch/13](../../../../pytorch/pytorch%20дубинин/13/13_save_load.ipynb); val и early stop — [pytorch/14](../../../../pytorch/pytorch%20дубинин/14/14_early_stopping.ipynb); карта → [0_как_учить_pytorch.md](../../../../pytorch/pytorch%20дубинин/0_как_учить_pytorch.md). Кратко — [README.md](./README.md).
 
 | § | Ментор | Якорь здесь |
 |:---:|:---|:---|
