@@ -1,0 +1,25 @@
+# виртуальное окружение — не в репозиторий
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / локальное (по желанию)
+.cursor/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store

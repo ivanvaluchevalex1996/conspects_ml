@@ -46,7 +46,7 @@ $$`. Инлайн-формулы в одну строку с текстом и �
 | Функции активации                         | [d.4.34](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md); производные ReLU/σ, затухание → §9.2.1 там же |
 | Краткий обзор CNN и RNN                   | [d.4.34](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md) §9.5 |
 | Полносвязная нейронная сеть               | весь этот файл                                          |
-| [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html) гл.33 | теория — [d.4.33](d.4.33%20Нейрон%20и%20полносвязная%20сеть/d.4.33%20Нейрон%20и%20полносвязная%20сеть.md); практика — [practice/](./practice/README.md) |
+| [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/neural-network.html) гл.33 | теория — [d.4.33](d.4.33%20Нейрон%20и%20полносвязная%20сеть.md); практика — [practice/](./practice/README.md) |
 | [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/activations.html) гл.34 | теория — [d.4.34](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md); практика — [d.4.34/practice](../d.4.34%20Функции%20активации/practice/README.md) |
 | [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/backprop.html) гл.35 | теория — [d.4.35](../d.4.35%20Backpropagation/d.4.35%20Backpropagation.md); практика — [d.4.35/practice](../d.4.35%20Backpropagation/practice/README.md) |
 | [ML Handbook](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-optimization.html) гл.36 | теория — [d.4.36](../d.4.36%20Оптимизация%20и%20обучение%20в%20DL/d.4.36%20Оптимизация%20и%20обучение%20в%20DL.md); практика — [d.4.36/practice](../d.4.36%20Оптимизация%20и%20обучение%20в%20DL/practice/README.md) |
@@ -889,7 +889,7 @@ X = 3 × 2                 W = 2 × 4                 XW + b = 3 × 4
 | Softmax + CE с расчётами (NumPy, домашка)               | [формулы-конспект-код.md](../../../../homework_linear_models_and_knn/формулы-конспект-код.md) |
 | Loss / метрики (классика)                               | [d.1.2](../../d.1%20Введение%20в%20мл/d.1.2%20Loss%20и%20эмпирический%20риск.md), [d.3.1](../../d.3%20Classic%20ML/d.3.1%20Метрики%20классификации%20и%20регрессии.md) |
 | Активации: §9.1–9.3 подробно; §9.4 таблица + Deep-ML     | [d.4.34](../d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md) |
-| `exp` для ELU / Swish на отрицательных x                  | [a.NumPy/8](../../a.NumPy/8.математические%20функции.md) |
+| `exp` для ELU / Swish на отрицательных x                  | [a.NumPy/8](../../../a.NumPy/8.математические%20функции.md) |
 | Общий указатель Deep-ML ↔ конспекты                       | [Deep-ML — задачи ↔ конспекты](../../1.Deep-ML%20—%20задачи%20↔%20конспекты.md) |
 
 ## Главный вывод
