@@ -35,6 +35,11 @@
 
 Код: [pytorch дубинин](../../../pytorch/pytorch%20дубинин/0_как_учить_pytorch.md) · handbook [gl38](../../../pytorch/pytorch%20handbook/handbook_gl38/README.md) · [gl39](../../../pytorch/pytorch%20handbook/handbook_gl39/README.md)
 
+| гл. | Практика Deep-ML |
+|:---:|:---|
+| **38** | [d.4.38 PyTorch/practice/](d.4.38%20PyTorch/practice/README.md) · PyTorch Basics |
+| **39** | [d.4.39 PyTorch практика/practice/](d.4.39%20PyTorch%20практика/practice/README.md) · DataLoader, MSE, train step, labs; проект — `pytorch дубинин/project/` |
+
 | Тема DL | PyTorch |
 | --- | --- |
 | гл. 33–35 | `08/`–`11/`, project |
