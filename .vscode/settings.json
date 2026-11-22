@@ -1,4 +1,10 @@
 {
   "git.ignoreLimitWarning": true,
-  "python.defaultInterpreterPath": "C:\\Users\\HUAWEI\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+  "python.defaultInterpreterPath": "${env:LOCALAPPDATA}/Programs/Python/Python312/python.exe",
+  "notebook.markup.fontSize": 14,
+  "notebook.lineHeight": 20,
+  "markdown.preview.fontSize": 14,
+  "markdown.previewStyles": [
+    "${workspaceFolder}/.vscode/notebook-markdown-headings.css"
+  ]
 }

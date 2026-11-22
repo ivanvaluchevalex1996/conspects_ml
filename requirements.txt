@@ -1,0 +1,17 @@
+# conspects_ml + ноутбуки practice/, pytorch дубинин (общий список)
+# Установка: см. README → scripts/setup-global.ps1
+
+numpy
+matplotlib
+pandas
+pillow
+jupyter
+ipykernel
+nbclient
+nbformat
+nbconvert
+
+# PyTorch (CPU). GPU: https://pytorch.org/get-started/locally/
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision

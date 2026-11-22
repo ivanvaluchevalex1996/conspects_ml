@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.debugpy",
+    "ms-toolsai.jupyter",
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens",
+    "ritwickdey.liveserver",
+    "teabyii.ayu",
+    "MoBalic.jetbrains-new-dark"
+  ],
+  "unwantedRecommendations": []
+}
