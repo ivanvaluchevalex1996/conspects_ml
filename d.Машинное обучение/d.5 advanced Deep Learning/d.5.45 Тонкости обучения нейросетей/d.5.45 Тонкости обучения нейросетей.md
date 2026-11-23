@@ -11,7 +11,7 @@
 | 45.5 | residual | [§6](#6-residual-handbook-455) |
 | 45.6 | чек-лист отладки | [§7](#7-арсенал-и-отладка-handbook-456) |
 
-**Практика:** *(пока нет)*
+**Практика:** [practice/](./practice/README.md) · [handbook_gl45_практика.ipynb](./practice/handbook_gl45_практика.ipynb)
 
 Дубли/углубление с базой: инициализация и BN — [d.4.36](../../d.4%20Deep%20Learning/d.4.36%20Оптимизация%20и%20обучение%20в%20DL/d.4.36%20Оптимизация%20и%20обучение%20в%20DL.md) §1; Dropout, входная нормализация — [d.4.37](../../d.4%20Deep%20Learning/d.4.37%20Регуляризация%20в%20DL/d.4.37%20Регуляризация%20в%20DL.md). Scheduler, warmup в коде — [pytorch/12](../../../../pytorch/pytorch%20дубинин/12/12_lr_scheduler.ipynb). BPTT clipping — [d.5.40](../d.5.40%20Последовательности%20RNN%20LSTM%20GRU%20Transformer/d.5.40%20Последовательности%20RNN%20LSTM%20GRU%20Transformer.md).
 

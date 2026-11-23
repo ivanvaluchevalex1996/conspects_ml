@@ -9,7 +9,7 @@
 | 44.3 | дистилляция | [§4](#4-дистилляция-handbook-443) |
 | 44.4 | compile, fp16, LoRA | [§5](#5-инференс-без-потери-смысла-handbook-444) |
 
-**Практика:** *(пока нет)*
+**Практика:** [practice/](./practice/README.md) · [handbook_gl44_практика.ipynb](./practice/handbook_gl44_практика.ipynb)
 
 Не путать с **обучением SGD/Adam** — это [d.4.36](../../d.4%20Deep%20Learning/d.4.36%20Оптимизация%20и%20обучение%20в%20DL/d.4.36%20Оптимизация%20и%20обучение%20в%20DL.md). LoRA в контексте LLM → [d.5.42](../d.5.42%20Transfer%20learning/d.5.42%20Transfer%20learning.md).
 

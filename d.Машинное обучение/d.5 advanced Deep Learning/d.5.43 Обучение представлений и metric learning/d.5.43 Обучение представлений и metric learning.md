@@ -9,7 +9,7 @@
 | 43.3 | ArcFace, метрики 1:1 / 1:N | [§4](#4-arcface-handbook-433) |
 | 43.4 | self-supervised, связка с поиском | [§5](#5-self-supervised-и-прод-handbook-434) |
 
-**Практика:** *(пока нет)*
+**Практика:** [practice/](./practice/README.md) · [handbook_gl43_практика.ipynb](./practice/handbook_gl43_практика.ipynb)
 
 Transfer / энкодеры: [d.5.42](../d.5.42%20Transfer%20learning/d.5.42%20Transfer%20learning.md). Трансформер как энкодер текста: [d.5.40](../d.5.40%20Последовательности%20RNN%20LSTM%20GRU%20Transformer/d.5.40%20Последовательности%20RNN%20LSTM%20GRU%20Transformer.md).
 

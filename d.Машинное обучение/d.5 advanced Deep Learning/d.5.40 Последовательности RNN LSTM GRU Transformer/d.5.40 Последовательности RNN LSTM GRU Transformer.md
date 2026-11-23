@@ -2,7 +2,7 @@
 
 Сайт: [sequences.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/sequences.html) · [README.md](./README.md) · [карта d.5](../d.5%20advanced%20Deep%20Learning.md)
 
-**Практика:** *(пока нет)* — на сайте: PyTorch `nn.RNN` / `LSTM` / `GRU`, attention руками, Deep-ML по рекуррентным и трансформерам (см. [§9](#9-что-делать-руками-после-теории-handbook)).
+**Практика:** [practice/](./practice/README.md) · [handbook_gl40_практика.ipynb](./practice/handbook_gl40_практика.ipynb) · [deep_ml/](./practice/deep_ml/README.md)
 
 | § | Ментор | Якорь в конспекте |
 |:---:|:---|:---|
@@ -306,7 +306,7 @@ Attention **не знает порядок** сам по себе: множес�
 
 ## 9. Что делать руками после теории (handbook)
 
-**Практика в конспектах пока не разложена** — ориентир с [сайта](https://mlhandbook-production.up.railway.app/parts/deep-learning/sequences.html):
+**Код:** [practice/handbook_gl40_практика.ipynb](./practice/handbook_gl40_практика.ipynb) · Deep-ML: [practice/deep_ml/](./practice/deep_ml/README.md). Дополнительно с [сайта](https://mlhandbook-production.up.railway.app/parts/deep-learning/sequences.html):
 
 **Рекуррентные:**
 
@@ -362,4 +362,4 @@ Attention **не знает порядок** сам по себе: множес�
 | Карта advanced DL | [d.5 advanced Deep Learning.md](../d.5%20advanced%20Deep%20Learning.md) |
 | Базовый DL | [d.4 Deep Learning.md](../../d.4%20Deep%20Learning/d.4%20Deep%20Learning.md) |
 
-Когда появятся ноутбуки практики — сюда добавится строка **Практика:** как в [d.4.33/practice](../../d.4%20Deep%20Learning/d.4.33%20Нейрон%20и%20полносвязная%20сеть/practice/README.md).
+Практика: [practice/](./practice/README.md).
