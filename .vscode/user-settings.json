@@ -410,7 +410,7 @@
   },
   "editor.fontSize": 14,
   "notebook.markup.fontSize": 14,
-  "notebook.output.fontSize": 12,
+  "notebook.output.fontSize": 14,
   "notebook.lineHeight": 20,
   "markdown.preview.fontSize": 14,
   "editor.inlayHints.maximumLength": 100,
