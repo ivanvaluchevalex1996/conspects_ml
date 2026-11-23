@@ -1,5 +1,7 @@
 # Handbook гл.37 · NumPy + PyTorch Basics
 
+В README каждой папки — **что за механизм** (dropout/BN) и **зачем train vs eval** в проде.
+
 Handbook: [../handbook_gl37_практика.ipynb](../handbook_gl37_практика.ipynb) → эталон [../handbook_gl37_практика_решения.ipynb](../handbook_gl37_практика_решения.ipynb). Deep-ML: в каждой папке `*_решения.ipynb` **после** попытки. Сначала NumPy, потом torch.
 
 **Уровень** в имени папки — с [deep-ml.com](https://www.deep-ml.com/) (для `batchnorm1d_numpy` — **easy**, блок NumPy в [handbook гл.37](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-regularization.html), без # на Deep-ML).

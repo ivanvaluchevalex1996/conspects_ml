@@ -1,5 +1,7 @@
 # Deep-ML · PyTorch Basics
 
+В README каждой задачи — блоки **«Что это»** / **«Зачем в жизни»** (тензоры, autograd, MLP).
+
 | ☐ | Задача | Тема | Уровень |
 |:---:|:---|:---|:---:|
 | ☐ | [1218_count_parameters_sequential — easy](./1218_count_parameters_sequential%20—%20easy/) | Count Parameters of a Sequential Model | **easy** |

@@ -1,5 +1,7 @@
 # Handbook гл.34 · домашка Deep-ML по папкам
 
+В **каждой папке** в [README.md](./22_sigmoid%20—%20easy/README.md) задачи есть блоки **«Что это за задача»** и **«Зачем это в реальной жизни»** — не только ссылка на deep-ml.com.
+
 Handbook **§34.4–advanced**: [../handbook_gl34_практика.ipynb](../handbook_gl34_практика.ipynb) → эталон [handbook_gl34_практика_решения.ipynb](../handbook_gl34_практика_решения.ipynb). Deep-ML: в каждой папке `*_решения.ipynb` **после** своей попытки.
 
 **Уровень** в имени папки (`— easy` / `— medium`) — с [deep-ml.com](https://www.deep-ml.com/).

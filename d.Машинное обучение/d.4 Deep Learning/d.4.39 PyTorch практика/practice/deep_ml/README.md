@@ -1,5 +1,7 @@
 # Deep-ML · PyTorch на практике (гл. 39)
 
+В README каждой задачи — **смысл** (DataLoader, MSE, один training step) и **связь с циклом обучения**.
+
 | ☐ | Задача | Тема | Уровень |
 |:---:|:---|:---|:---:|
 | ☐ | [1237_batch_tensor_dataloader — easy](./1237_batch_tensor_dataloader — easy/) | Batch a TensorDataset with DataLoader | **easy** |

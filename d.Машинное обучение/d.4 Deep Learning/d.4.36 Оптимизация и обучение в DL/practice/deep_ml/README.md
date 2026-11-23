@@ -1,5 +1,7 @@
 # Handbook гл.36 · домашка Deep-ML
 
+В README каждой папки — пояснение **смысла задачи** и **где это в реальном training loop**.
+
 Handbook: [dl-optimization](https://mlhandbook-production.up.railway.app/parts/deep-learning/dl-optimization.html) · [../handbook_gl36_практика.ipynb](../handbook_gl36_практика.ipynb) → эталон [../handbook_gl36_практика_решения.ipynb](../handbook_gl36_практика_решения.ipynb). Deep-ML: в каждой папке `*_решения.ipynb` **после** попытки.
 
 Суффикс в **имени папки** (`— easy` / `— medium`) совпадает с уровнем в таблице (для #1235 и #1236 в названии **medium** — как на Deep-ML).

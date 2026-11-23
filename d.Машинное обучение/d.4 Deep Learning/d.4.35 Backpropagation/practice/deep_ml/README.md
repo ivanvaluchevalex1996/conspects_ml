@@ -1,5 +1,7 @@
 # Handbook гл.35 · домашка Deep-ML
 
+В README каждой папки — **что делаем** и **зачем в обучении сетей** (не только условие Deep-ML).
+
 Handbook §35.3–35.6: [../handbook_gl35_практика.ipynb](../handbook_gl35_практика.ipynb) → эталон [../handbook_gl35_практика_решения.ipynb](../handbook_gl35_практика_решения.ipynb). Deep-ML: в каждой папке `*_решения.ipynb` **после** попытки.
 
 **Уровень** в имени папки — с [deep-ml.com](https://www.deep-ml.com/).
