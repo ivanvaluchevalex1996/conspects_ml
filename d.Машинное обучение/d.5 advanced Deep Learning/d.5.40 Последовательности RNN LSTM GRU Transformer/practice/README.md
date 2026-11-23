@@ -7,6 +7,8 @@
 | §40.1–40.6 код handbook | [handbook_gl40_практика.ipynb](./handbook_gl40_практика.ipynb) · эталон [handbook_gl40_практика_решения.ipynb](./handbook_gl40_практика_решения.ipynb) |
 | Deep-ML (RNN / attention) | [deep_ml/](./deep_ml/README.md) |
 
+**В ноутбуке:** у каждого блока — **Зачем этот фрагмент** (со ссылкой на конспект), **Что проверить**, затем код.
+
 **Порядок:** RNN с нуля → `nn.RNN` → GRU/LSTM → attention → MHA → `TransformerEncoderLayer` → при желании Deep-ML.
 
 Для NLP: после ноутбука — Hugging Face fine-tune (гл. 42); RNN/LSTM на Deep-ML — опционально.

@@ -6,6 +6,8 @@
 |-----|-----|
 | Embedding, triplet smoke | [handbook_gl43_практика.ipynb](./handbook_gl43_практика.ipynb) · [handbook_gl43_практика_решения.ipynb](./handbook_gl43_практика_решения.ipynb) |
 
+**В ноутбуке:** **Зачем этот фрагмент** + ссылка на конспект → **Что проверить** → код.
+
 **На сайте (домашка):** полный triplet на `load_digits`, PCA/t-SNE кластеры; hard negative mining; contrastive vs сырые пиксели.
 
 **Recsys / NLP:** эмбеддинги user/item, sentence-transformers — см. теорию §5.

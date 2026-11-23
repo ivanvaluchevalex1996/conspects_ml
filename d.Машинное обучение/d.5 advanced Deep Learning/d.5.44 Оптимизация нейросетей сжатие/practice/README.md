@@ -6,4 +6,6 @@
 |-----|-----|
 | distillation_loss, prune, quantize_dynamic | [handbook_gl44_практика.ipynb](./handbook_gl44_практика.ipynb) · [handbook_gl44_практика_решения.ipynb](./handbook_gl44_практика_решения.ipynb) |
 
+**В ноутбуке:** **Зачем этот фрагмент** + ссылка на конспект → **Что проверить** → код.
+
 **Мини-проект handbook:** учитель/ученик на digits/MNIST, прунинг 50%, сравнение размера `state_dict` после quant.

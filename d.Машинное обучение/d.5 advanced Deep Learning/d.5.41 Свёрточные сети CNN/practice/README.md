@@ -7,4 +7,6 @@
 | Conv2d, padding/stride, Conv vs FC | [handbook_gl41_практика.ipynb](./handbook_gl41_практика.ipynb) · [handbook_gl41_практика_решения.ipynb](./handbook_gl41_практика_решения.ipynb) |
 | Deep-ML / PyTorch Basics | [deep_ml/](./deep_ml/README.md) |
 
+**В ноутбуке:** **Зачем этот фрагмент** + ссылка на конспект → **Что проверить** → код.
+
 **Дальше на сайте:** MNIST CNN accuracy ≥ 0.99; аугментации `torchvision.transforms`. PyTorch: `pytorch дубинин/07` (transforms).
