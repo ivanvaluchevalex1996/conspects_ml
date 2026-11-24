@@ -8,7 +8,7 @@
 
 | гл. | Папка | Сайт | Теория | Практика |
 |:---:|:---|:---|:---|:---|
-| **40** | [d.5.40](d.5.40%20Последовательности%20RNN%20LSTM%20GRU%20Transformer/d.5.40%20Последовательности%20RNN%20LSTM%20GRU%20Transformer.md) | [sequences](https://mlhandbook-production.up.railway.app/parts/deep-learning/sequences.html) | §0–§11 | [practice/](d.5.40%20Последовательности%20RNN%20LSTM%20GRU%20Transformer/practice/) |
+| **40** | [d.5.40](d.5.40%20Последовательности%20RNN%20LSTM%20GRU%20Transformer/d.5.40%20Последовательности%20RNN%20LSTM%20GRU%20Transformer.md) | [sequences](https://mlhandbook-production.up.railway.app/parts/deep-learning/sequences.html) | §2–§7 = **40.1–40.6** (+ §0, §1, §9–§11) | [practice/](d.5.40%20Последовательности%20RNN%20LSTM%20GRU%20Transformer/practice/) |
 | **41** | [d.5.41](d.5.41%20Свёрточные%20сети%20CNN/d.5.41%20Свёрточные%20сети%20CNN.md) | [cnn](https://mlhandbook-production.up.railway.app/parts/deep-learning/cnn.html) | §0–§10 | [practice/](d.5.41%20Свёрточные%20сети%20CNN/practice/) |
 | **42** | [d.5.42](d.5.42%20Transfer%20learning/d.5.42%20Transfer%20learning.md) | [transfer-learning](https://mlhandbook-production.up.railway.app/parts/deep-learning/transfer-learning.html) | §0–§7 | [practice/](d.5.42%20Transfer%20learning/practice/) |
 | **43** | [d.5.43](d.5.43%20Обучение%20представлений%20и%20metric%20learning/d.5.43%20Обучение%20представлений%20и%20metric%20learning.md) | [representation-learning](https://mlhandbook-production.up.railway.app/parts/deep-learning/representation-learning.html) | §0–§7 | [practice/](d.5.43%20Обучение%20представлений%20и%20metric%20learning/practice/) |

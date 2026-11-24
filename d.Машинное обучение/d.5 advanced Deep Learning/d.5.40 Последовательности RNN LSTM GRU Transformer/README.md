@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Вход (§ → якоря)** | [d.5.40 … .md](./d.5.40%20Последовательности%20RNN%20LSTM%20GRU%20Transformer.md) |
-| **Теория** | §0–§9 в том же файле |
+| **Теория** | §0–§7 = handbook **40.1–40.6**; §9–§10 — практика и шпаргалка |
 | **Практика** | [practice/](./practice/README.md) |
 | **Сайт** | [sequences.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/sequences.html) |
 
