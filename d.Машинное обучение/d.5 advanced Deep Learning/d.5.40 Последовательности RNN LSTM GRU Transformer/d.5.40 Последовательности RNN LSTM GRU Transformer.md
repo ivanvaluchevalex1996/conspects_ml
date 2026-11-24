@@ -2,6 +2,8 @@
 
 Сайт: [sequences.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/sequences.html) · [README.md](./README.md) · [карта d.5](../d.5%20advanced%20Deep%20Learning.md)
 
+**Видео (YouTube):** [Лекция. Рекуррентная нейронная сеть](https://www.youtube.com/watch?v=3OljkWQ2Uc0) → [§1](#1-почему-не-mlp-и-cnn-как-есть-вводка-с-сайта), [§2.1](#21-одна-ячейка) (**handbook 40.1**, forward pass, h_t); обучение / нюансы в курсе — после видео [§2.2](#22-проблема-короткая-память-handbook-4011); трансформер в той же линии курса → [§7](#7-transformer-внимание-вместо-рекуррентности-handbook-406).
+
 **Практика:** [practice/](./practice/README.md) · [handbook_gl40_практика.ipynb](./practice/handbook_gl40_практика.ipynb) · [deep_ml/](./practice/deep_ml/README.md)
 
 | § handbook | На сайте | Якорь в конспекте |
@@ -83,6 +85,8 @@
 Обычная сеть обрабатывает весь вход и «забывает». **RNN** читает последовательность **слева направо** (если не оговорено иначе): на шаге t видит x_t и предыдущую память h_{t−1}.
 
 ### 2.1. Одна ячейка
+
+Курс: [Лекция. Рекуррентная нейронная сеть](https://www.youtube.com/watch?v=3OljkWQ2Uc0) — та же схема (embedding слова → RNN по токенам, **общие** веса по времени, голова для классификации).
 
 Линейное смешивание входа и памяти + нелинейность (часто **tanh**):
 
@@ -359,6 +363,7 @@ Attention **не знает порядок** сам по себе: множес�
 | Источник | Где |
 | --- | --- |
 | [ML Handbook гл.40](https://mlhandbook-production.up.railway.app/parts/deep-learning/sequences.html) | этот файл: §0, §1 (вводка), §2–§7 = **40.1–40.6**, §9–§10 |
+| [YouTube: Рекуррентная нейронная сеть](https://www.youtube.com/watch?v=3OljkWQ2Uc0) | §1–§2.1 (идея RNN, forward); BPTT — §2.2 после следующих роликов курса |
 | Краткий обзор RNN в курсе | [d.4.34](../../d.4%20Deep%20Learning/d.4.34%20Функции%20активации/d.4.34%20Функции%20активации.md) (упоминание CNN/RNN) |
 | Карта advanced DL | [d.5 advanced Deep Learning.md](../d.5%20advanced%20Deep%20Learning.md) |
 | Базовый DL | [d.4 Deep Learning.md](../../d.4%20Deep%20Learning/d.4%20Deep%20Learning.md) |
