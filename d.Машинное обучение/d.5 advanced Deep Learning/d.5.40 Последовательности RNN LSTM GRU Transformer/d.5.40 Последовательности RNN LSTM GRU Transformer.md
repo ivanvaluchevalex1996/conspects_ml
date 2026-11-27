@@ -2,11 +2,11 @@
 
 > 🔴 **Посмотреть — визуализация transformer / LLM:** [bbycroft.net/llm](https://bbycroft.net/llm) — интерактивный разбор (B. Croft) → [§7](#7-transformer-внимание-вместо-рекуррентности-handbook-406) 🔴
 
-Сайт: [sequences.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/sequences.html) · [README.md](./README.md) · [карта d.5](../d.5%20advanced%20Deep%20Learning.md)
+**🔵 ML Handbook (ментор):** [sequences.html · гл. 40](https://mlhandbook-production.up.railway.app/parts/deep-learning/sequences.html) · [README.md](./README.md) · [карта d.5](../d.5%20advanced%20Deep%20Learning.md)
 
-**Видео (YouTube):** [1–5](https://www.youtube.com/playlist?list=PL0Ks75aof3ThuLLtLIVl_KPUDDQlTDyJI) → §0–§6; [6](https://www.youtube.com/watch?v=Fki-Xe3CGg8) attention · [7](https://www.youtube.com/watch?v=TBEwpgyoo20)+[8](https://www.youtube.com/watch?v=tsee8mosj5U) трансформер (enc/dec) → [§7](#7-transformer-внимание-вместо-рекуррентности-handbook-406).
+**🟣 Лекции (YouTube, не ментор):** [1–5](https://www.youtube.com/playlist?list=PL0Ks75aof3ThuLLtLIVl_KPUDDQlTDyJI) → §0–§6; [6](https://www.youtube.com/watch?v=Fki-Xe3CGg8) attention · [7](https://www.youtube.com/watch?v=TBEwpgyoo20)+[8](https://www.youtube.com/watch?v=tsee8mosj5U) трансформер (enc/dec) → [§7](#7-transformer-внимание-вместо-рекуррентности-handbook-406).
 
-**Метки:** 🔵 handbook · 🟣 лекции · в конце §0–§7 — **«На собес · кратко»**; сводка RNN/GRU/LSTM — [§5.1](#51-сводка-rnn-vs-gru-vs-lstm-как-в-конце-404-на-сайте). Тайм-коды: [мастер-указатель](#мастер-указатель-тайм-кодов-детальные-интервалы--в-таблице-у-каждого-ролика-в-§) + таблицы у роликов. Формулы — [§10](#10-шпаргалка-собес).
+**Метки:** 🔵 **ментор (handbook)** · 🟣 **лекции YouTube** (курс по RNN/transformer, не сайт) · **Разбор (конспект)** — пояснения без цвета · в конце §0–§7 — **«На собес · кратко»**; сводка RNN/GRU/LSTM — [§5.1](#51-сводка-rnn-vs-gru-vs-lstm-как-в-конце-404-на-сайте). Тайм-коды: [мастер-указатель](#мастер-указатель-тайм-кодов-детальные-интервалы--в-таблице-у-каждого-ролика-в-§) + таблицы у роликов. Формулы — [§10](#10-шпаргалка-собес).
 
 **Практика:** [practice/](./practice/README.md) · [handbook_gl40_практика.ipynb](./practice/handbook_gl40_практика.ipynb) · [deep_ml/](./practice/deep_ml/README.md)
 
@@ -41,8 +41,8 @@
 
 | Источник | В **редакторе** (этот файл) | **Цветной фон** |
 | --- | --- | --- |
-| Handbook | 🔵 **▸ Handbook** | синий — **только** этот шаблон заголовка |
-| Лекция | 🟣 **▸ Лекция (YouTube)** | фиолетовый — ролик, слайды, разбор кадра |
+| 🔵 ML Handbook (ментор) | 🔵 **▸ Handbook** | синий — **только** этот шаблон заголовка |
+| 🟣 Лекции YouTube | 🟣 **▸ Лекция (YouTube)** | фиолетовый — **не** сайт ментора |
 | Пояснение | **Разбор (конспект)** в заголовке | без 🔵/🟣 — не с сайта и не дословно лекция |
 | **Собес** | **На собес · кратко** | в конце §0–§7; формулы — [§10](#10-шпаргалка-собес) |
 

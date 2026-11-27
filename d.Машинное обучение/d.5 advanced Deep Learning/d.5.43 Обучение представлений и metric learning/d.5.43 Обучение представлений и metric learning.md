@@ -1,8 +1,12 @@
-# d.5.43 · ML Handbook гл. 43 — Обучение представлений и metric learning
+# d.5.43 · Обучение представлений и metric learning
 
-Сайт: [representation-learning.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/representation-learning.html) · [README.md](./README.md) · [карта d.5](../d.5%20advanced%20Deep%20Learning.md)
+**🔵 ML Handbook (ментор):** [representation-learning.html · гл. 43](https://mlhandbook-production.up.railway.app/parts/deep-learning/representation-learning.html) · [README.md](./README.md) · [карта d.5](../d.5%20advanced%20Deep%20Learning.md)
 
-| § | Ментор | Якорь |
+**Метки:** 🔵 ментор (`*(handbook 43.x)*`) · §0 и связки — **конспект** (NLP/recsys).
+
+#### 🔵 **▸ Handbook (ментор)** · карта гл. 43
+
+| § handbook | На сайте | Якорь |
 |:---:|:---|:---|
 | 43.1 | эмбеддинг | [§2](#2-эмбеддинг-handbook-431) |
 | 43.2 | contrastive, triplet | [§3](#3-metric-learning-handbook-432) |

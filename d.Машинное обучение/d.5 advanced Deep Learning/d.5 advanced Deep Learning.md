@@ -1,6 +1,6 @@
 # d.5 · Advanced Deep Learning
 
-**Сейчас в папке:** теория + **practice/** (handbook-ноутбуки `handbook_gl40`…`45`, Deep-ML — где есть на сайте) по ML Handbook **гл. 40–45**. Стиль как [d.4](../d.4%20Deep%20Learning/d.4%20Deep%20Learning.md).
+**Сейчас в папке:** теория + **practice/** (handbook-ноутбуки `handbook_gl40`…`45`, Deep-ML — где есть на сайте) по **🔵 ML Handbook (ментор)** **гл. 40–45**. В конспектах: **🟣** — лекции YouTube (d.5.40), **🟠** — курс Дубинина PyTorch (d.5.41). Стиль как [d.4](../d.4%20Deep%20Learning/d.4%20Deep%20Learning.md).
 
 **База:** [d.4 Deep Learning](../d.4%20Deep%20Learning/d.4%20Deep%20Learning.md) (гл. 33–39) · [d.0](../d.0%20Градиент%20и%20правило%20цепочки.md)
 

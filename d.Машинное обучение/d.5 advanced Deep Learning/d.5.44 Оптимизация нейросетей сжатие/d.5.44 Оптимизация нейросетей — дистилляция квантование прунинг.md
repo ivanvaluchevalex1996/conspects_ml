@@ -1,8 +1,12 @@
-# d.5.44 · ML Handbook гл. 44 — Оптимизация нейросетей: дистилляция, квантование, прунинг
+# d.5.44 · Оптимизация нейросетей: дистилляция, квантование, прунинг
 
-Сайт: [nn-optimization.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/nn-optimization.html) · [README.md](./README.md) · [карта d.5](../d.5%20advanced%20Deep%20Learning.md)
+**🔵 ML Handbook (ментор):** [nn-optimization.html · гл. 44](https://mlhandbook-production.up.railway.app/parts/deep-learning/nn-optimization.html) · [README.md](./README.md) · [карта d.5](../d.5%20advanced%20Deep%20Learning.md)
 
-| § | Ментор | Якорь |
+**Метки:** 🔵 ментор (`*(handbook 44.x)*`) · не путать с **оптимизатором Adam/SGD** — [d.4.36](../../d.4%20Deep%20Learning/d.4.36%20Оптимизация%20и%20обучение%20в%20DL/d.4.36%20Оптимизация%20и%20обучение%20в%20DL.md) (это **обучение**, не сжатие модели).
+
+#### 🔵 **▸ Handbook (ментор)** · карта гл. 44
+
+| § handbook | На сайте | Якорь |
 |:---:|:---|:---|
 | 44.1 | квантование | [§2](#2-квантование-handbook-441) |
 | 44.2 | прунинг | [§3](#3-прунинг-handbook-442) |

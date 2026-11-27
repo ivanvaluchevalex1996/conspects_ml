@@ -1,8 +1,12 @@
-# d.5.45 · ML Handbook гл. 45 — Тонкости обучения нейросетей
+# d.5.45 · Тонкости обучения нейросетей
 
-Сайт: [training-tricks.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/training-tricks.html) · [README.md](./README.md) · [карта d.5](../d.5%20advanced%20Deep%20Learning.md)
+**🔵 ML Handbook (ментор):** [training-tricks.html · гл. 45](https://mlhandbook-production.up.railway.app/parts/deep-learning/training-tricks.html) · [README.md](./README.md) · [карта d.5](../d.5%20advanced%20Deep%20Learning.md)
 
-| § | Ментор | Якорь |
+**Метки:** 🔵 ментор (`*(handbook 45.x)*`) · 🟠 Дубинин — BN [16](https://www.youtube.com/watch?v=CSRu8byqxNs), scheduler [12](https://www.youtube.com/watch?v=oWevpnv3RI0) (см. [0_как_учить_pytorch](../../../../pytorch/pytorch%20дубинин/0_как_учить_pytorch.md)).
+
+#### 🔵 **▸ Handbook (ментор)** · карта гл. 45
+
+| § handbook | На сайте | Якорь |
 |:---:|:---|:---|
 | 45.1 | инициализация He/Xavier | [§2](#2-инициализация-handbook-451) |
 | 45.2 | BN / LN / GN | [§3](#3-нормализации-handbook-452) |

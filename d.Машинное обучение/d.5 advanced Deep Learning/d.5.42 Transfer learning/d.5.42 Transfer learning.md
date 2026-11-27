@@ -1,8 +1,12 @@
-# d.5.42 · ML Handbook гл. 42 — Transfer learning (трансферное обучение)
+# d.5.42 · Transfer learning (трансферное обучение)
 
-Сайт: [transfer-learning.html](https://mlhandbook-production.up.railway.app/parts/deep-learning/transfer-learning.html) · [README.md](./README.md) · [карта d.5](../d.5%20advanced%20Deep%20Learning.md)
+**🔵 ML Handbook (ментор):** [transfer-learning.html · гл. 42](https://mlhandbook-production.up.railway.app/parts/deep-learning/transfer-learning.html) · [README.md](./README.md) · [карта d.5](../d.5%20advanced%20Deep%20Learning.md)
 
-| § | Ментор | Якорь |
+**Метки:** 🔵 ментор (`*(handbook 42.x)*`) · 🟠 Дубинин [видео 23](https://www.youtube.com/watch?v=M0iB56Vwy64&list=PLBP4Q3FNSLK2rtGPBsK-aMAetYj-8yg_1&index=23) · [d.5.41](../d.5.41%20Свёрточные%20сети%20CNN/d.5.41%20Свёрточные%20сети%20CNN.md) (CNN-блок курса).
+
+#### 🔵 **▸ Handbook (ментор)** · карта гл. 42
+
+| § handbook | На сайте | Якорь |
 |:---:|:---|:---|
 | 42.1 | универсальные ранние признаки | [§2](#2-почему-работает-handbook-421) |
 | 42.2 | feature extraction vs fine-tuning | [§3](#3-два-режима-handbook-422) |
