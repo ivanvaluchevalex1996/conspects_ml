@@ -6,6 +6,11 @@
   "notebook.lineHeight": 20,
   "markdown.preview.fontSize": 14,
   "markdown.previewStyles": [
-    "${workspaceFolder}/.vscode/notebook-markdown-headings.css"
+    "${workspaceFolder}/.vscode/notebook-markdown-headings.css",
+    "${workspaceFolder}/.vscode/conspect-sources.css"
+  ],
+  "markdown.styles": [
+    "${workspaceFolder}/.vscode/notebook-markdown-headings.css",
+    "${workspaceFolder}/.vscode/conspect-sources.css"
   ]
 }
