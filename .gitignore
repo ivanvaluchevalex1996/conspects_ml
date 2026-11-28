@@ -23,3 +23,7 @@ build/
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Practice datasets (скачиваются в ноутбуке / вручную — не в git)
+**/practice/data/
+**/*hymenoptera_data*.zip

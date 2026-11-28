@@ -26,9 +26,19 @@
 | [§3](#3-таблица-данные--похожесть-handbook-423) | сколько данных, похожесть домена |
 | [§4](#4-nlp-и-lora-handbook-424) | NLP / адаптеры (если есть в ролике) |
 
-#### 🟠 **▸ Дубинин (PyTorch)** · [видео 23 — Transfer Learning](https://www.youtube.com/watch?v=M0iB56Vwy64&list=PLBP4Q3FNSLK2rtGPBsK-aMAetYj-8yg_1&index=23)
+#### 🟠 **▸ Дубинин (PyTorch)** · плейлист [«Нейросети с PyTorch»](https://www.youtube.com/playlist?list=PLBP4Q3FNSLK2rtGPBsK-aMAetYj-8yg_1) · [видео 23 — Transfer Learning](https://www.youtube.com/watch?v=M0iB56Vwy64&list=PLBP4Q3FNSLK2rtGPBsK-aMAetYj-8yg_1&index=23)
 
-Короче, с упором на **CV** и код; после [d.5.41](../d.5.41%20Свёрточные%20сети%20CNN/d.5.41%20Свёрточные%20сети%20CNN.md) · [обзор 17–23](../../../../pytorch/pytorch%20дубинин/17-23_cnn/17-23_cnn_обзор.md).
+Та же **практика по смыслу**, что handbook: датасет **пчёлы / муравьи** (статья [transfer learning в доке PyTorch](https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html)), сравнение **с нуля vs transfer**, заморозка **`features`**, учится **`classifier`**, `requires_grad`, ~**10 эпох**. Модель — **своя CNN** из курса (`features` + `classifier`), не `ResNet18.layer4` как на сайте ментора.
+
+| Время | О чём |
+| --- | --- |
+| [0:00](https://www.youtube.com/watch?v=M0iB56Vwy64&t=0) | введение |
+| [0:42](https://www.youtube.com/watch?v=M0iB56Vwy64&t=42) | transfer при классификации (в т.ч. идея `ResNet`) |
+| [5:44](https://www.youtube.com/watch?v=M0iB56Vwy64&t=344) | **код:** датасет, обучение с нуля vs transfer |
+| ~6:20 | два класса: пчёлы и муравьи |
+| ~12:50+ | `features` заморожен, учится классификатор |
+
+Полный код в ролике + ноутбук курса (ссылка в описании видео). У себя под **handbook / ментор:** [handbook_gl42_hymenoptera_решения.ipynb](./practice/handbook_gl42_hymenoptera_решения.ipynb) (**ResNet-18**, шаги 1–2–3). Обзор CNN-блока: [17–23](../../../../pytorch/pytorch%20дубинин/17-23_cnn/17-23_cnn_обзор.md) · [§6](#6-практика-handbook--мини-проект).
 
 **Практика handbook (сайт):** [practice/](./practice/README.md) · [handbook_gl42_практика.ipynb](./practice/handbook_gl42_практика.ipynb)
 
@@ -134,9 +144,29 @@ model = AutoModelForSequenceClassification.from_pretrained("bert-base-uncased", 
 
 ---
 
-## 6. Практика (handbook, позже)
+## 6. Практика (handbook · мини-проект)
 
-ResNet-18 на Hymenoptera: feature extraction vs fine-tune `layer4` + аугментации.
+> **🔵 Ментор:** [transfer-learning.html · практика](https://mlhandbook-production.up.railway.app/parts/deep-learning/transfer-learning.html) · **🟠 Дубинин:** [видео 23](https://www.youtube.com/watch?v=M0iB56Vwy64) · **код у себя:** [practice/](./practice/README.md) · [handbook_gl42_практика.ipynb](./practice/handbook_gl42_практика.ipynb)
+
+**Датасет:** [Hymenoptera](https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html) (пчёлы / муравьи, ~240 train). **Модель:** `torchvision` **ResNet-18**, веса ImageNet.
+
+| ☐ | Шаг handbook | Что делаешь | Теория |
+|---|--------------|-------------|--------|
+| ☐ | **1. Feature extraction** | заморозить всё (`requires_grad=False`), заменить `fc` на 2 класса, учить **только голову**, записать **accuracy** на val | [§2](#2-два-режима-handbook-422) |
+| ☐ | **2. Fine-tuning** | разморозить **`model.layer4`**, дообучить с **`lr=1e-4`** (handbook), сравнить с шагом 1 | [§2](#2-два-режима-handbook-422) · [§3](#3-таблица-данные--похожесть-handbook-423) |
+| ☐ | **3. Аугментации** | `RandomResizedCrop`, `RandomHorizontalFlip`, **`Normalize`** — mean/std **ImageNet** (как у ResNet) | [§3](#3-таблица-данные--похожесть-handbook-423) |
+
+**Официальный эталон кода:** [PyTorch · Transfer Learning tutorial](https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html) (то, на что ссылается handbook).
+
+**У себя в конспекте:** [handbook_gl42_практика.ipynb](./practice/handbook_gl42_практика.ipynb) (фрагменты) → **[handbook_gl42_hymenoptera_решения.ipynb](./practice/handbook_gl42_hymenoptera_решения.ipynb)** (полный train/val, **ResNet-18**, шаги handbook 1–2–3).
+
+| Источник | Код практики |
+| --- | --- |
+| **🔵 handbook / ноутбук** | `ResNet18`, `fc`, fine-tune **`layer4`**, аугментации ImageNet |
+| **🟠 Дубинин, [видео 23](https://www.youtube.com/watch?v=M0iB56Vwy64&t=344)** | тот же **hymenoptera_data**, своя сеть **`features` + `classifier`**, сравнение с обучением с нуля |
+| **PyTorch tutorial** | эталон, близко к handbook | Цикл обучения: [d.4.35](../../d.4%20Deep%20Learning/d.4.35%20Backpropagation/d.4.35%20Backpropagation.md), DataLoader/transforms: Дубинин `04–07`, `11`.
+
+**Два этапа во времени (если val после шага 1 слабый):** сначала только `fc`, потом `layer4` + новый `optimizer` — см. обсуждение param groups в [§2](#2-два-режима-handbook-422).
 
 ---
 
